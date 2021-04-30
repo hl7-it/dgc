@@ -1,0 +1,92 @@
+* differential.element[1].mapping[0].identity = "fhir"
+* differential.element[1].mapping[0].map = "Immunization.protocolApplied.targetDisease"
+* differential.element[1].mapping[0].comment = "note"
+* differential.element[2].mapping[0].identity = "fhir"
+* differential.element[2].mapping[0].map = "Immunization.where(status='completed')"
+
+
+
+
+* differential.element[4].mapping[0].identity = "fhir"
+* differential.element[4].mapping[0].map = "Immunization.vaccineCode"
+
+* differential.element[5].mapping[0].identity = "fhir"
+* differential.element[5].mapping[0].map = "Immunization.vaccineCode"
+
+* differential.element[6].mapping[0].identity = "fhir"
+* differential.element[6].mapping[0].map = "Immunization.vaccineCode"
+
+* differential.element[7].mapping[0].identity = "fhir"
+* differential.element[7].mapping[0].map = "Immunization.lotNumber"
+
+* differential.element[8].mapping[0].identity = "fhir"
+* differential.element[8].mapping[0].map = "Immunization.expirationDate"
+
+* differential.element[9].mapping[0].identity = "fhir"
+* differential.element[9].mapping[0].map = "Immunization.occurrenceDateTime"
+
+* differential.element[10].mapping[0].identity = "fhir"
+* differential.element[10].mapping[0].map = "Immunization.site"
+
+* differential.element[11].mapping[0].identity = "fhir"
+* differential.element[11].mapping[0].map = "Immunization.route"
+
+* differential.element[12].mapping[0].identity = "fhir"
+* differential.element[12].mapping[0].map = "Immunization.reasonCode"
+
+* differential.element[13].mapping[0].identity = "fhir"
+* differential.element[13].mapping[0].map = "Immunization.reasonCode"
+
+* differential.element[14].mapping[0].identity = "fhir"
+* differential.element[14].mapping[0].map = "Immunization.reasonCode"
+
+* differential.element[15].mapping[0].identity = "fhir"
+* differential.element[15].mapping[0].map = "Immunization.reaction"
+
+* differential.element[16].mapping[0].identity = "fhir"
+* differential.element[16].mapping[0].map = "ImmunizationRecommendation.dateCriterion.value"
+
+* differential.element[17].mapping[0].identity = "fhir"
+* differential.element[17].mapping[0].map = "ImmunizationRecommendation.dateCriterion.value"
+
+* differential.element[18].mapping[0].identity = "fhir"
+* differential.element[18].mapping[0].map = "Immunization.performer"
+
+* differential.element[19].mapping[0].identity = "fhir"
+* differential.element[19].mapping[0].map = "Immunization.location"
+
+
+
+
+
+
+
+
+
+
+* differential.element[23].mapping[0].identity = "fhir"
+* differential.element[23].mapping[0].map = "Location.address"
+
+
+
+
+
+
+
+* differential.element[26].mapping[0].identity = "fhir"
+* differential.element[26].mapping[0].map = "Immunization.performer"
+
+* differential.element[27].mapping[0].identity = "fhir"
+* differential.element[27].mapping[0].map = "Immunization.where(status='not-done')"
+
+* differential.element[28].mapping[0].identity = "fhir"
+* differential.element[28].mapping[0].map = "Immunization.statusReason"
+
+* differential.element[29].mapping[0].identity = "fhir"
+* differential.element[29].mapping[0].map = "Immunization.recorded"
+
+* differential.element[30].mapping[0].identity = "fhir"
+* differential.element[30].mapping[0].map = "ImmunizationRecommendation.where(forecastStatus='immune').forecastReason"
+
+* differential.element[31].mapping[0].identity = "fhir"
+* differential.element[31].mapping[0].map = "ImmunizationRecommendation.dateCriterion.value"

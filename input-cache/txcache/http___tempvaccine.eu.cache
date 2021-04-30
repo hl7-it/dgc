@@ -1,0 +1,61 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://tempvaccine.eu",
+  "code" : "sputnik-v"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://tempvaccine.eu\" is not known (encountered paired with code = \"sputnik-v\"); The code provided (http://tempvaccine.eu#sputnik-v) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://tempvaccine.eu",
+  "code" : "CVnCoV"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://tempvaccine.eu\" is not known (encountered paired with code = \"CVnCoV\"); The code provided (http://tempvaccine.eu#CVnCoV) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://tempvaccine.eu",
+  "code" : "Convidecia"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://tempvaccine.eu\" is not known (encountered paired with code = \"Convidecia\"); The code provided (http://tempvaccine.eu#Convidecia) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://tempvaccine.eu",
+  "code" : "EpiVacCorona"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://tempvaccine.eu\" is not known (encountered paired with code = \"EpiVacCorona\"); The code provided (http://tempvaccine.eu#EpiVacCorona) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://tempvaccine.eu",
+  "code" : "BBIBP-CorV"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://tempvaccine.eu\" is not known (encountered paired with code = \"BBIBP-CorV\"); The code provided (http://tempvaccine.eu#BBIBP-CorV) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "http://tempvaccine.eu",
+  "code" : "CoronaVac"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"http://tempvaccine.eu\" is not known (encountered paired with code = \"CoronaVac\"); The code provided (http://tempvaccine.eu#CoronaVac) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------

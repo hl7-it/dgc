@@ -1,0 +1,41 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+  "code" : "1232"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://covid-19-diagnostics.jrc.ec.europa.eu/devices\" is not known (encountered paired with code = \"1232\"); The code provided (https://covid-19-diagnostics.jrc.ec.europa.eu/devices#1232) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+  "code" : "1065"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://covid-19-diagnostics.jrc.ec.europa.eu/devices\" is not known (encountered paired with code = \"1065\"); The code provided (https://covid-19-diagnostics.jrc.ec.europa.eu/devices#1065) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "concept" : [{
+        "code" : "1232",
+        "display" : "Abbott Rapid Diagnostics Panbio™ COVID-19 Ag Rapid Test"
+      },
+      {
+        "code" : "1065",
+        "display" : "Becton Dickinson BD Veritor System for Rapid Deteciton os SARS-CoV-2"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://covid-19-diagnostics.jrc.ec.europa.eu/devices"
+}
+-------------------------------------------------------------------------------------

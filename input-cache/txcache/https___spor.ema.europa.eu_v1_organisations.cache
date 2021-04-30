@@ -1,0 +1,153 @@
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100001699"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100001699\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100001699) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100030215"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100030215\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100030215) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100001417"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100001417\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100001417) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100031184"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100031184\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100031184) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100006270"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100006270\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100006270) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100013793"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100013793\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100013793) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100020693"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100020693\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100020693) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100010771"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100010771\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100010771) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100024420"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100024420\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100024420) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"code" : {
+  "system" : "https://spor.ema.europa.eu/v1/organisations",
+  "code" : "ORG-100032020"
+}, "valueSet" :null, "lang":"en-US", "useServer":"true", "useClient":"true", "guessSystem":"false", "valueSetMode":"ALL_CHECKS"}####
+v: {
+  "display" : "",
+  "severity" : "error",
+  "error" : "The code system \"https://spor.ema.europa.eu/v1/organisations\" is not known (encountered paired with code = \"ORG-100032020\"); The code provided (https://spor.ema.europa.eu/v1/organisations#ORG-100032020) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4)"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "include" : [{
+      "system" : "https://spor.ema.europa.eu/v1/organisations",
+      "concept" : [{
+        "code" : "ORG-100001699",
+        "display" : "AstraZeneca AB"
+      },
+      {
+        "code" : "ORG-100030215",
+        "display" : "Biontech Manufacturing GmbH"
+      },
+      {
+        "code" : "ORG-100001417",
+        "display" : "Janssen-Cilag International"
+      },
+      {
+        "code" : "ORG-100031184",
+        "display" : "Moderna Biotech Spain S.L."
+      },
+      {
+        "code" : "ORG-100006270",
+        "display" : "Curevac AG"
+      },
+      {
+        "code" : "ORG-100013793",
+        "display" : "CanSino Biologics"
+      },
+      {
+        "code" : "ORG-100020693",
+        "display" : "China Sinopharm International Corp. - Beijing location"
+      },
+      {
+        "code" : "ORG-100010771",
+        "display" : "Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location"
+      },
+      {
+        "code" : "ORG-100024420",
+        "display" : "Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location"
+      },
+      {
+        "code" : "ORG-100032020",
+        "display" : "Novavax CZ AS"
+      }]
+    }]
+  }
+}}####
+e: {
+  "error" : "Error from server: Unable to provide support for code system https://spor.ema.europa.eu/v1/organisations"
+}
+-------------------------------------------------------------------------------------
