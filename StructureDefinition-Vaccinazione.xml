@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="Vaccinazione"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a></th><th style="width: 100px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione" title="Dati Vaccinazione">Vaccinazione</a><a name="Vaccinazione"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Element">Element</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vaccinazione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.malattiaTarget" title="Malattia per la quale è stata programmata la vaccinazione">malattiaTarget</a><a name="Vaccinazione.malattiaTarget"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Malattia per la quale è stata programmata la vaccinazione<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione" title="Dati relativi alla somministrazione del vaccino">somministrazione</a><a name="Vaccinazione.somministrazione"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Dati Somministrazione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.vaccino" title="Dati reativi al prodotto somministrato">vaccino</a><a name="Vaccinazione.somministrazione.vaccino"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vaccino somminstrato</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.vaccino.tipo" title="Mono-componente o combinazione (bambini-adulti) somministrata, ad es. HBV,DTaP-HBV-IPV-HIB">tipo</a><a name="Vaccinazione.somministrazione.vaccino.tipo"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tipo Vaccino / Profilassi</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.vaccino.codiceAIC" title="Codice AIC del Vaccino Somministrato">codiceAIC</a><a name="Vaccinazione.somministrazione.vaccino.codiceAIC"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codice AIC</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.vaccino.codiceATC" title="Codice ATC del Vaccino Somministrato">codiceATC</a><a name="Vaccinazione.somministrazione.vaccino.codiceATC"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codice ATC</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.vaccino.nomeCommerciale" title="Nome commerciale Vaccino">nomeCommerciale</a><a name="Vaccinazione.somministrazione.vaccino.nomeCommerciale"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nome commerciale</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.vaccino.lotto" title="Numero del lotto">lotto</a><a name="Vaccinazione.somministrazione.vaccino.lotto"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numero del lotto</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.vaccino.dataScadenza" title="Data scadenza del vaccino">dataScadenza</a><a name="Vaccinazione.somministrazione.vaccino.dataScadenza"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Data scadenza del vaccino</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.data" title="Data e ora di somministrazione ">data</a><a name="Vaccinazione.somministrazione.data"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Data e ora di somministrazione </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.sedeAnatomica" title="Sede anatomica di somministrazione ">sedeAnatomica</a><a name="Vaccinazione.somministrazione.sedeAnatomica"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Sede anatomica di somministrazione </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.viaSomministrazione" title="Via di somministrazione ">viaSomministrazione</a><a name="Vaccinazione.somministrazione.viaSomministrazione"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Via di somministrazione </td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.indicazioni" title="Indicazioni per la vaccinazione">indicazioni</a><a name="Vaccinazione.somministrazione.indicazioni"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indicazioni per la vaccinazione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.indicazioni.categoriaRischio" title="Categoria per cui è raccomandata la vaccinazione">categoriaRischio</a><a name="Vaccinazione.somministrazione.indicazioni.categoriaRischio"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Categoria a rischio <br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.indicazioni.patologia" title="Patologia per cui è raccomandata la vaccinazione">patologia</a><a name="Vaccinazione.somministrazione.indicazioni.patologia"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Condizioni sanitarie a rischio<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.reazioniAvverse" title="Presente solo nel caso di Certificato Vaccinale">reazioniAvverse</a><a name="Vaccinazione.somministrazione.reazioniAvverse"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Reazioni avverse<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.periodoCopertura" title="Periodo di copertura">periodoCopertura</a><a name="Vaccinazione.somministrazione.periodoCopertura"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Periodo di copertura</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.dataProssimaDose" title="Data e ora programmata per la prossima  vaccinazione">dataProssimaDose</a><a name="Vaccinazione.somministrazione.dataProssimaDose"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Data prossima vaccinazione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.responsabile" title="Organizzazione responsabile  della vaccinazione inserendo nome oppure identificativo  (Sanitaria o Ospedaliera) ">responsabile</a><a name="Vaccinazione.somministrazione.responsabile"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-Organizzazione.html">Organizzazione</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Organizzazione responsabile della vaccinazione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck111.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.struttura" title="Ambulatorio Vaccinale oppure Unità Operativa oppure Pronto Soccorso oppure Centro medicina dei viaggi oppure autorità portuale oppure Studio Medico MMG/PLS.
+Struttura presso cui è stato somministrato vaccino
+Codice regione + codice presidio + subcodice stabilimento">struttura</a><a name="Vaccinazione.somministrazione.struttura"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Struttura presso cui è stat effettuata la vaccinazione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.struttura.identificativo" title="Identificativo della struttura">identificativo</a><a name="Vaccinazione.somministrazione.struttura.identificativo"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificativo<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.struttura.nome" title="nome della struttura">nome</a><a name="Vaccinazione.somministrazione.struttura.nome"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Denominazione struttura</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.struttura.responsabile" title="Direttore/Responsabile struttura">responsabile</a><a name="Vaccinazione.somministrazione.struttura.responsabile"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Direttore/Responsabile struttura</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.struttura.indirizzo" title="Indirizzo struttura">indirizzo</a><a name="Vaccinazione.somministrazione.struttura.indirizzo"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Indirizzo struttura</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.struttura.email" title="Email Segreteria struttura">email</a><a name="Vaccinazione.somministrazione.struttura.email"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Email Segreteria struttura<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.struttura.telefono" title="Recapito Telefonico Segreteria struttura">telefono</a><a name="Vaccinazione.somministrazione.struttura.telefono"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint">ContactPoint</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Recapito Telefonico Segreteria struttura<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.somministrazione.somministratore" title="Persona  Responsabile della Vaccinazione">somministratore</a><a name="Vaccinazione.somministrazione.somministratore"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-OperatoreSanitario.html">OperatoreSanitario</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Persona  Responsabile della Vaccinazione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.mancataSomministrazione" title="Esonero, omissione o differimento della somministrazione">mancataSomministrazione</a><a name="Vaccinazione.mancataSomministrazione"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Esonero, omissione o differimento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.mancataSomministrazione.motivazione" title="Motivazione per esonero/omissione o differimento">motivazione</a><a name="Vaccinazione.mancataSomministrazione.motivazione"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Motivazione esonero / differimento</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.mancataSomministrazione.data" title="Data e ora di registrazione esonero/ omissione o differimento ">data</a><a name="Vaccinazione.mancataSomministrazione.data"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Data registrazione</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.mancataSomministrazione.malattiaImmunita" title="Malattia con presunta immunità">malattiaImmunita</a><a name="Vaccinazione.mancataSomministrazione.malattiaImmunita"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Malattia con presunta immunità</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-Vaccinazione-definitions.html#Vaccinazione.mancataSomministrazione.scadenzaMotivazione" title="Data scadenza controindicazione temporanea">scadenzaMotivazione</a><a name="Vaccinazione.mancataSomministrazione.scadenzaMotivazione"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Data scadenza controindicazione temporanea</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <url value="http://hl7.it/fhir/dgc/StructureDefinition/Vaccinazione"/>
+  <version value="0.1.1"/>
+  <name value="Vaccinazione"/>
+  <title value="Vaccinazione"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-05-01T17:30:35+00:00"/>
+  <publisher value="HL7 Italia"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.it"/>
+    </telecom>
+  </contact>
+  <description value="Dati Vaccinazione"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="fhir"/>
+    <uri value="hl7.org/fhir/r4"/>
+    <name value="FHIR"/>
+  </mapping>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="Vaccinazione"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <element id="Vaccinazione">
+      <path value="Vaccinazione"/>
+      <short value="Vaccinazione"/>
+      <definition value="Dati Vaccinazione"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Element"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.id">
+      <path value="Vaccinazione.id"/>
+      <representation value="xmlAttr"/>
+      <short value="Unique id for inter-element referencing"/>
+      <definition value="Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Element.id"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type">
+          <valueUrl value="string"/>
+        </extension>
+        <code value="http://hl7.org/fhirpath/System.String"/>
+      </type>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.extension">
+      <path value="Vaccinazione.extension"/>
+      <slicing>
+        <discriminator>
+          <type value="value"/>
+          <path value="url"/>
+        </discriminator>
+        <description value="Extensions are always sliced by (at least) url"/>
+        <rules value="open"/>
+      </slicing>
+      <short value="Additional content defined by implementations"/>
+      <definition value="May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+      <comment value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+      <alias value="extensions"/>
+      <alias value="user content"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Element.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+      </type>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <isModifier value="false"/>
+      <isSummary value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.malattiaTarget">
+      <path value="Vaccinazione.malattiaTarget"/>
+      <short value="Malattia per la quale &#xE8; stata programmata la vaccinazione"/>
+      <definition value="Malattia per la quale &#xE8; stata programmata la vaccinazione"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Vaccinazione.malattiaTarget"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.protocolApplied.targetDisease"/>
+        <comment value="note"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione">
+      <path value="Vaccinazione.somministrazione"/>
+      <short value="Dati Somministrazione"/>
+      <definition value="Dati relativi alla somministrazione del vaccino"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.where(status=&#39;completed&#39;)"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino">
+      <path value="Vaccinazione.somministrazione.vaccino"/>
+      <short value="Vaccino somminstrato"/>
+      <definition value="Dati reativi al prodotto somministrato"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.vaccino"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.tipo">
+      <path value="Vaccinazione.somministrazione.vaccino.tipo"/>
+      <short value="Tipo Vaccino / Profilassi"/>
+      <definition value="Mono-componente o combinazione (bambini-adulti) somministrata, ad es. HBV,DTaP-HBV-IPV-HIB"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.vaccino.tipo"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.vaccineCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.codiceAIC">
+      <path value="Vaccinazione.somministrazione.vaccino.codiceAIC"/>
+      <short value="Codice AIC"/>
+      <definition value="Codice AIC del Vaccino Somministrato"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.vaccino.codiceAIC"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.vaccineCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.codiceATC">
+      <path value="Vaccinazione.somministrazione.vaccino.codiceATC"/>
+      <short value="Codice ATC"/>
+      <definition value="Codice ATC del Vaccino Somministrato"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.vaccino.codiceATC"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.vaccineCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.nomeCommerciale">
+      <path value="Vaccinazione.somministrazione.vaccino.nomeCommerciale"/>
+      <short value="Nome commerciale"/>
+      <definition value="Nome commerciale Vaccino"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.vaccino.nomeCommerciale"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.lotNumber"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.lotto">
+      <path value="Vaccinazione.somministrazione.vaccino.lotto"/>
+      <short value="Numero del lotto"/>
+      <definition value="Numero del lotto"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.vaccino.lotto"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.expirationDate"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.dataScadenza">
+      <path value="Vaccinazione.somministrazione.vaccino.dataScadenza"/>
+      <short value="Data scadenza del vaccino"/>
+      <definition value="Data scadenza del vaccino"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.vaccino.dataScadenza"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.occurrenceDateTime"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.data">
+      <path value="Vaccinazione.somministrazione.data"/>
+      <short value="Data e ora di somministrazione "/>
+      <definition value="Data e ora di somministrazione "/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.data"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.site"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.sedeAnatomica">
+      <path value="Vaccinazione.somministrazione.sedeAnatomica"/>
+      <short value="Sede anatomica di somministrazione "/>
+      <definition value="Sede anatomica di somministrazione "/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.sedeAnatomica"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.route"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.viaSomministrazione">
+      <path value="Vaccinazione.somministrazione.viaSomministrazione"/>
+      <short value="Via di somministrazione "/>
+      <definition value="Via di somministrazione "/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.viaSomministrazione"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.reasonCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.indicazioni">
+      <path value="Vaccinazione.somministrazione.indicazioni"/>
+      <short value="Indicazioni per la vaccinazione"/>
+      <definition value="Indicazioni per la vaccinazione"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.indicazioni"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.reasonCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.indicazioni.categoriaRischio">
+      <path value="Vaccinazione.somministrazione.indicazioni.categoriaRischio"/>
+      <short value="Categoria a rischio "/>
+      <definition value="Categoria per cui &#xE8; raccomandata la vaccinazione"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.indicazioni.categoriaRischio"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.reasonCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.indicazioni.patologia">
+      <path value="Vaccinazione.somministrazione.indicazioni.patologia"/>
+      <short value="Condizioni sanitarie a rischio"/>
+      <definition value="Patologia per cui &#xE8; raccomandata la vaccinazione"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.indicazioni.patologia"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.reaction"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.reazioniAvverse">
+      <path value="Vaccinazione.somministrazione.reazioniAvverse"/>
+      <short value="Reazioni avverse"/>
+      <definition value="Presente solo nel caso di Certificato Vaccinale"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.reazioniAvverse"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="ImmunizationRecommendation.dateCriterion.value"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.periodoCopertura">
+      <path value="Vaccinazione.somministrazione.periodoCopertura"/>
+      <short value="Periodo di copertura"/>
+      <definition value="Periodo di copertura"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.periodoCopertura"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="ImmunizationRecommendation.dateCriterion.value"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.dataProssimaDose">
+      <path value="Vaccinazione.somministrazione.dataProssimaDose"/>
+      <short value="Data prossima vaccinazione"/>
+      <definition value="Data e ora programmata per la prossima  vaccinazione"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.dataProssimaDose"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.performer"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.responsabile">
+      <path value="Vaccinazione.somministrazione.responsabile"/>
+      <short value="Organizzazione responsabile della vaccinazione"/>
+      <definition value="Organizzazione responsabile  della vaccinazione inserendo nome oppure identificativo  (Sanitaria o Ospedaliera) "/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.responsabile"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.it/fhir/dgc/StructureDefinition/Organizzazione"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.location"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura">
+      <path value="Vaccinazione.somministrazione.struttura"/>
+      <short value="Struttura presso cui &#xE8; stat effettuata la vaccinazione"/>
+      <definition value="Ambulatorio Vaccinale oppure Unit&#xE0; Operativa oppure Pronto Soccorso oppure Centro medicina dei viaggi oppure autorit&#xE0; portuale oppure Studio Medico MMG/PLS.&#xA;Struttura presso cui &#xE8; stato somministrato vaccino&#xA;Codice regione + codice presidio + subcodice stabilimento"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.struttura"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.identificativo">
+      <path value="Vaccinazione.somministrazione.struttura.identificativo"/>
+      <short value="Identificativo"/>
+      <definition value="Identificativo della struttura"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.struttura.identificativo"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.nome">
+      <path value="Vaccinazione.somministrazione.struttura.nome"/>
+      <short value="Denominazione struttura"/>
+      <definition value="nome della struttura"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.struttura.nome"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.responsabile">
+      <path value="Vaccinazione.somministrazione.struttura.responsabile"/>
+      <short value="Direttore/Responsabile struttura"/>
+      <definition value="Direttore/Responsabile struttura"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.struttura.responsabile"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Location.address"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.indirizzo">
+      <path value="Vaccinazione.somministrazione.struttura.indirizzo"/>
+      <short value="Indirizzo struttura"/>
+      <definition value="Indirizzo struttura"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.struttura.indirizzo"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Address"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.email">
+      <path value="Vaccinazione.somministrazione.struttura.email"/>
+      <short value="Email Segreteria struttura"/>
+      <definition value="Email Segreteria struttura"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.struttura.email"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="ContactPoint"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.telefono">
+      <path value="Vaccinazione.somministrazione.struttura.telefono"/>
+      <short value="Recapito Telefonico Segreteria struttura"/>
+      <definition value="Recapito Telefonico Segreteria struttura"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.struttura.telefono"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="ContactPoint"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.performer"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.somministratore">
+      <path value="Vaccinazione.somministrazione.somministratore"/>
+      <short value="Persona  Responsabile della Vaccinazione"/>
+      <definition value="Persona  Responsabile della Vaccinazione"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.somministrazione.somministratore"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="http://hl7.it/fhir/dgc/StructureDefinition/OperatoreSanitario"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.where(status=&#39;not-done&#39;)"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione">
+      <path value="Vaccinazione.mancataSomministrazione"/>
+      <short value="Esonero, omissione o differimento"/>
+      <definition value="Esonero, omissione o differimento della somministrazione"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.mancataSomministrazione"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.statusReason"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione.motivazione">
+      <path value="Vaccinazione.mancataSomministrazione.motivazione"/>
+      <short value="Motivazione esonero / differimento"/>
+      <definition value="Motivazione per esonero/omissione o differimento"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.mancataSomministrazione.motivazione"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.recorded"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione.data">
+      <path value="Vaccinazione.mancataSomministrazione.data"/>
+      <short value="Data registrazione"/>
+      <definition value="Data e ora di registrazione esonero/ omissione o differimento "/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.mancataSomministrazione.data"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="ImmunizationRecommendation.where(forecastStatus=&#39;immune&#39;).forecastReason"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione.malattiaImmunita">
+      <path value="Vaccinazione.mancataSomministrazione.malattiaImmunita"/>
+      <short value="Malattia con presunta immunit&#xE0;"/>
+      <definition value="Malattia con presunta immunit&#xE0;"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.mancataSomministrazione.malattiaImmunita"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="ImmunizationRecommendation.dateCriterion.value"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione.scadenzaMotivazione">
+      <path value="Vaccinazione.mancataSomministrazione.scadenzaMotivazione"/>
+      <short value="Data scadenza controindicazione temporanea"/>
+      <definition value="Data scadenza controindicazione temporanea"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="Vaccinazione.mancataSomministrazione.scadenzaMotivazione"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="Vaccinazione">
+      <path value="Vaccinazione"/>
+      <short value="Vaccinazione"/>
+      <definition value="Dati Vaccinazione"/>
+      <min value="1"/>
+      <max value="1"/>
+    </element>
+    <element id="Vaccinazione.malattiaTarget">
+      <path value="Vaccinazione.malattiaTarget"/>
+      <short value="Malattia per la quale &#xE8; stata programmata la vaccinazione"/>
+      <definition value="Malattia per la quale &#xE8; stata programmata la vaccinazione"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.protocolApplied.targetDisease"/>
+        <comment value="note"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione">
+      <path value="Vaccinazione.somministrazione"/>
+      <short value="Dati Somministrazione"/>
+      <definition value="Dati relativi alla somministrazione del vaccino"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.where(status=&#39;completed&#39;)"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino">
+      <path value="Vaccinazione.somministrazione.vaccino"/>
+      <short value="Vaccino somminstrato"/>
+      <definition value="Dati reativi al prodotto somministrato"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.tipo">
+      <path value="Vaccinazione.somministrazione.vaccino.tipo"/>
+      <short value="Tipo Vaccino / Profilassi"/>
+      <definition value="Mono-componente o combinazione (bambini-adulti) somministrata, ad es. HBV,DTaP-HBV-IPV-HIB"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.vaccineCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.codiceAIC">
+      <path value="Vaccinazione.somministrazione.vaccino.codiceAIC"/>
+      <short value="Codice AIC"/>
+      <definition value="Codice AIC del Vaccino Somministrato"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.vaccineCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.codiceATC">
+      <path value="Vaccinazione.somministrazione.vaccino.codiceATC"/>
+      <short value="Codice ATC"/>
+      <definition value="Codice ATC del Vaccino Somministrato"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.vaccineCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.nomeCommerciale">
+      <path value="Vaccinazione.somministrazione.vaccino.nomeCommerciale"/>
+      <short value="Nome commerciale"/>
+      <definition value="Nome commerciale Vaccino"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.lotNumber"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.lotto">
+      <path value="Vaccinazione.somministrazione.vaccino.lotto"/>
+      <short value="Numero del lotto"/>
+      <definition value="Numero del lotto"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.expirationDate"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.vaccino.dataScadenza">
+      <path value="Vaccinazione.somministrazione.vaccino.dataScadenza"/>
+      <short value="Data scadenza del vaccino"/>
+      <definition value="Data scadenza del vaccino"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.occurrenceDateTime"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.data">
+      <path value="Vaccinazione.somministrazione.data"/>
+      <short value="Data e ora di somministrazione "/>
+      <definition value="Data e ora di somministrazione "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.site"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.sedeAnatomica">
+      <path value="Vaccinazione.somministrazione.sedeAnatomica"/>
+      <short value="Sede anatomica di somministrazione "/>
+      <definition value="Sede anatomica di somministrazione "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.route"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.viaSomministrazione">
+      <path value="Vaccinazione.somministrazione.viaSomministrazione"/>
+      <short value="Via di somministrazione "/>
+      <definition value="Via di somministrazione "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.reasonCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.indicazioni">
+      <path value="Vaccinazione.somministrazione.indicazioni"/>
+      <short value="Indicazioni per la vaccinazione"/>
+      <definition value="Indicazioni per la vaccinazione"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.reasonCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.indicazioni.categoriaRischio">
+      <path value="Vaccinazione.somministrazione.indicazioni.categoriaRischio"/>
+      <short value="Categoria a rischio "/>
+      <definition value="Categoria per cui &#xE8; raccomandata la vaccinazione"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.reasonCode"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.indicazioni.patologia">
+      <path value="Vaccinazione.somministrazione.indicazioni.patologia"/>
+      <short value="Condizioni sanitarie a rischio"/>
+      <definition value="Patologia per cui &#xE8; raccomandata la vaccinazione"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.reaction"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.reazioniAvverse">
+      <path value="Vaccinazione.somministrazione.reazioniAvverse"/>
+      <short value="Reazioni avverse"/>
+      <definition value="Presente solo nel caso di Certificato Vaccinale"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="ImmunizationRecommendation.dateCriterion.value"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.periodoCopertura">
+      <path value="Vaccinazione.somministrazione.periodoCopertura"/>
+      <short value="Periodo di copertura"/>
+      <definition value="Periodo di copertura"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="ImmunizationRecommendation.dateCriterion.value"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.dataProssimaDose">
+      <path value="Vaccinazione.somministrazione.dataProssimaDose"/>
+      <short value="Data prossima vaccinazione"/>
+      <definition value="Data e ora programmata per la prossima  vaccinazione"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.performer"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.responsabile">
+      <path value="Vaccinazione.somministrazione.responsabile"/>
+      <short value="Organizzazione responsabile della vaccinazione"/>
+      <definition value="Organizzazione responsabile  della vaccinazione inserendo nome oppure identificativo  (Sanitaria o Ospedaliera) "/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.it/fhir/dgc/StructureDefinition/Organizzazione"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.location"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura">
+      <path value="Vaccinazione.somministrazione.struttura"/>
+      <short value="Struttura presso cui &#xE8; stat effettuata la vaccinazione"/>
+      <definition value="Ambulatorio Vaccinale oppure Unit&#xE0; Operativa oppure Pronto Soccorso oppure Centro medicina dei viaggi oppure autorit&#xE0; portuale oppure Studio Medico MMG/PLS.&#xA;Struttura presso cui &#xE8; stato somministrato vaccino&#xA;Codice regione + codice presidio + subcodice stabilimento"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.identificativo">
+      <path value="Vaccinazione.somministrazione.struttura.identificativo"/>
+      <short value="Identificativo"/>
+      <definition value="Identificativo della struttura"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.nome">
+      <path value="Vaccinazione.somministrazione.struttura.nome"/>
+      <short value="Denominazione struttura"/>
+      <definition value="nome della struttura"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.responsabile">
+      <path value="Vaccinazione.somministrazione.struttura.responsabile"/>
+      <short value="Direttore/Responsabile struttura"/>
+      <definition value="Direttore/Responsabile struttura"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Location.address"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.indirizzo">
+      <path value="Vaccinazione.somministrazione.struttura.indirizzo"/>
+      <short value="Indirizzo struttura"/>
+      <definition value="Indirizzo struttura"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Address"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.email">
+      <path value="Vaccinazione.somministrazione.struttura.email"/>
+      <short value="Email Segreteria struttura"/>
+      <definition value="Email Segreteria struttura"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="ContactPoint"/>
+      </type>
+    </element>
+    <element id="Vaccinazione.somministrazione.struttura.telefono">
+      <path value="Vaccinazione.somministrazione.struttura.telefono"/>
+      <short value="Recapito Telefonico Segreteria struttura"/>
+      <definition value="Recapito Telefonico Segreteria struttura"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="ContactPoint"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.performer"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.somministrazione.somministratore">
+      <path value="Vaccinazione.somministrazione.somministratore"/>
+      <short value="Persona  Responsabile della Vaccinazione"/>
+      <definition value="Persona  Responsabile della Vaccinazione"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="http://hl7.it/fhir/dgc/StructureDefinition/OperatoreSanitario"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.where(status=&#39;not-done&#39;)"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione">
+      <path value="Vaccinazione.mancataSomministrazione"/>
+      <short value="Esonero, omissione o differimento"/>
+      <definition value="Esonero, omissione o differimento della somministrazione"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="BackboneElement"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.statusReason"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione.motivazione">
+      <path value="Vaccinazione.mancataSomministrazione.motivazione"/>
+      <short value="Motivazione esonero / differimento"/>
+      <definition value="Motivazione per esonero/omissione o differimento"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="Immunization.recorded"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione.data">
+      <path value="Vaccinazione.mancataSomministrazione.data"/>
+      <short value="Data registrazione"/>
+      <definition value="Data e ora di registrazione esonero/ omissione o differimento "/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="ImmunizationRecommendation.where(forecastStatus=&#39;immune&#39;).forecastReason"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione.malattiaImmunita">
+      <path value="Vaccinazione.mancataSomministrazione.malattiaImmunita"/>
+      <short value="Malattia con presunta immunit&#xE0;"/>
+      <definition value="Malattia con presunta immunit&#xE0;"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+      <mapping>
+        <identity value="fhir"/>
+        <map value="ImmunizationRecommendation.dateCriterion.value"/>
+      </mapping>
+    </element>
+    <element id="Vaccinazione.mancataSomministrazione.scadenzaMotivazione">
+      <path value="Vaccinazione.mancataSomministrazione.scadenzaMotivazione"/>
+      <short value="Data scadenza controindicazione temporanea"/>
+      <definition value="Data scadenza controindicazione temporanea"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

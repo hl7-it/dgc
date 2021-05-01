@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccines-covid-19-auth-holders"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://spor.ema.europa.eu/v1/organisations</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>ORG-100001699</td><td>AstraZeneca AB</td></tr><tr><td>ORG-100030215</td><td>Biontech Manufacturing GmbH</td></tr><tr><td>ORG-100001417</td><td>Janssen-Cilag International</td></tr><tr><td>ORG-100031184</td><td>Moderna Biotech Spain S.L.</td></tr><tr><td>ORG-100006270</td><td>Curevac AG</td></tr><tr><td>ORG-100013793</td><td>CanSino Biologics</td></tr><tr><td>ORG-100020693</td><td>China Sinopharm International Corp. - Beijing location</td></tr><tr><td>ORG-100010771</td><td>Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location</td></tr><tr><td>ORG-100024420</td><td>Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location</td></tr><tr><td>ORG-100032020</td><td>Novavax CZ AS</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.it/fhir/dgc/ValueSet/vaccines-covid-19-auth-holders"/>
+  <version value="0.1.1"/>
+  <name value="Covid19VaccineAuthHolders"/>
+  <title value="Vaccine marketing authorization holder or Vaccine manufacturer (COVID-19)"/>
+  <status value="draft"/>
+  <date value="2021-05-01T17:30:35+00:00"/>
+  <publisher value="HL7 Italia"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.it"/>
+    </telecom>
+  </contact>
+  <description value="Vaccine marketing authorization holder or Vaccine manufacturer (COVID-19)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://spor.ema.europa.eu/v1/organisations"/>
+      <concept>
+        <code value="ORG-100001699"/>
+        <display value="AstraZeneca AB"/>
+      </concept>
+      <concept>
+        <code value="ORG-100030215"/>
+        <display value="Biontech Manufacturing GmbH"/>
+      </concept>
+      <concept>
+        <code value="ORG-100001417"/>
+        <display value="Janssen-Cilag International"/>
+      </concept>
+      <concept>
+        <code value="ORG-100031184"/>
+        <display value="Moderna Biotech Spain S.L."/>
+      </concept>
+      <concept>
+        <code value="ORG-100006270"/>
+        <display value="Curevac AG"/>
+      </concept>
+      <concept>
+        <code value="ORG-100013793"/>
+        <display value="CanSino Biologics"/>
+      </concept>
+      <concept>
+        <code value="ORG-100020693"/>
+        <display value="China Sinopharm International Corp. - Beijing location"/>
+      </concept>
+      <concept>
+        <code value="ORG-100010771"/>
+        <display value="Sinopharm Weiqida Europe Pharmaceutical s.r.o.&#xA0;- Prague location"/>
+      </concept>
+      <concept>
+        <code value="ORG-100024420"/>
+        <display value="Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location"/>
+      </concept>
+      <concept>
+        <code value="ORG-100032020"/>
+        <display value="Novavax CZ AS"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

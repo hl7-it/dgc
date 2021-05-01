@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/Immunization/example-it-1-2> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-it-1-2"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {https://www.aifa.gov.it/aic 049269018}, {http://snomed.info/sct 1119349007}, {http://www.whocc.no/atc J07BX03}, {http://id.who.int/icd11/mms XM6AT1}\">COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)</span></p><p><b>patient</b>: <a href=\"Patient-example-it-1.html\">Generated Summary: id: LGHDNT71E01D612Q; active; DANTE ALIGHIERI (OFFICIAL); gender: male; birthDate: 1971-05-01</a></p><p><b>occurrence</b>: 2021-02-25</p><p><b>lotNumber</b>: EL0727</p><p><b>site</b>: <span title=\"Codes: \">deltoide</span></p><p><b>route</b>: <span title=\"Codes: \">intramuscolare</span></p><blockquote><p><b>performer</b></p><p><b>actor</b>: <span>Az. USL Toscana centro</span></p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href=\"Organization-org-example-it.html\">Generated Summary: id: 090201, id: 201, id: 06593810481 , id: 06593810481 ; active; <span title=\"Codes: {http://terminology.hl7.it/CodeSystem/it-tipoEntita asl}\">Azienda Sanitaria Locale</span>; name: AZIENDA USL TOSCANA CENTRO; Phone: (055) 6939222, Fax: (055) 6939223, mailto:direttore.generale@uslcentro.toscana.it, http://www.uslcentro.toscana.i...</a></p></blockquote><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://hl7.org/fhir/sid/icd-10 J12.82}\">Pneumonia due to coronavirus disease 2019</span>, <span title=\"Codes: {http://id.who.int/icd11/mms XN109}\">SARS-CoV-2</span>, <span title=\"Codes: {http://snomed.info/sct 840533007}\">2019 novel coronavirus</span></td><td>2</td></tr></table></div>"
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.aifa.gov.it/aic" ];
+       fhir:Coding.code [ fhir:value "049269018" ];
+       fhir:Coding.display [ fhir:value "0,45 ML- CONCENTRATO PER DISPERSIONE INIETTABILE- VIA INTRAMUSCOLARE- FLACONCINO (VETRO) 0,45 ML (6 DOSI)- 195 FLACONCINI MULTIDOSE (1170 DOSI)" ]
+     ], [
+       fhir:index 1;
+       a sct:1119349007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1119349007" ];
+       fhir:Coding.display [ fhir:value "Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product" ]
+     ], [
+       fhir:index 2;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "J07BX03" ];
+       fhir:Coding.display [ fhir:value "covid-19 vaccines" ]
+     ], [
+       fhir:index 3;
+       fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+       fhir:Coding.code [ fhir:value "XM6AT1" ];
+       fhir:Coding.display [ fhir:value "COVID-19 vaccine, DNA based" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)" ]
+  ];
+  fhir:Immunization.patient [
+     fhir:link <http://hl7.it/fhir/dgc/Patient/example-it-1>;
+     fhir:Reference.reference [ fhir:value "Patient/example-it-1" ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-25"^^xsd:date];
+  fhir:Immunization.lotNumber [ fhir:value "EL0727"];
+  fhir:Immunization.site [
+     fhir:CodeableConcept.text [ fhir:value "deltoide" ]
+  ];
+  fhir:Immunization.route [
+     fhir:CodeableConcept.text [ fhir:value "intramuscolare" ]
+  ];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.display [ fhir:value "Az. USL Toscana centro" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Immunization.performer.actor [
+       fhir:link <http://hl7.it/fhir/dgc/Organization/org-example-it>;
+       fhir:Reference.reference [ fhir:value "Organization/org-example-it" ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.targetDisease [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10" ];
+         fhir:Coding.code [ fhir:value "J12.82" ];
+         fhir:Coding.display [ fhir:value "Pneumonia due to coronavirus disease 2019" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+         fhir:Coding.code [ fhir:value "XN109" ];
+         fhir:Coding.display [ fhir:value "SARS-CoV-2" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:840533007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "840533007" ];
+         fhir:Coding.display [ fhir:value "2019 novel coronavirus" ]
+       ]
+     ];
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/Immunization/example-it-1-2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

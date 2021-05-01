@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="npu-covid-19-rapid-tests"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://npu-terminology.org</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>NPU59310</td><td>Secr(Nasoph)—Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?</td></tr><tr><td>NPU59312</td><td>Secr(Vestibulum nasi)—Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?</td></tr><tr><td>NPU59385</td><td>Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?</td></tr><tr><td>NPU59386</td><td>Secr(spec.)—Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?</td></tr><tr><td>NPU59387</td><td>Secr(Pharynx)—Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?</td></tr><tr><td>NPU59388</td><td>Saliva—Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?</td></tr><tr><td>NPU60223</td><td>Secr(Oroph)—Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.it/fhir/dgc/ValueSet/npu-covid-19-rapid-tests"/>
+  <version value="0.1.1"/>
+  <name value="NPUCovid19RapidTests"/>
+  <title value="NPU Rapid Test List (COVID-19)"/>
+  <status value="active"/>
+  <date value="2021-05-01T17:30:35+00:00"/>
+  <publisher value="HL7 Italia"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.it"/>
+    </telecom>
+  </contact>
+  <description value="Rapid Test List (COVID-19) from [NPU]"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://npu-terminology.org"/>
+      <concept>
+        <code value="NPU59310"/>
+        <display value="Secr(Nasoph)&#x2014;Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?"/>
+      </concept>
+      <concept>
+        <code value="NPU59312"/>
+        <display value="Secr(Vestibulum nasi)&#x2014;Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?"/>
+      </concept>
+      <concept>
+        <code value="NPU59385"/>
+        <display value="Syst(spec.)&#x2014;Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?"/>
+      </concept>
+      <concept>
+        <code value="NPU59386"/>
+        <display value="Secr(spec.)&#x2014;Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?"/>
+      </concept>
+      <concept>
+        <code value="NPU59387"/>
+        <display value="Secr(Pharynx)&#x2014;Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?"/>
+      </concept>
+      <concept>
+        <code value="NPU59388"/>
+        <display value="Saliva&#x2014;Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?"/>
+      </concept>
+      <concept>
+        <code value="NPU60223"/>
+        <display value="Secr(Oroph)&#x2014;Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

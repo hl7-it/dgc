@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="svc-Bundle-07"/>
+  <identifier>
+    <system value="http://hl7.eu/fhir/sid/uvci"/>
+    <value value="V1CZ454557891308174803488707671418"/>
+    <period>
+      <start value="2020-12-27T14:30:00+01:00"/>
+      <end value="2021-12-27T14:30:00+01:00"/>
+    </period>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2020-12-27T14:30:00+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:1afa55c0-ba99-4d76-90d4-87c947b379d6"/>
+    <resource>
+      <Composition>
+        <id value="1afa55c0-ba99-4d76-90d4-87c947b379d6"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 3f69e0a5-2177-4540-baab-7a5d0877428f</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 82593-5}">Immunization summary report</span></p><p><b>date</b>: Dec 27, 2020, 1:30:00 PM</p><p><b>author</b>: <span>MUDr. Aleš Procházka</span></p><p><b>title</b>: Vaccine Certificate December 27, 2020 14:30</p><p><b>confidentiality</b>: N</p><h3>Attesters</h3><table class="grid"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>legal</td><td>Dec 27, 2020, 1:30:00 PM</td><td><a href="#Organization_fa5b4571-9347-41be-b102-c201f7da329b">See above (Organization/fa5b4571-9347-41be-b102-c201f7da329b)</a></td></tr></table><p><b>custodian</b>: <a href="#Organization_fa5b4571-9347-41be-b102-c201f7da329b">See above (Organization/fa5b4571-9347-41be-b102-c201f7da329b)</a></p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:2.16.724.4.8.10.200.10"/>
+          <value value="3f69e0a5-2177-4540-baab-7a5d0877428f"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="82593-5"/>
+            <display value="Immunization summary report"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:c32fd63f-8705-4e6f-aab6-a64cd64fb938"/>
+        </subject>
+        <date value="2020-12-27T14:30:00+01:00"/>
+        <author>
+          <display value="MUDr. Ale&#x161; Proch&#xE1;zka"/>
+        </author>
+        <title value="Vaccine Certificate December 27, 2020 14:30"/>
+        <confidentiality value="N"/>
+        <attester>
+          <mode value="legal"/>
+          <time value="2020-12-27T14:30:00+01:00"/>
+          <party>
+            <reference value="urn:uuid:fa5b4571-9347-41be-b102-c201f7da329b"/>
+          </party>
+        </attester>
+        <custodian>
+          <reference value="urn:uuid:fa5b4571-9347-41be-b102-c201f7da329b"/>
+        </custodian>
+        <section>
+          <title value="Vaccinations"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11369-6"/>
+              <display value="Hx of Immunization"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table><thead><tr><th>Date</th><th>Product</th><th>Vaccine</th><th>Dose</th></tr></thead><tbody><tr><td>2020-12-02</td><td>Comirnaty</td><td>COVID-19 mRNA Vaccine</td><td>1/2</td></tr></tbody></table></div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:cc9b611a-99b4-4342-a716-4bfbba1d0d1a"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:8de24625-d0bf-451c-bdb1-fbe63ffaa01e"/>
+          </entry>
+        </section>
+        <section>
+          <entry>
+            <reference value="urn:uuid:ef187374-9ee4-4eaa-ad5c-06ddfdc5b825"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c32fd63f-8705-4e6f-aab6-a64cd64fb938"/>
+    <resource>
+      <Patient>
+        <id value="c32fd63f-8705-4e6f-aab6-a64cd64fb938"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: National Insurance Payor Identifier (Payor): 715511123X, id: A225961454, Passport number: 5484136</p><p><b>name</b>: Jana Marie Nedostatečně Očkovaná </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1971-05-11</p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NIIP"/>
+            </coding>
+          </type>
+          <system value="urn:oid:1.2.203.24341.1.20.2"/>
+          <value value="715511123X"/>
+        </identifier>
+        <identifier>
+          <system value="urn:oid:1.2.203.24341.1.20.9.1"/>
+          <value value="A225961454"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PPN"/>
+            </coding>
+          </type>
+          <system value="urn:oid:2.16.840.1.113883.4.330.203"/>
+          <value value="5484136"/>
+        </identifier>
+        <name>
+          <family value="Nedostate&#x10D;n&#x11B; O&#x10D;kovan&#xE1;"/>
+          <given value="Jana Marie"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1971-05-11"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:cc9b611a-99b4-4342-a716-4bfbba1d0d1a"/>
+    <resource>
+      <Immunization>
+        <id value="cc9b611a-99b4-4342-a716-4bfbba1d0d1a"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {http://snomed.info/sct 1119349007}">Comirnaty</span></p><p><b>patient</b>: <a href="#Patient_c32fd63f-8705-4e6f-aab6-a64cd64fb938">See above (Patient/c32fd63f-8705-4e6f-aab6-a64cd64fb938)</a></p><p><b>occurrence</b>: 2020-12-02</p><p><b>location</b>: <a href="#Location_411603a2-81d6-415b-9a1d-ca016ff57dd6">See above (Location/411603a2-81d6-415b-9a1d-ca016ff57dd6)</a></p><p><b>manufacturer</b>: <span>BioNTech Manufacturing GmbH</span></p><p><b>lotNumber</b>: B1235742</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span>MUDr. Jan Očko CSc.</span></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 840533007}">SARS-CoV-2</span></td><td>1</td><td>2</td></tr></table></div>
+        </text>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119349007"/>
+            <display value="Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product"/>
+          </coding>
+          <text value="Comirnaty"/>
+        </vaccineCode>
+        <patient>
+          <reference value="urn:uuid:c32fd63f-8705-4e6f-aab6-a64cd64fb938"/>
+        </patient>
+        <occurrenceDateTime value="2020-12-02"/>
+        <location>
+          <reference value="urn:uuid:411603a2-81d6-415b-9a1d-ca016ff57dd6"/>
+        </location>
+        <manufacturer>
+          <display value="BioNTech Manufacturing GmbH"/>
+        </manufacturer>
+        <lotNumber value="B1235742"/>
+        <performer>
+          <actor>
+            <display value="MUDr. Jan O&#x10D;ko CSc."/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="840533007"/>
+              <display value="SARS-CoV-2"/>
+            </coding>
+          </targetDisease>
+          <doseNumberPositiveInt value="1"/>
+          <seriesDosesPositiveInt value="2"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8de24625-d0bf-451c-bdb1-fbe63ffaa01e"/>
+    <resource>
+      <ImmunizationRecommendation>
+        <id value="8de24625-d0bf-451c-bdb1-fbe63ffaa01e"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>patient</b>: <a href="#Patient_c32fd63f-8705-4e6f-aab6-a64cd64fb938">See above (Patient/c32fd63f-8705-4e6f-aab6-a64cd64fb938)</a></p><p><b>date</b>: 2020-12-02</p><p><b>authority</b>: <a href="#Organization_fa5b4571-9347-41be-b102-c201f7da329b">See above (Organization/fa5b4571-9347-41be-b102-c201f7da329b)</a></p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title="Codes: {http://snomed.info/sct 1119349007}">Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product</span></p><p><b>forecastStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}">The patient is due for their next vaccination</span></p><h3>DateCriterions</h3><table class="grid"><tr><td>-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title="Codes: {http://loinc.org 30980-7}">Date vaccine due</span></td><td>2020-12-23</td></tr></table><p><b>doseNumber</b>: 2</p><p><b>seriesDoses</b>: 2</p></blockquote></div>
+        </text>
+        <patient>
+          <reference value="urn:uuid:c32fd63f-8705-4e6f-aab6-a64cd64fb938"/>
+        </patient>
+        <date value="2020-12-02"/>
+        <authority>
+          <reference value="urn:uuid:fa5b4571-9347-41be-b102-c201f7da329b"/>
+        </authority>
+        <recommendation>
+          <vaccineCode>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="1119349007"/>
+              <display value="Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product"/>
+            </coding>
+          </vaccineCode>
+          <forecastStatus>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/immunization-recommendation-status"/>
+              <code value="due"/>
+              <display value="The patient is due for their next vaccination"/>
+            </coding>
+          </forecastStatus>
+          <dateCriterion>
+            <code>
+              <coding>
+                <system value="http://loinc.org"/>
+                <code value="30980-7"/>
+                <display value="Date vaccine due"/>
+              </coding>
+            </code>
+            <value value="2020-12-23"/>
+          </dateCriterion>
+          <doseNumberPositiveInt value="2"/>
+          <seriesDosesPositiveInt value="2"/>
+        </recommendation>
+      </ImmunizationRecommendation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:fa5b4571-9347-41be-b102-c201f7da329b"/>
+    <resource>
+      <Organization>
+        <id value="fa5b4571-9347-41be-b102-c201f7da329b"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 24341</p><p><b>name</b>: Ministry of Health of the Czech Republic</p></div>
+        </text>
+        <identifier>
+          <system value="urn:oid:1.2.203"/>
+          <value value="24341"/>
+        </identifier>
+        <name value="Ministry of Health of the Czech Republic"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:411603a2-81d6-415b-9a1d-ca016ff57dd6"/>
+    <resource>
+      <Location>
+        <id value="411603a2-81d6-415b-9a1d-ca016ff57dd6"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Hospital Na Františku Prague</p><p><b>address</b>: Prague CZ </p></div>
+        </text>
+        <name value="Hospital Na Franti&#x161;ku Prague"/>
+        <address>
+          <city value="Prague"/>
+          <country value="CZ"/>
+        </address>
+      </Location>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:ef187374-9ee4-4eaa-ad5c-06ddfdc5b825"/>
+    <resource>
+      <Binary>
+        <id value="ef187374-9ee4-4eaa-ad5c-06ddfdc5b825"/>
+        <contentType value="image/png"/>
+        <data value="iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAAAAACMfPpKAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAfElEQVQYlU2QWwrEMAwDR0vuf+XZj8qJSyjIyNYjAkAMQNFhkBCKzoNiin70kxKBN41ENuf7+9AZWQOGRx/2m4TeKy2YO0GyDpwszW5EUCs/ur78NZtGvSa8azdPDGttsonot8LtDFNnrs4yLSbuJk0ajnV3vevhCxUj4Q+R11n764g4WgAAAABJRU5ErkJggg=="/>
+      </Binary>
+    </resource>
+  </entry>
+</Bundle>

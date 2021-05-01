@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="example-it-1"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Birth Place</b>: Italia </p><p><b>identifier</b>: id: LGHDNT71E01D612Q</p><p><b>active</b>: true</p><p><b>name</b>: DANTE ALIGHIERI (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1971-05-01</p><p><b>address</b>: </p><ul><li>Viale della Repubblica 12, PANTIGLIATE - 20090 - Italia(HOME)</li><li>Via Capitolina 27 - interno 5b - 34131 - TRIESTE(HOME)</li></ul><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: 33312345678</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <country value="Italia">
+        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+          <valueCoding>
+            <system value="http://terminology.hl7.it/CodeSystem/mef-ae-comuni"/>
+            <code value="F979"/>
+            <display value="NUORO"/>
+          </valueCoding>
+        </extension>
+      </country>
+    </valueAddress>
+  </extension>
+  <identifier>
+    <system value="http://hl7.it/sid/codiceFiscale"/>
+    <value value="LGHDNT71E01D612Q"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <family value="ALIGHIERI"/>
+    <given value="DANTE"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1971-05-01"/>
+  <address>
+    <use value="home"/>
+    <type value="postal"/>
+    <text value="Viale della Repubblica 12, PANTIGLIATE - 20090 - Italia"/>
+    <line value="Viale della Repubblica 12, scala 2">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Viale della Repubblica"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType">
+        <valueString value="VIALE"/>
+      </extension>
+      <extension url="http://hl7.it/fhir/StructureDefinition/address-dug">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://registry.geodati.gov.it/dug"/>
+            <code value="76"/>
+            <display value="viale"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase">
+        <valueString value="DELLA REPUBBLICA"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="12"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+        <valueString value="scala 2"/>
+      </extension>
+    </line>
+    <city value="PANTIGLIATE"/>
+    <postalCode value="20090"/>
+    <country value="Italia"/>
+  </address>
+  <address>
+    <use value="home"/>
+    <type value="postal"/>
+    <text value="Via Capitolina 27 - interno 5b - 34131 - TRIESTE"/>
+    <line value="Via Capitolina 27 - interno 5b"/>
+    <city value="TRIESTE"/>
+    <postalCode value="34131"/>
+    <country value="Italia"/>
+    <period>
+      <start value="2009-06-09T00:00:00+02:00"/>
+    </period>
+  </address>
+  <contact>
+    <telecom>
+      <system value="phone"/>
+      <value value="33312345678"/>
+    </telecom>
+  </contact>
+</Patient>

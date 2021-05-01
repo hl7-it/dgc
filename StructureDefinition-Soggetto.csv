@@ -1,0 +1,49 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: FHIR","Mapping: RIM Mapping"
+"Soggetto","","","",1,1,"","","","","Soggetto vaccinato o da vaccinare","Soggetto vaccinato o da vaccinare","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"Soggetto.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Soggetto.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Soggetto.identificativo","","","",1,*,"","","","Identifier {[]} {[]}
+","Identificativi Paziente","Codice Fiscale dell'assistito (o STP / TEAM nei casi opportuni)","","","","","","","","","",,,,,"",,,,"Soggetto.identificativo",1,*,"",""
+"Soggetto.nome","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Nome Paziente","Nome Paziente","","","","","","","","","",,,,,"",,,,"Soggetto.nome",1,1,"",""
+"Soggetto.nome.nome","","","",1,1,"","","","string {[]} {[]}
+","Nome","Nome","","","","","","","","","",,,,,"",,,,"Soggetto.nome.nome",1,1,"",""
+"Soggetto.nome.cognome","","","",1,1,"","","","string {[]} {[]}
+","Cognome","Cognome","","","","","","","","","",,,,,"",,,,"Soggetto.nome.cognome",1,1,"",""
+"Soggetto.genere","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Genere Amministrativo","Genere Amministrativo","","","","","","","","","",,,,,"",,,,"Soggetto.genere",1,1,"",""
+"Soggetto.dataNascita","","","",1,1,"","","","dateTime {[]} {[]}
+","Data Nascita Paziente","Data Nascita Paziente","","","","","","","","","",,,,,"",,,,"Soggetto.dataNascita",1,1,"",""
+"Soggetto.luogoNascita","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Luogo Nascita Paziente","Luogo Nascita Paziente","","","","","","","","","",,,,,"",,,,"Soggetto.luogoNascita",0,1,"",""
+"Soggetto.luogoNascita.nomeComune","","","",0,1,"","","","string {[]} {[]}
+","Nome del comune di nascita","Nome del comune di nascita","","","","","","","","","",,,,,"",,,,"Soggetto.luogoNascita.nomeComune",0,1,"",""
+"Soggetto.luogoNascita.codiceComune","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Codice Istat comune di nascita","Codice istat comune di nascita","","","","","","","","","",,,,,"",,,,"Soggetto.luogoNascita.codiceComune",0,1,"",""
+"Soggetto.luogoNascita.codiceStatoEstero","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Codice Istat stato estero","Codice istat stato estero","","","","","","","","","",,,,,"",,,,"Soggetto.luogoNascita.codiceStatoEstero",0,1,"",""
+"Soggetto.residenza","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Residenza","Indirizzo di residenza","","","","","","","","","",,,,,"",,,,"Soggetto.residenza",0,1,"",""
+"Soggetto.residenza.indirizzo","","","",0,1,"","","","string {[]} {[]}
+","Indirizzo","Indirizzo (line address)","","","","","","","","","",,,,,"",,,,"Soggetto.residenza.indirizzo",0,1,"",""
+"Soggetto.residenza.cap","","","",0,1,"","","","string {[]} {[]}
+","CAP","Codice Avviamento Postale","","","","","","","","","",,,,,"",,,,"Soggetto.residenza.cap",0,1,"",""
+"Soggetto.residenza.nomeComune","","","",0,1,"","","","string {[]} {[]}
+","Nome del comune di residenza","Nome del comune di residenza","","","","","","","","","",,,,,"",,,,"Soggetto.residenza.nomeComune",0,1,"",""
+"Soggetto.residenza.codiceComune","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Codice Istat comune di residenza","Codice Istat comune di residenza","","","","","","","","","",,,,,"",,,,"Soggetto.residenza.codiceComune",0,1,"",""
+"Soggetto.contatti","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Recapiti","Recapiti del paziente","","","","","","","","","",,,,,"",,,,"Soggetto.contatti",0,*,"",""
+"Soggetto.contatti.telefono","","","",0,*,"","","","ContactPoint {[]} {[]}
+","telefono","telefono","","","","","","","","","",,,,,"",,,,"Soggetto.contatti.telefono",0,*,"",""
+"Soggetto.contatti.mail","","","",0,*,"","","","ContactPoint {[]} {[]}
+","e-mail","e-mail","","","","","","","","","",,,,,"",,,,"Soggetto.contatti.mail",0,*,"",""
+"Soggetto.contatti.pec","","","",0,*,"","","","ContactPoint {[]} {[]}
+","pec","pec","","","","","","","","","",,,,,"",,,,"Soggetto.contatti.pec",0,*,"",""

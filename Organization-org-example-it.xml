@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-example-it"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 090201, id: 201, id: 06593810481 , id: 06593810481 </p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.it/CodeSystem/it-tipoEntita asl}">Azienda Sanitaria Locale</span></p><p><b>name</b>: AZIENDA USL TOSCANA CENTRO</p><p><b>telecom</b>: ph: (055) 6939222, fax: (055) 6939223, <a href="mailto:mailto:direttore.generale@uslcentro.toscana.it">mailto:direttore.generale@uslcentro.toscana.it</a>, <a href="http://www.uslcentro.toscana.it">http://www.uslcentro.toscana.it</a></p><p><b>address</b>: PIAZZA SANTA MARIA NUOVA 1 FIRENZE TOSCANA 50122 IT </p></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.it/sid/fls"/>
+    <value value="090201"/>
+  </identifier>
+  <identifier>
+    <system value="http://hl7.it/sid/toscana/asl"/>
+    <value value="201"/>
+  </identifier>
+  <identifier>
+    <system value="http://hl7.it/sid/partitaIva"/>
+    <value value="06593810481 "/>
+  </identifier>
+  <identifier>
+    <system value="http://hl7.it/sid/codiceFiscale"/>
+    <value value="06593810481 "/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.it/CodeSystem/it-tipoEntita"/>
+      <code value="asl"/>
+      <display value="Azienda Sanitaria Locale"/>
+    </coding>
+  </type>
+  <name value="AZIENDA USL TOSCANA CENTRO"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="(055) 6939222"/>
+  </telecom>
+  <telecom>
+    <system value="fax"/>
+    <value value="(055) 6939223"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="mailto:direttore.generale@uslcentro.toscana.it"/>
+  </telecom>
+  <telecom>
+    <system value="url"/>
+    <value value="http://www.uslcentro.toscana.it"/>
+  </telecom>
+  <address>
+    <line value="PIAZZA SANTA MARIA NUOVA 1"/>
+    <city value="FIRENZE">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+        <valueCoding>
+          <system value="http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali"/>
+          <code value="007003"/>
+          <display value="AOSTA"/>
+        </valueCoding>
+      </extension>
+    </city>
+    <district value="FI"/>
+    <state value="TOSCANA">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+        <valueCoding>
+          <system value="http://terminology.hl7.it/CodeSystem/minsan-regione"/>
+          <code value="090"/>
+          <display value="TOSCANA"/>
+        </valueCoding>
+      </extension>
+    </state>
+    <postalCode value="50122"/>
+    <country value="IT"/>
+  </address>
+</Organization>

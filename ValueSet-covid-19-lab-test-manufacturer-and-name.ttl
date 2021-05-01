@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/ValueSet/covid-19-lab-test-manufacturer-and-name> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "covid-19-lab-test-manufacturer-and-name"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://covid-19-diagnostics.jrc.ec.europa.eu/devices</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1232</td><td>Abbott Rapid Diagnostics Panbio™ COVID-19 Ag Rapid Test</td></tr><tr><td>1065</td><td>Becton Dickinson BD Veritor System for Rapid Deteciton os SARS-CoV-2</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.it/fhir/dgc/ValueSet/covid-19-lab-test-manufacturer-and-name"];
+  fhir:ValueSet.version [ fhir:value "0.1.1"];
+  fhir:ValueSet.name [ fhir:value "Covid19LabTestManufacturerAndName"];
+  fhir:ValueSet.title [ fhir:value "COVID-19 Lab Test Manufacturer And Name"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2021-05-01T17:30:35+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 Italia"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.it" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Examples of COVID-19 Lab Test Manufacturer And Name from http://covid-19-diagnostics.jrc.ec.europa.eu/devices?manufacturer&text_name&marking&rapid_diag&format&target_type&field-1=HSC%20mutual%20recognition%20%28RAT%29&value-1=1&search_method=AND#form_content"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "IT" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://covid-19-diagnostics.jrc.ec.europa.eu/devices" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1232" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Abbott Rapid Diagnostics Panbio™ COVID-19 Ag Rapid Test" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "1065" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Becton Dickinson BD Veritor System for Rapid Deteciton os SARS-CoV-2" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/ValueSet/covid-19-lab-test-manufacturer-and-name.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,77 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: FHIR","Mapping: RIM Mapping"
+"Vaccinazione","","","",1,1,"","","","","Vaccinazione","Dati Vaccinazione","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"Vaccinazione.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Vaccinazione.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Vaccinazione.malattiaTarget","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Malattia per la quale è stata programmata la vaccinazione","Malattia per la quale è stata programmata la vaccinazione","","","","","","","","","",,,,,"",,,,"Vaccinazione.malattiaTarget",0,*,"","","Immunization.protocolApplied.targetDisease"
+"Vaccinazione.somministrazione","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Dati Somministrazione","Dati relativi alla somministrazione del vaccino","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione",0,1,"","","Immunization.where(status='completed')"
+"Vaccinazione.somministrazione.vaccino","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Vaccino somminstrato","Dati reativi al prodotto somministrato","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.vaccino",0,1,"",""
+"Vaccinazione.somministrazione.vaccino.tipo","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Tipo Vaccino / Profilassi","Mono-componente o combinazione (bambini-adulti) somministrata, ad es. HBV,DTaP-HBV-IPV-HIB","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.vaccino.tipo",1,1,"","","Immunization.vaccineCode"
+"Vaccinazione.somministrazione.vaccino.codiceAIC","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Codice AIC","Codice AIC del Vaccino Somministrato","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.vaccino.codiceAIC",1,1,"","","Immunization.vaccineCode"
+"Vaccinazione.somministrazione.vaccino.codiceATC","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Codice ATC","Codice ATC del Vaccino Somministrato","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.vaccino.codiceATC",0,1,"","","Immunization.vaccineCode"
+"Vaccinazione.somministrazione.vaccino.nomeCommerciale","","","",0,1,"","","","string {[]} {[]}
+","Nome commerciale","Nome commerciale Vaccino","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.vaccino.nomeCommerciale",0,1,"","","Immunization.lotNumber"
+"Vaccinazione.somministrazione.vaccino.lotto","","","",0,1,"","","","string {[]} {[]}
+","Numero del lotto","Numero del lotto","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.vaccino.lotto",0,1,"","","Immunization.expirationDate"
+"Vaccinazione.somministrazione.vaccino.dataScadenza","","","",0,1,"","","","dateTime {[]} {[]}
+","Data scadenza del vaccino","Data scadenza del vaccino","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.vaccino.dataScadenza",0,1,"","","Immunization.occurrenceDateTime"
+"Vaccinazione.somministrazione.data","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e ora di somministrazione ","Data e ora di somministrazione ","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.data",0,1,"","","Immunization.site"
+"Vaccinazione.somministrazione.sedeAnatomica","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Sede anatomica di somministrazione ","Sede anatomica di somministrazione ","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.sedeAnatomica",0,1,"","","Immunization.route"
+"Vaccinazione.somministrazione.viaSomministrazione","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Via di somministrazione ","Via di somministrazione ","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.viaSomministrazione",0,1,"","","Immunization.reasonCode"
+"Vaccinazione.somministrazione.indicazioni","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Indicazioni per la vaccinazione","Indicazioni per la vaccinazione","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.indicazioni",0,1,"","","Immunization.reasonCode"
+"Vaccinazione.somministrazione.indicazioni.categoriaRischio","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Categoria a rischio ","Categoria per cui è raccomandata la vaccinazione","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.indicazioni.categoriaRischio",0,*,"","","Immunization.reasonCode"
+"Vaccinazione.somministrazione.indicazioni.patologia","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Condizioni sanitarie a rischio","Patologia per cui è raccomandata la vaccinazione","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.indicazioni.patologia",0,*,"","","Immunization.reaction"
+"Vaccinazione.somministrazione.reazioniAvverse","","","",0,*,"","","","BackboneElement {[]} {[]}
+","Reazioni avverse","Presente solo nel caso di Certificato Vaccinale","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.reazioniAvverse",0,*,"","","ImmunizationRecommendation.dateCriterion.value"
+"Vaccinazione.somministrazione.periodoCopertura","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Periodo di copertura","Periodo di copertura","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.periodoCopertura",0,1,"","","ImmunizationRecommendation.dateCriterion.value"
+"Vaccinazione.somministrazione.dataProssimaDose","","","",0,1,"","","","dateTime {[]} {[]}
+","Data prossima vaccinazione","Data e ora programmata per la prossima  vaccinazione","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.dataProssimaDose",0,1,"","","Immunization.performer"
+"Vaccinazione.somministrazione.responsabile","","","",0,1,"","","","http://hl7.it/fhir/dgc/StructureDefinition/Organizzazione {[]} {[]}
+","Organizzazione responsabile della vaccinazione","Organizzazione responsabile  della vaccinazione inserendo nome oppure identificativo  (Sanitaria o Ospedaliera) ","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.responsabile",0,1,"","","Immunization.location"
+"Vaccinazione.somministrazione.struttura","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Struttura presso cui è stat effettuata la vaccinazione","Ambulatorio Vaccinale oppure Unità Operativa oppure Pronto Soccorso oppure Centro medicina dei viaggi oppure autorità portuale oppure Studio Medico MMG/PLS.
+Struttura presso cui è stato somministrato vaccino
+Codice regione + codice presidio + subcodice stabilimento","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.struttura",0,1,"",""
+"Vaccinazione.somministrazione.struttura.identificativo","","","",0,*,"","","","Identifier {[]} {[]}
+","Identificativo","Identificativo della struttura","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.struttura.identificativo",0,*,"",""
+"Vaccinazione.somministrazione.struttura.nome","","","",0,1,"","","","string {[]} {[]}
+","Denominazione struttura","nome della struttura","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.struttura.nome",0,1,"",""
+"Vaccinazione.somministrazione.struttura.responsabile","","","",0,1,"","","","string {[]} {[]}
+","Direttore/Responsabile struttura","Direttore/Responsabile struttura","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.struttura.responsabile",0,1,"","","Location.address"
+"Vaccinazione.somministrazione.struttura.indirizzo","","","",0,1,"","","","Address {[]} {[]}
+","Indirizzo struttura","Indirizzo struttura","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.struttura.indirizzo",0,1,"",""
+"Vaccinazione.somministrazione.struttura.email","","","",0,*,"","","","ContactPoint {[]} {[]}
+","Email Segreteria struttura","Email Segreteria struttura","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.struttura.email",0,*,"",""
+"Vaccinazione.somministrazione.struttura.telefono","","","",0,*,"","","","ContactPoint {[]} {[]}
+","Recapito Telefonico Segreteria struttura","Recapito Telefonico Segreteria struttura","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.struttura.telefono",0,*,"","","Immunization.performer"
+"Vaccinazione.somministrazione.somministratore","","","",0,1,"","","","http://hl7.it/fhir/dgc/StructureDefinition/OperatoreSanitario {[]} {[]}
+","Persona  Responsabile della Vaccinazione","Persona  Responsabile della Vaccinazione","","","","","","","","","",,,,,"",,,,"Vaccinazione.somministrazione.somministratore",0,1,"","","Immunization.where(status='not-done')"
+"Vaccinazione.mancataSomministrazione","","","",0,1,"","","","BackboneElement {[]} {[]}
+","Esonero, omissione o differimento","Esonero, omissione o differimento della somministrazione","","","","","","","","","",,,,,"",,,,"Vaccinazione.mancataSomministrazione",0,1,"","","Immunization.statusReason"
+"Vaccinazione.mancataSomministrazione.motivazione","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Motivazione esonero / differimento","Motivazione per esonero/omissione o differimento","","","","","","","","","",,,,,"",,,,"Vaccinazione.mancataSomministrazione.motivazione",1,1,"","","Immunization.recorded"
+"Vaccinazione.mancataSomministrazione.data","","","",1,1,"","","","dateTime {[]} {[]}
+","Data registrazione","Data e ora di registrazione esonero/ omissione o differimento ","","","","","","","","","",,,,,"",,,,"Vaccinazione.mancataSomministrazione.data",1,1,"","","ImmunizationRecommendation.where(forecastStatus='immune').forecastReason"
+"Vaccinazione.mancataSomministrazione.malattiaImmunita","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Malattia con presunta immunità","Malattia con presunta immunità","","","","","","","","","",,,,,"",,,,"Vaccinazione.mancataSomministrazione.malattiaImmunita",0,1,"","","ImmunizationRecommendation.dateCriterion.value"
+"Vaccinazione.mancataSomministrazione.scadenzaMotivazione","","","",0,1,"","","","dateTime {[]} {[]}
+","Data scadenza controindicazione temporanea","Data scadenza controindicazione temporanea","","","","","","","","","",,,,,"",,,,"Vaccinazione.mancataSomministrazione.scadenzaMotivazione",0,1,"",""

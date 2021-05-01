@@ -1,0 +1,121 @@
+{
+  "resourceType": "Patient",
+  "id": "example-it-1",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Birth Place</b>: Italia </p><p><b>identifier</b>: id: LGHDNT71E01D612Q</p><p><b>active</b>: true</p><p><b>name</b>: DANTE ALIGHIERI (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1971-05-01</p><p><b>address</b>: </p><ul><li>Viale della Repubblica 12, PANTIGLIATE - 20090 - Italia(HOME)</li><li>Via Capitolina 27 - interno 5b - 34131 - TRIESTE(HOME)</li></ul><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: 33312345678</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "country": "Italia",
+        "_country": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+              "valueCoding": {
+                "system": "http://terminology.hl7.it/CodeSystem/mef-ae-comuni",
+                "code": "F979",
+                "display": "NUORO"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "LGHDNT71E01D612Q"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "ALIGHIERI",
+      "given": [
+        "DANTE"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1971-05-01",
+  "address": [
+    {
+      "use": "home",
+      "type": "postal",
+      "text": "Viale della Repubblica 12, PANTIGLIATE - 20090 - Italia",
+      "line": [
+        "Viale della Repubblica 12, scala 2"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Viale della Repubblica"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType",
+              "valueString": "VIALE"
+            },
+            {
+              "url": "http://hl7.it/fhir/StructureDefinition/address-dug",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://registry.geodati.gov.it/dug",
+                    "code": "76",
+                    "display": "viale"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase",
+              "valueString": "DELLA REPUBBLICA"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "12"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+              "valueString": "scala 2"
+            }
+          ]
+        }
+      ],
+      "city": "PANTIGLIATE",
+      "postalCode": "20090",
+      "country": "Italia"
+    },
+    {
+      "use": "home",
+      "type": "postal",
+      "text": "Via Capitolina 27 - interno 5b - 34131 - TRIESTE",
+      "line": [
+        "Via Capitolina 27 - interno 5b"
+      ],
+      "city": "TRIESTE",
+      "postalCode": "34131",
+      "country": "Italia",
+      "period": {
+        "start": "2009-06-09T00:00:00+02:00"
+      }
+    }
+  ],
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "33312345678"
+        }
+      ]
+    }
+  ]
+}

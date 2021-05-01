@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/ConceptMap/Covid19VaccinesSnomedToICD11Map> a fhir:ConceptMap;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Covid19VaccinesSnomedToICD11Map"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>Covid19VaccinesSnomedToICD11Map (http://hl7.it/fhir/dgc/ConceptMap/Covid19VaccinesSnomedToICD11Map)</h2><p>Mapping from <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\">http://snomed.info/sct</a> to http://id.who.int/icd11/mms</p><p>DRAFT. Published on May 1, 2021, 5:30:35 PM by HL7 Italia (<a href=\"http://hl7.it\">http://hl7.it</a>). </p><div><p>COVID-19 Vaccines SNOMED CT To ICD11 Map</p>\n</div><br/><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td>1119349007</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>hejsan</td></tr></table><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Destination Code</b></td></tr><tr><td>1119305005</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td>hoppsan</td></tr></table></div>"
+  ];
+  fhir:ConceptMap.url [ fhir:value "http://hl7.it/fhir/dgc/ConceptMap/Covid19VaccinesSnomedToICD11Map"];
+  fhir:ConceptMap.version [ fhir:value "0.1.1"];
+  fhir:ConceptMap.name [ fhir:value "Covid19VaccinesSnomedToICD11Map"];
+  fhir:ConceptMap.title [ fhir:value "COVID-19 Vaccines SNOMED CT To ICD11 Map"];
+  fhir:ConceptMap.status [ fhir:value "draft"];
+  fhir:ConceptMap.date [ fhir:value "2021-05-01T17:30:35+00:00"^^xsd:dateTime];
+  fhir:ConceptMap.publisher [ fhir:value "HL7 Italia"];
+  fhir:ConceptMap.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.it" ]
+     ]
+  ];
+  fhir:ConceptMap.description [ fhir:value "COVID-19 Vaccines SNOMED CT To ICD11 Map"];
+  fhir:ConceptMap.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "IT" ]
+     ]
+  ];
+  fhir:ConceptMap.sourceUri [ fhir:value "http://snomed.info/sct"];
+  fhir:ConceptMap.targetUri [ fhir:value "http://id.who.int/icd11/mms"];
+  fhir:ConceptMap.group [
+     fhir:index 0;
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "1119349007" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "hejsan" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ConceptMap.group.element [
+       fhir:index 0;
+       fhir:ConceptMap.group.element.code [ fhir:value "1119305005" ];
+       fhir:ConceptMap.group.element.target [
+         fhir:index 0;
+         fhir:ConceptMap.group.element.target.code [ fhir:value "hoppsan" ];
+         fhir:ConceptMap.group.element.target.equivalence [ fhir:value "equivalent" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/ConceptMap/Covid19VaccinesSnomedToICD11Map.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

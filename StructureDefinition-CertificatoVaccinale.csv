@@ -1,0 +1,24 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: FHIR","Mapping: RIM Mapping"
+"CertificatoVaccinale","","","",1,1,"","","","","Certificato Vaccinale","Certificato Vaccinale","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"CertificatoVaccinale.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"CertificatoVaccinale.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"CertificatoVaccinale.soggetto","","","",1,1,"","","","http://hl7.it/fhir/dgc/StructureDefinition/Soggetto {[]} {[]}
+","soggetto del certificato","Dati del soggetto a cui questo certificato vaccinale si riferisce","","","","","","","","","",,,,,"",,,,"CertificatoVaccinale.soggetto",1,1,"","","Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').subject","Immunization.conformsTo('http://hl7.eu/fhir/ig/dgc/StructureDefinition/Immunization-svc').patient"
+"CertificatoVaccinale.dataCreazione","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e Ora del Certificato Vaccinale ","Data di creazione del certificato","","","","","","","","","",,,,,"",,,,"CertificatoVaccinale.dataCreazione",0,1,"","","Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').date"
+"CertificatoVaccinale.dataFirma","","","",0,1,"","","","dateTime {[]} {[]}
+","Data e Ora firma Certificato","Data e ora firma certificato","","","","","","","","","",,,,,"",,,,"CertificatoVaccinale.dataFirma",0,1,"","","Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').attester.time"
+"CertificatoVaccinale.personaResponsabile","","","",0,1,"","","","http://hl7.it/fhir/dgc/StructureDefinition/OperatoreSanitario {[]} {[]}
+","Persona responsabile del rilascio del certificato.","Persona responsabile del rilascio del certificato.","","","","","","","","","",,,,,"",,,,"CertificatoVaccinale.personaResponsabile",0,1,"","","Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').attester.party"
+"CertificatoVaccinale.organizzazioneResponsabile","","","",0,1,"","","","http://hl7.it/fhir/dgc/StructureDefinition/Organizzazione {[]} {[]}
+","Organizzazione responsabile del rilascio del certificato. ","Organizzazione responsabile del rilascio del certificato. 
+Certificati generati automaticamente","","","","","","","","","",,,,,"",,,,"CertificatoVaccinale.organizzazioneResponsabile",0,1,"","","Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').attester.party"
+"CertificatoVaccinale.vaccinazione","","","",1,*,"","","","http://hl7.it/fhir/dgc/StructureDefinition/Vaccinazione {[]} {[]}
+","Dati Vaccinzione o Esonero","Dettagli relativi alla vaccinazione effettuata o che doveva essere effettuata (e.g. esonero, differimento)","","","","","","","","","",,,,,"",,,,"CertificatoVaccinale.vaccinazione",1,*,"","","Immunization.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Immunization-svc')"

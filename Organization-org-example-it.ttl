@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/Organization/org-example-it> a fhir:Organization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "org-example-it"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 090201, id: 201, id: 06593810481 , id: 06593810481 </p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.it/CodeSystem/it-tipoEntita asl}\">Azienda Sanitaria Locale</span></p><p><b>name</b>: AZIENDA USL TOSCANA CENTRO</p><p><b>telecom</b>: ph: (055) 6939222, fax: (055) 6939223, <a href=\"mailto:mailto:direttore.generale@uslcentro.toscana.it\">mailto:direttore.generale@uslcentro.toscana.it</a>, <a href=\"http://www.uslcentro.toscana.it\">http://www.uslcentro.toscana.it</a></p><p><b>address</b>: PIAZZA SANTA MARIA NUOVA 1 FIRENZE TOSCANA 50122 IT </p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://hl7.it/sid/fls" ];
+     fhir:Identifier.value [ fhir:value "090201" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "http://hl7.it/sid/toscana/asl" ];
+     fhir:Identifier.value [ fhir:value "201" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.system [ fhir:value "http://hl7.it/sid/partitaIva" ];
+     fhir:Identifier.value [ fhir:value "06593810481 " ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.system [ fhir:value "http://hl7.it/sid/codiceFiscale" ];
+     fhir:Identifier.value [ fhir:value "06593810481 " ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.it/CodeSystem/it-tipoEntita" ];
+       fhir:Coding.code [ fhir:value "asl" ];
+       fhir:Coding.display [ fhir:value "Azienda Sanitaria Locale" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "AZIENDA USL TOSCANA CENTRO"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(055) 6939222" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "fax" ];
+     fhir:ContactPoint.value [ fhir:value "(055) 6939223" ]
+  ], [
+     fhir:index 2;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "mailto:direttore.generale@uslcentro.toscana.it" ]
+  ], [
+     fhir:index 3;
+     fhir:ContactPoint.system [ fhir:value "url" ];
+     fhir:ContactPoint.value [ fhir:value "http://www.uslcentro.toscana.it" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "PIAZZA SANTA MARIA NUOVA 1";
+       fhir:index 0
+     ];
+     fhir:Address.city [
+       fhir:value "FIRENZE";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali" ];
+           fhir:Coding.code [ fhir:value "007003" ];
+           fhir:Coding.display [ fhir:value "AOSTA" ]
+         ]
+       ]
+     ];
+     fhir:Address.district [ fhir:value "FI" ];
+     fhir:Address.state [
+       fhir:value "TOSCANA";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.it/CodeSystem/minsan-regione" ];
+           fhir:Coding.code [ fhir:value "090" ];
+           fhir:Coding.display [ fhir:value "TOSCANA" ]
+         ]
+       ]
+     ];
+     fhir:Address.postalCode [ fhir:value "50122" ];
+     fhir:Address.country [ fhir:value "IT" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/Organization/org-example-it.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

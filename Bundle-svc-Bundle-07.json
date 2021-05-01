@@ -1,0 +1,306 @@
+{
+  "resourceType": "Bundle",
+  "id": "svc-Bundle-07",
+  "identifier": {
+    "system": "http://hl7.eu/fhir/sid/uvci",
+    "value": "V1CZ454557891308174803488707671418",
+    "period": {
+      "start": "2020-12-27T14:30:00+01:00",
+      "end": "2021-12-27T14:30:00+01:00"
+    }
+  },
+  "type": "document",
+  "timestamp": "2020-12-27T14:30:00+01:00",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:1afa55c0-ba99-4d76-90d4-87c947b379d6",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "1afa55c0-ba99-4d76-90d4-87c947b379d6",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 3f69e0a5-2177-4540-baab-7a5d0877428f</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 82593-5}\">Immunization summary report</span></p><p><b>date</b>: Dec 27, 2020, 1:30:00 PM</p><p><b>author</b>: <span>MUDr. Aleš Procházka</span></p><p><b>title</b>: Vaccine Certificate December 27, 2020 14:30</p><p><b>confidentiality</b>: N</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>legal</td><td>Dec 27, 2020, 1:30:00 PM</td><td><a href=\"#Organization_fa5b4571-9347-41be-b102-c201f7da329b\">See above (Organization/fa5b4571-9347-41be-b102-c201f7da329b)</a></td></tr></table><p><b>custodian</b>: <a href=\"#Organization_fa5b4571-9347-41be-b102-c201f7da329b\">See above (Organization/fa5b4571-9347-41be-b102-c201f7da329b)</a></p></div>"
+        },
+        "identifier": {
+          "system": "urn:oid:2.16.724.4.8.10.200.10",
+          "value": "3f69e0a5-2177-4540-baab-7a5d0877428f"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "82593-5",
+              "display": "Immunization summary report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:c32fd63f-8705-4e6f-aab6-a64cd64fb938"
+        },
+        "date": "2020-12-27T14:30:00+01:00",
+        "author": [
+          {
+            "display": "MUDr. Aleš Procházka"
+          }
+        ],
+        "title": "Vaccine Certificate December 27, 2020 14:30",
+        "confidentiality": "N",
+        "attester": [
+          {
+            "mode": "legal",
+            "time": "2020-12-27T14:30:00+01:00",
+            "party": {
+              "reference": "urn:uuid:fa5b4571-9347-41be-b102-c201f7da329b"
+            }
+          }
+        ],
+        "custodian": {
+          "reference": "urn:uuid:fa5b4571-9347-41be-b102-c201f7da329b"
+        },
+        "section": [
+          {
+            "title": "Vaccinations",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6",
+                  "display": "Hx of Immunization"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Date</th><th>Product</th><th>Vaccine</th><th>Dose</th></tr></thead><tbody><tr><td>2020-12-02</td><td>Comirnaty</td><td>COVID-19 mRNA Vaccine</td><td>1/2</td></tr></tbody></table></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:cc9b611a-99b4-4342-a716-4bfbba1d0d1a"
+              },
+              {
+                "reference": "urn:uuid:8de24625-d0bf-451c-bdb1-fbe63ffaa01e"
+              }
+            ]
+          },
+          {
+            "entry": [
+              {
+                "reference": "urn:uuid:ef187374-9ee4-4eaa-ad5c-06ddfdc5b825"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c32fd63f-8705-4e6f-aab6-a64cd64fb938",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "c32fd63f-8705-4e6f-aab6-a64cd64fb938",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: National Insurance Payor Identifier (Payor): 715511123X, id: A225961454, Passport number: 5484136</p><p><b>name</b>: Jana Marie Nedostatečně Očkovaná </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1971-05-11</p></div>"
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "NIIP"
+                }
+              ]
+            },
+            "system": "urn:oid:1.2.203.24341.1.20.2",
+            "value": "715511123X"
+          },
+          {
+            "system": "urn:oid:1.2.203.24341.1.20.9.1",
+            "value": "A225961454"
+          },
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code": "PPN"
+                }
+              ]
+            },
+            "system": "urn:oid:2.16.840.1.113883.4.330.203",
+            "value": "5484136"
+          }
+        ],
+        "name": [
+          {
+            "family": "Nedostatečně Očkovaná",
+            "given": [
+              "Jana Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1971-05-11"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cc9b611a-99b4-4342-a716-4bfbba1d0d1a",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "cc9b611a-99b4-4342-a716-4bfbba1d0d1a",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://snomed.info/sct 1119349007}\">Comirnaty</span></p><p><b>patient</b>: <a href=\"#Patient_c32fd63f-8705-4e6f-aab6-a64cd64fb938\">See above (Patient/c32fd63f-8705-4e6f-aab6-a64cd64fb938)</a></p><p><b>occurrence</b>: 2020-12-02</p><p><b>location</b>: <a href=\"#Location_411603a2-81d6-415b-9a1d-ca016ff57dd6\">See above (Location/411603a2-81d6-415b-9a1d-ca016ff57dd6)</a></p><p><b>manufacturer</b>: <span>BioNTech Manufacturing GmbH</span></p><p><b>lotNumber</b>: B1235742</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span>MUDr. Jan Očko CSc.</span></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 840533007}\">SARS-CoV-2</span></td><td>1</td><td>2</td></tr></table></div>"
+        },
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1119349007",
+              "display": "Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product"
+            }
+          ],
+          "text": "Comirnaty"
+        },
+        "patient": {
+          "reference": "urn:uuid:c32fd63f-8705-4e6f-aab6-a64cd64fb938"
+        },
+        "occurrenceDateTime": "2020-12-02",
+        "location": {
+          "reference": "urn:uuid:411603a2-81d6-415b-9a1d-ca016ff57dd6"
+        },
+        "manufacturer": {
+          "display": "BioNTech Manufacturing GmbH"
+        },
+        "lotNumber": "B1235742",
+        "performer": [
+          {
+            "actor": {
+              "display": "MUDr. Jan Očko CSc."
+            }
+          }
+        ],
+        "protocolApplied": [
+          {
+            "targetDisease": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "840533007",
+                    "display": "SARS-CoV-2"
+                  }
+                ]
+              }
+            ],
+            "doseNumberPositiveInt": 1,
+            "seriesDosesPositiveInt": 2
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8de24625-d0bf-451c-bdb1-fbe63ffaa01e",
+      "resource": {
+        "resourceType": "ImmunizationRecommendation",
+        "id": "8de24625-d0bf-451c-bdb1-fbe63ffaa01e",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>patient</b>: <a href=\"#Patient_c32fd63f-8705-4e6f-aab6-a64cd64fb938\">See above (Patient/c32fd63f-8705-4e6f-aab6-a64cd64fb938)</a></p><p><b>date</b>: 2020-12-02</p><p><b>authority</b>: <a href=\"#Organization_fa5b4571-9347-41be-b102-c201f7da329b\">See above (Organization/fa5b4571-9347-41be-b102-c201f7da329b)</a></p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title=\"Codes: {http://snomed.info/sct 1119349007}\">Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product</span></p><p><b>forecastStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}\">The patient is due for their next vaccination</span></p><h3>DateCriterions</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://loinc.org 30980-7}\">Date vaccine due</span></td><td>2020-12-23</td></tr></table><p><b>doseNumber</b>: 2</p><p><b>seriesDoses</b>: 2</p></blockquote></div>"
+        },
+        "patient": {
+          "reference": "urn:uuid:c32fd63f-8705-4e6f-aab6-a64cd64fb938"
+        },
+        "date": "2020-12-02",
+        "authority": {
+          "reference": "urn:uuid:fa5b4571-9347-41be-b102-c201f7da329b"
+        },
+        "recommendation": [
+          {
+            "vaccineCode": [
+              {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "1119349007",
+                    "display": "Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product"
+                  }
+                ]
+              }
+            ],
+            "forecastStatus": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+                  "code": "due",
+                  "display": "The patient is due for their next vaccination"
+                }
+              ]
+            },
+            "dateCriterion": [
+              {
+                "code": {
+                  "coding": [
+                    {
+                      "system": "http://loinc.org",
+                      "code": "30980-7",
+                      "display": "Date vaccine due"
+                    }
+                  ]
+                },
+                "value": "2020-12-23"
+              }
+            ],
+            "doseNumberPositiveInt": 2,
+            "seriesDosesPositiveInt": 2
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fa5b4571-9347-41be-b102-c201f7da329b",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "fa5b4571-9347-41be-b102-c201f7da329b",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 24341</p><p><b>name</b>: Ministry of Health of the Czech Republic</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "urn:oid:1.2.203",
+            "value": "24341"
+          }
+        ],
+        "name": "Ministry of Health of the Czech Republic"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:411603a2-81d6-415b-9a1d-ca016ff57dd6",
+      "resource": {
+        "resourceType": "Location",
+        "id": "411603a2-81d6-415b-9a1d-ca016ff57dd6",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Hospital Na Františku Prague</p><p><b>address</b>: Prague CZ </p></div>"
+        },
+        "name": "Hospital Na Františku Prague",
+        "address": {
+          "city": "Prague",
+          "country": "CZ"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ef187374-9ee4-4eaa-ad5c-06ddfdc5b825",
+      "resource": {
+        "resourceType": "Binary",
+        "id": "ef187374-9ee4-4eaa-ad5c-06ddfdc5b825",
+        "contentType": "image/png",
+        "data": "iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAAAAACMfPpKAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAfElEQVQYlU2QWwrEMAwDR0vuf+XZj8qJSyjIyNYjAkAMQNFhkBCKzoNiin70kxKBN41ENuf7+9AZWQOGRx/2m4TeKy2YO0GyDpwszW5EUCs/ur78NZtGvSa8azdPDGttsonot8LtDFNnrs4yLSbuJk0ajnV3vevhCxUj4Q+R11n764g4WgAAAABJRU5ErkJggg=="
+      }
+    }
+  ]
+}

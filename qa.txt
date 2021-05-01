@@ -1,0 +1,537 @@
+﻿Hl7ItDgcIG : Validation Results
+=========================================
+
+err = 48, warn = 155, info = 121
+IG Publisher Version: 1.1.68
+Generated Sat May 01 17:31:17 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.dgc#0.1.1 (canonical = http://hl7.it/fhir/dgc)
+
+ Build Errors : 0 / 0 / 0
+ /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-01 : 4 / 0 / 20
+ /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-02 : 1 / 2 / 17
+ /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-03 : 4 / 0 / 25
+ /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-04 : 3 / 0 / 24
+ /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-05 : 0 / 0 / 13
+ /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-06 : 1 / 0 / 17
+ /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-07 : 1 / 2 / 20
+ /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-08 : 19 / 2 / 42
+ /github/workspace/fsh-generated/resources/ConceptMap-Covid19LabTestsNPUToLOINCMap : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-Covid19VaccinesSnomedToICD11Map : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Immunization-example-it-1-1 : 7 / 0 / 14
+ /github/workspace/fsh-generated/resources/Immunization-example-it-1-2 : 7 / 0 / 14
+ /github/workspace/fsh-generated/resources/Organization-org-example-it : 0 / 2 / 4
+ /github/workspace/fsh-generated/resources/Patient-example-it-1 : 1 / 2 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-Bundle-dgc : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CertificatoVaccinale : 0 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Composition-dgc : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Immunization-dgc : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ImmunizationRecommendation-dgc : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Location-dgc : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Observation-dgc : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OperatoreSanitario : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Organizzazione : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Patient-dgc : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Soggetto : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Vaccinazione : 0 / 8 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-atc-vaccines-covid-19 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-covid-19-diseases : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-covid-19-lab-methods : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-covid-19-lab-result : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-covid-19-lab-test-manufacturer-and-name : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-icd11-vaccines-covid-19 : 0 / 8 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-loinc-tests-covid-19 : 0 / 18 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-npu-covid-19-non-rapid-tests : 0 / 63 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-npu-covid-19-rapid-tests : 0 / 8 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-sct-vaccines-covid-19 : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vaccines-covid-19 : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vaccines-covid-19-auth-holders : 0 / 11 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vaccines-covid-19-names : 0 / 11 / 1
+ /github/workspace/input/hl7.fhir.it.dgc : 0 / 1 / 1
+</table>
+== n/a ==
+== /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-01.json ==
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+ERROR: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[0].resource.ofType(Composition).subject: Unable to find a match for profile urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8 among choices: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[0].resource.ofType(Composition).subject: Details for urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8 matching against Profilehttp://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[0].resource.ofType(Composition).section[0].entry[1]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc
+ERROR: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[1].resource.ofType(Patient): Patient.gender: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc)
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: resource.vaccineCode: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: resource.patient: Unable to find a match for profile urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8 among choices: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: resource.patient: Details for urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8 matching against Profilehttp://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: resource.protocolApplied[0].targetDisease[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: resource.protocolApplied[0].targetDisease[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: resource.protocolApplied[0].targetDisease[0]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[3].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[3].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-01: Bundle/svc-Bundle-01: Bundle.entry[5].resource.ofType(Location): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
+== /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-02.json ==
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: resource.vaccineCode: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: resource.protocolApplied[0].targetDisease[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: resource.protocolApplied[0].targetDisease[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: resource.protocolApplied[0].targetDisease[0]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[3].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/ImmunizationRecommendation-dgc
+WARNING: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: resource.recommendation[0].forecastStatus.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due should be one of 'Due' instead of 'The patient is due for their next vaccination' for 'http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due'
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[3].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation
+WARNING: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[3].resource.ofType(ImmunizationRecommendation).recommendation[0].forecastStatus.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due should be one of 'Due' instead of 'The patient is due for their next vaccination' for 'http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due'
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-02: Bundle/svc-Bundle-02: Bundle.entry[5].resource.ofType(Location): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
+== /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-03.json ==
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[0].resource.ofType(Composition).section[0].entry[1]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: resource.vaccineCode: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: resource: Immunization.performer: max allowed = 1, but found 2 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: resource.vaccineCode.coding[1]: Code System URI 'https://www.aifa.gov.it/aic' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: resource.vaccineCode.coding[1]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: resource.protocolApplied[0].targetDisease[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: resource.protocolApplied[0].targetDisease[0].coding[0]: Code "J12.82" not found; The code "J12.82" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#J12.82) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#J12.82'
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: resource.protocolApplied[0].targetDisease[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: resource.protocolApplied[0].targetDisease[0]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[1]: Code System URI 'https://www.aifa.gov.it/aic' is unknown so the code cannot be validated
+ERROR: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[2].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code "J12.82" not found; The code "J12.82" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#J12.82) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#J12.82'
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[3].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[3].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[5].resource.ofType(Location): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[6].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-03: Bundle/svc-Bundle-03: Bundle.entry[7].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+== /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-04.json ==
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[7]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[2].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/ImmunizationRecommendation-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: resource.recommendation[0].supportingImmunization[0]: Details for urn:uuid:42befbaf-eba8-44ec-b7d6-0e4a996e0760 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[2].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[2].resource.ofType(ImmunizationRecommendation).recommendation[0].supportingImmunization[0]: Details for urn:uuid:42befbaf-eba8-44ec-b7d6-0e4a996e0760 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[3].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[5].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization).vaccineCode: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization): Immunization.performer: max allowed = 1, but found 2 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization).vaccineCode.coding[1]: Code System URI 'https://www.aifa.gov.it/aic' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization).vaccineCode.coding[1]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization).protocolApplied[0].targetDisease[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code "J12.82" not found; The code "J12.82" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#J12.82) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#J12.82'
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization).protocolApplied[0].targetDisease[0]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[6].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-04: Bundle/svc-Bundle-04: Bundle.entry[7].resource.ofType(Location): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
+== /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-05.json ==
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[3]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[2].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/ImmunizationRecommendation-dgc
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[2].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[3].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-05: Bundle/svc-Bundle-05: Bundle.entry[5].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+== /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-06.json ==
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: resource.vaccineCode: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: resource.protocolApplied[0].targetDisease[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: resource.protocolApplied[0].targetDisease[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: resource.protocolApplied[0].targetDisease[0]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[3].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/ImmunizationRecommendation-dgc
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[3].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-06: Bundle/svc-Bundle-06: Bundle.entry[5].resource.ofType(Location): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
+== /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-07.json ==
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[5]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[6]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[0].resource.ofType(Composition).section[1]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: resource.vaccineCode: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: resource.protocolApplied[0].targetDisease[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: resource.protocolApplied[0].targetDisease[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: resource.protocolApplied[0].targetDisease[0]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[3].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/ImmunizationRecommendation-dgc
+WARNING: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: resource.recommendation[0].forecastStatus.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due should be one of 'Due' instead of 'The patient is due for their next vaccination' for 'http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due'
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[3].resource.ofType(ImmunizationRecommendation): Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation
+WARNING: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[3].resource.ofType(ImmunizationRecommendation).recommendation[0].forecastStatus.coding[0]: Display Name for http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due should be one of 'Due' instead of 'The patient is due for their next vaccination' for 'http://terminology.hl7.org/CodeSystem/immunization-recommendation-status#due'
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[5].resource.ofType(Location): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Location
+INFORMATION: Bundle/svc-Bundle-07: Bundle/svc-Bundle-07: Bundle.entry[6].resource.ofType(Binary): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Binary
+== /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-08.json ==
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[4]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[0].resource.ofType(Composition).subject: Unable to find a match for profile urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2 among choices: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[0].resource.ofType(Composition).subject: Details for urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2 matching against Profilehttp://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[0].resource.ofType(Composition).section[0].entry[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[0].resource.ofType(Composition).section[0].entry[1]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[0].resource.ofType(Composition): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient).extension[0].value.ofType(Address).country.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/mef-ae-comuni' is unknown so the code cannot be validated
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient).identifier[0].extension[0]: The extension http://hl7.it/fhir/StructureDefinition/recordCertification is unknown, and not allowed here
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient).identifier[0].extension[0].extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.it/CodeSystem/it-tipoEntita' is unknown so the code cannot be validated
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient).address[0].extension[0]: The extension http://hl7.org/fhir/StructureDefinition/address-official is unknown, and not allowed here
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient).address[0].extension[0].url: URL value 'http://hl7.org/fhir/StructureDefinition/address-official' does not resolve
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient).address[0].line[0].extension[2]: The extension http://hl7.it/fhir/StructureDefinition/address-dug is unknown, and not allowed here
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient).address[0].line[0].extension[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://registry.geodati.gov.it/dug' is unknown so the code cannot be validated
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient).address[1].extension[0]: The extension http://hl7.org/fhir/StructureDefinition/address-official is unknown, and not allowed here
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient).address[1].extension[0].url: URL value 'http://hl7.org/fhir/StructureDefinition/address-official' does not resolve
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[1].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.vaccineCode: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource: Immunization.performer: max allowed = 1, but found 2 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.vaccineCode: The code "J07BX03" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07BX03) is not valid in the value set 'VaccinesUvIps' (from http://tx.fhir.org/r4)
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.vaccineCode.coding[0]: Code System URI 'https://www.aifa.gov.it/aic' is unknown so the code cannot be validated
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.vaccineCode.coding[2]: The code "J07BX03" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07BX03) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#J07BX03'
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.vaccineCode.coding[3]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.vaccineCode.coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.vaccineCode.coding[2]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.vaccineCode.coding[3]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.patient: Unable to find a match for profile urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2 among choices: http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.patient: Details for urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2 matching against Profilehttp://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[1]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[2]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[0].coding[0]: Code "J12.82" not found; The code "J12.82" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#J12.82) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#J12.82'
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[0]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[1].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[1].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[1]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[2].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: resource.protocolApplied[0].targetDisease[2]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[2].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'https://www.aifa.gov.it/aic' is unknown so the code cannot be validated
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[2]: The code "J07BX03" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07BX03) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#J07BX03'
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[3]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[2].resource.ofType(Immunization).patient: Details for urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[2].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code "J12.82" not found; The code "J12.82" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#J12.82) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#J12.82'
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[2].resource.ofType(Immunization).protocolApplied[0].targetDisease[1].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[3].resource.ofType(Immunization): Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[3].resource.ofType(Immunization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[3].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'https://www.aifa.gov.it/aic' is unknown so the code cannot be validated
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[3].resource.ofType(Immunization).vaccineCode.coding[2]: The code "J07BX03" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07BX03) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#J07BX03'
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[3].resource.ofType(Immunization).vaccineCode.coding[3]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[3].resource.ofType(Immunization).patient: Details for urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2 matching against Profilehttp://hl7.org/fhir/StructureDefinition/Patient
+ERROR: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code "J12.82" not found; The code "J12.82" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#J12.82) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#J12.82'
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[1].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[4].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+WARNING: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[4].resource.ofType(Organization).identifier[2].value: value should not start or finish with whitespace
+WARNING: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[4].resource.ofType(Organization).identifier[3].value: value should not start or finish with whitespace
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[4].resource.ofType(Organization).type[0].coding[0]: Code System URI 'http://terminology.hl7.it/CodeSystem/it-tipoEntita' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[4].resource.ofType(Organization).address[0].city.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali' is unknown so the code cannot be validated
+INFORMATION: Bundle/svc-Bundle-08: Bundle/svc-Bundle-08: Bundle.entry[4].resource.ofType(Organization).address[0].state.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/minsan-regione' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/ConceptMap-Covid19LabTestsNPUToLOINCMap.json ==
+INFORMATION: ConceptMap/Covid19LabTestsNPUToLOINCMap: ConceptMap/Covid19LabTestsNPUToLOINCMap: ConceptMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap
+== /github/workspace/fsh-generated/resources/ConceptMap-Covid19VaccinesSnomedToICD11Map.json ==
+INFORMATION: ConceptMap/Covid19VaccinesSnomedToICD11Map: ConceptMap/Covid19VaccinesSnomedToICD11Map: ConceptMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap
+== /github/workspace/fsh-generated/resources/Immunization-example-it-1-1.json ==
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.vaccineCode: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization: Immunization.performer: max allowed = 1, but found 2 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+ERROR: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.vaccineCode: The code "J07BX03" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07BX03) is not valid in the value set 'VaccinesUvIps' (from http://tx.fhir.org/r4)
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.vaccineCode.coding[0]: Code System URI 'https://www.aifa.gov.it/aic' is unknown so the code cannot be validated
+ERROR: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.vaccineCode.coding[2]: The code "J07BX03" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07BX03) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#J07BX03'
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.vaccineCode.coding[3]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.vaccineCode.coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.vaccineCode.coding[2]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.vaccineCode.coding[3]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[1]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[2]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[0].coding[0]: Code "J12.82" not found; The code "J12.82" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#J12.82) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#J12.82'
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[0]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[1].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[1].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[1]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[2].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-1: Immunization/example-it-1-1: Immunization.protocolApplied[0].targetDisease[2]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+== /github/workspace/fsh-generated/resources/Immunization-example-it-1-2.json ==
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.vaccineCode: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization: Immunization.performer: max allowed = 1, but found 2 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+ERROR: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.vaccineCode: The code "J07BX03" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07BX03) is not valid in the value set 'VaccinesUvIps' (from http://tx.fhir.org/r4)
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.vaccineCode.coding[0]: Code System URI 'https://www.aifa.gov.it/aic' is unknown so the code cannot be validated
+ERROR: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.vaccineCode.coding[2]: The code "J07BX03" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#J07BX03) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#J07BX03'
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.vaccineCode.coding[3]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.vaccineCode.coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.vaccineCode.coding[2]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.vaccineCode.coding[3]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[1]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[2]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[0].coding[0]: Code "J12.82" not found; The code "J12.82" is not valid in the system http://hl7.org/fhir/sid/icd-10; The code provided (http://hl7.org/fhir/sid/icd-10#J12.82) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://hl7.org/fhir/sid/icd-10#J12.82'
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[0].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[0]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[1].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[1].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[1]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+INFORMATION: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[2].coding[0]: This element does not match any known slice defined in the profile http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc
+ERROR: Immunization/example-it-1-2: Immunization/example-it-1-2: Immunization.protocolApplied[0].targetDisease[2]: Immunization.protocolApplied.targetDisease.coding:sctCovid19Diseases: minimum required = 1, but only found 0 (from http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc)
+== /github/workspace/fsh-generated/resources/Organization-org-example-it.json ==
+INFORMATION: Organization/org-example-it: Organization/org-example-it: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+WARNING: Organization/org-example-it: Organization/org-example-it: Organization.identifier[2].value: value should not start or finish with whitespace
+WARNING: Organization/org-example-it: Organization/org-example-it: Organization.identifier[3].value: value should not start or finish with whitespace
+INFORMATION: Organization/org-example-it: Organization/org-example-it: Organization.type[0].coding[0]: Code System URI 'http://terminology.hl7.it/CodeSystem/it-tipoEntita' is unknown so the code cannot be validated
+INFORMATION: Organization/org-example-it: Organization/org-example-it: Organization.address[0].city.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali' is unknown so the code cannot be validated
+INFORMATION: Organization/org-example-it: Organization/org-example-it: Organization.address[0].state.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/minsan-regione' is unknown so the code cannot be validated
+== /github/workspace/fsh-generated/resources/Patient-example-it-1.json ==
+INFORMATION: Patient/example-it-1: Patient/example-it-1: Patient: Validate resource against profile http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc
+INFORMATION: Patient/example-it-1: Patient/example-it-1: Patient.extension[0].value.ofType(Address).country.extension[0].value.ofType(Coding): Code System URI 'http://terminology.hl7.it/CodeSystem/mef-ae-comuni' is unknown so the code cannot be validated
+WARNING: Patient/example-it-1: Patient/example-it-1: Patient.address[0]: pat-cnt-2or3-char: 'The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.' failed
+ERROR: Patient/example-it-1: Patient/example-it-1: Patient.address[0].line[0].extension[2]: The extension http://hl7.it/fhir/StructureDefinition/address-dug is unknown, and not allowed here
+INFORMATION: Patient/example-it-1: Patient/example-it-1: Patient.address[0].line[0].extension[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'http://registry.geodati.gov.it/dug' is unknown so the code cannot be validated
+WARNING: Patient/example-it-1: Patient/example-it-1: Patient.address[1]: pat-cnt-2or3-char: 'The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.' failed
+== /github/workspace/fsh-generated/resources/StructureDefinition-Bundle-dgc.json ==
+INFORMATION: StructureDefinition/Bundle-dgc: StructureDefinition/Bundle-dgc: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /github/workspace/fsh-generated/resources/StructureDefinition-CertificatoVaccinale.json ==
+INFORMATION: StructureDefinition/CertificatoVaccinale: StructureDefinition/CertificatoVaccinale: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/CertificatoVaccinale: StructureDefinition/CertificatoVaccinale: StructureDefinition.snapshot.element[4].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/CertificatoVaccinale: StructureDefinition/CertificatoVaccinale: StructureDefinition.snapshot.element[7].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/CertificatoVaccinale: StructureDefinition/CertificatoVaccinale: StructureDefinition.differential.element[2].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/CertificatoVaccinale: StructureDefinition/CertificatoVaccinale: StructureDefinition.differential.element[5].short: value should not start or finish with whitespace
+== /github/workspace/fsh-generated/resources/StructureDefinition-Composition-dgc.json ==
+INFORMATION: StructureDefinition/Composition-dgc: StructureDefinition/Composition-dgc: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition.where(url = 'http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc'): The Implementation Guide contains no explicitly linked examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-Immunization-dgc.json ==
+INFORMATION: StructureDefinition/Immunization-dgc: StructureDefinition/Immunization-dgc: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /github/workspace/fsh-generated/resources/StructureDefinition-ImmunizationRecommendation-dgc.json ==
+INFORMATION: StructureDefinition/ImmunizationRecommendation-dgc: StructureDefinition/ImmunizationRecommendation-dgc: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition.where(url = 'http://hl7.it/fhir/dgc/StructureDefinition/ImmunizationRecommendation-dgc'): The Implementation Guide contains no explicitly linked examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-Location-dgc.json ==
+INFORMATION: StructureDefinition/Location-dgc: StructureDefinition/Location-dgc: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+INFORMATION: StructureDefinition.where(url = 'http://hl7.it/fhir/dgc/StructureDefinition/Location-dgc'): The Implementation Guide contains no explicitly linked examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-Observation-dgc.json ==
+INFORMATION: StructureDefinition/Observation-dgc: StructureDefinition/Observation-dgc: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/dgc/StructureDefinition/Observation-dgc'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-OperatoreSanitario.json ==
+INFORMATION: StructureDefinition/OperatoreSanitario: StructureDefinition/OperatoreSanitario: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/OperatoreSanitario: StructureDefinition/OperatoreSanitario: StructureDefinition.snapshot.element[3].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/OperatoreSanitario: StructureDefinition/OperatoreSanitario: StructureDefinition.differential.element[1].short: value should not start or finish with whitespace
+== /github/workspace/fsh-generated/resources/StructureDefinition-Organizzazione.json ==
+INFORMATION: StructureDefinition/Organizzazione: StructureDefinition/Organizzazione: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /github/workspace/fsh-generated/resources/StructureDefinition-Patient-dgc.json ==
+INFORMATION: StructureDefinition/Patient-dgc: StructureDefinition/Patient-dgc: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== /github/workspace/fsh-generated/resources/StructureDefinition-Soggetto.json ==
+INFORMATION: StructureDefinition/Soggetto: StructureDefinition/Soggetto: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/Soggetto: StructureDefinition/Soggetto: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+WARNING: StructureDefinition/Soggetto: StructureDefinition/Soggetto: StructureDefinition.name: value should not start or finish with whitespace
+WARNING: StructureDefinition/Soggetto: StructureDefinition/Soggetto: StructureDefinition.title: value should not start or finish with whitespace
+== /github/workspace/fsh-generated/resources/StructureDefinition-Vaccinazione.json ==
+INFORMATION: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.snapshot.element[12].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.snapshot.element[13].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.snapshot.element[14].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.snapshot.element[16].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.differential.element[10].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.differential.element[11].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.differential.element[12].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.differential.element[14].short: value should not start or finish with whitespace
+== /github/workspace/fsh-generated/resources/ValueSet-atc-vaccines-covid-19.json ==
+INFORMATION: ValueSet/atc-vaccines-covid-19: ValueSet/atc-vaccines-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/atc-vaccines-covid-19: ValueSet/atc-vaccines-covid-19: ValueSet.compose[0].include[0].concept[0]: The code J07BX03 is not valid in the system http://www.whocc.no/atc
+== /github/workspace/fsh-generated/resources/ValueSet-covid-19-diseases.json ==
+INFORMATION: ValueSet/covid-19-diseases: ValueSet/covid-19-diseases: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-covid-19-lab-methods.json ==
+INFORMATION: ValueSet/covid-19-lab-methods: ValueSet/covid-19-lab-methods: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/covid-19-lab-methods: ValueSet/covid-19-lab-methods: ValueSet.compose[0].include[0].concept[0]: The code LP6464-4 is not valid in the system http://loinc.org
+WARNING: ValueSet/covid-19-lab-methods: ValueSet/covid-19-lab-methods: ValueSet.compose[0].include[0].concept[1]: The code LP217198-3 is not valid in the system http://loinc.org
+== /github/workspace/fsh-generated/resources/ValueSet-covid-19-lab-result.json ==
+INFORMATION: ValueSet/covid-19-lab-result: ValueSet/covid-19-lab-result: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-covid-19-lab-test-manufacturer-and-name.json ==
+INFORMATION: ValueSet/covid-19-lab-test-manufacturer-and-name: ValueSet/covid-19-lab-test-manufacturer-and-name: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/covid-19-lab-test-manufacturer-and-name: ValueSet/covid-19-lab-test-manufacturer-and-name: ValueSet.compose[0].include[0].concept[0]: The code 1232 is not valid in the system https://covid-19-diagnostics.jrc.ec.europa.eu/devices
+WARNING: ValueSet/covid-19-lab-test-manufacturer-and-name: ValueSet/covid-19-lab-test-manufacturer-and-name: ValueSet.compose[0].include[0].concept[1]: The code 1065 is not valid in the system https://covid-19-diagnostics.jrc.ec.europa.eu/devices
+WARNING: ValueSet.where(id = 'covid-19-lab-test-manufacturer-and-name'): Error from server: Unable to provide support for code system https://covid-19-diagnostics.jrc.ec.europa.eu/devices
+== /github/workspace/fsh-generated/resources/ValueSet-icd11-vaccines-covid-19.json ==
+INFORMATION: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet.compose[0].include[0].concept[0]: The code XM1NL1 is not valid in the system http://id.who.int/icd11/mms
+WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet.compose[0].include[0].concept[1]: The code XM5DF6 is not valid in the system http://id.who.int/icd11/mms
+WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet.compose[0].include[0].concept[2]: The code XM6AT1 is not valid in the system http://id.who.int/icd11/mms
+WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet.compose[0].include[0].concept[3]: The code XM9QW8 is not valid in the system http://id.who.int/icd11/mms
+WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet.compose[0].include[0].concept[4]: The code XM0CX4 is not valid in the system http://id.who.int/icd11/mms
+WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet.compose[0].include[0].concept[5]: The code XM5JC5 is not valid in the system http://id.who.int/icd11/mms
+WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet.compose[0].include[0].concept[6]: The code XM1J92 is not valid in the system http://id.who.int/icd11/mms
+WARNING: ValueSet.where(id = 'icd11-vaccines-covid-19'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
+== /github/workspace/fsh-generated/resources/ValueSet-loinc-tests-covid-19.json ==
+INFORMATION: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[0]: The code 96766-1 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[1]: The code 96896-6 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[2]: The code 96894-1 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[3]: The code 96764-6 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[4]: The code 96763-8 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[5]: The code 96742-2 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[6]: The code 96895-8 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[7]: The code 96898-2 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[8]: The code 96899-0 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[9]: The code 96797-6 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[10]: The code 96829-7 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[11]: The code 96897-4 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[12]: The code 96900-6 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[13]: The code 96765-3 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[14]: The code 96752-1 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[15]: The code 96751-3 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[16]: The code 96741-4 is not valid in the system http://loinc.org
+WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[17]: The code 96755-4 is not valid in the system http://loinc.org
+== /github/workspace/fsh-generated/resources/ValueSet-npu-covid-19-non-rapid-tests.json ==
+INFORMATION: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[0]: The code NPU59097 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[1]: The code NPU59105 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[2]: The code NPU59106 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[3]: The code NPU59118 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[4]: The code NPU59129 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[5]: The code NPU59130 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[6]: The code NPU59144 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[7]: The code NPU59145 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[8]: The code NPU59146 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[9]: The code NPU59147 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[10]: The code NPU59148 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[11]: The code NPU59149 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[12]: The code NPU59150 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[13]: The code NPU59151 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[14]: The code NPU59152 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[15]: The code NPU59178 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[16]: The code NPU59179 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[17]: The code NPU59180 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[18]: The code NPU59191 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[19]: The code NPU59226 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[20]: The code NPU59236 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[21]: The code NPU59244 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[22]: The code NPU59283 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[23]: The code NPU59285 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[24]: The code NPU59308 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[25]: The code NPU59309 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[26]: The code NPU59311 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[27]: The code NPU59330 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[28]: The code NPU59331 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[29]: The code NPU59389 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[30]: The code NPU59808 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[31]: The code NPU59809 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[32]: The code NPU59810 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[33]: The code NPU59811 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[34]: The code NPU59828 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[35]: The code NPU59829 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[36]: The code NPU59830 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[37]: The code NPU59831 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[38]: The code NPU59832 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[39]: The code NPU59833 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[40]: The code NPU59834 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[41]: The code NPU59835 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[42]: The code NPU59836 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[43]: The code NPU59837 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[44]: The code NPU59838 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[45]: The code NPU59839 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[46]: The code NPU59953 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[47]: The code NPU59954 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[48]: The code NPU59955 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[49]: The code NPU59956 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[50]: The code NPU59957 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[51]: The code NPU59958 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[52]: The code NPU59959 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[53]: The code NPU59960 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[54]: The code NPU59962 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[55]: The code NPU60214 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[56]: The code NPU60215 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[57]: The code NPU60216 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[58]: The code NPU60218 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[59]: The code NPU60217 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[60]: The code NPU60218 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-non-rapid-tests: ValueSet/npu-covid-19-non-rapid-tests: ValueSet.compose[0].include[0].concept[61]: The code NPU60268 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet.where(id = 'npu-covid-19-non-rapid-tests'): Error from server: Unable to provide support for code system http://npu-terminology.org
+== /github/workspace/fsh-generated/resources/ValueSet-npu-covid-19-rapid-tests.json ==
+INFORMATION: ValueSet/npu-covid-19-rapid-tests: ValueSet/npu-covid-19-rapid-tests: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/npu-covid-19-rapid-tests: ValueSet/npu-covid-19-rapid-tests: ValueSet.compose[0].include[0].concept[0]: The code NPU59310 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-rapid-tests: ValueSet/npu-covid-19-rapid-tests: ValueSet.compose[0].include[0].concept[1]: The code NPU59312 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-rapid-tests: ValueSet/npu-covid-19-rapid-tests: ValueSet.compose[0].include[0].concept[2]: The code NPU59385 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-rapid-tests: ValueSet/npu-covid-19-rapid-tests: ValueSet.compose[0].include[0].concept[3]: The code NPU59386 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-rapid-tests: ValueSet/npu-covid-19-rapid-tests: ValueSet.compose[0].include[0].concept[4]: The code NPU59387 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-rapid-tests: ValueSet/npu-covid-19-rapid-tests: ValueSet.compose[0].include[0].concept[5]: The code NPU59388 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet/npu-covid-19-rapid-tests: ValueSet/npu-covid-19-rapid-tests: ValueSet.compose[0].include[0].concept[6]: The code NPU60223 is not valid in the system http://npu-terminology.org
+WARNING: ValueSet.where(id = 'npu-covid-19-rapid-tests'): Error from server: Unable to provide support for code system http://npu-terminology.org
+== /github/workspace/fsh-generated/resources/ValueSet-sct-vaccines-covid-19.json ==
+INFORMATION: ValueSet/sct-vaccines-covid-19: ValueSet/sct-vaccines-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /github/workspace/fsh-generated/resources/ValueSet-vaccines-covid-19.json ==
+INFORMATION: ValueSet/vaccines-covid-19: ValueSet/vaccines-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/vaccines-covid-19: ValueSet/vaccines-covid-19: ValueSet.compose[0].include[1].concept[0]: The code J07BX03 is not valid in the system http://www.whocc.no/atc
+== /github/workspace/fsh-generated/resources/ValueSet-vaccines-covid-19-auth-holders.json ==
+INFORMATION: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[0]: The code ORG-100001699 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[1]: The code ORG-100030215 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[2]: The code ORG-100001417 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[3]: The code ORG-100031184 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[4]: The code ORG-100006270 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[5]: The code ORG-100013793 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[6]: The code ORG-100020693 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[7]: The code ORG-100010771 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[8]: The code ORG-100024420 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet/vaccines-covid-19-auth-holders: ValueSet/vaccines-covid-19-auth-holders: ValueSet.compose[0].include[0].concept[9]: The code ORG-100032020 is not valid in the system https://spor.ema.europa.eu/v1/organisations
+WARNING: ValueSet.where(id = 'vaccines-covid-19-auth-holders'): Error from server: Unable to provide support for code system https://spor.ema.europa.eu/v1/organisations
+== /github/workspace/fsh-generated/resources/ValueSet-vaccines-covid-19-names.json ==
+INFORMATION: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[0].concept[0]: The code EU/1/20/1528 is not valid in the system https://ec.europa.eu/health/documents/community-register/html/
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[0].concept[1]: The code EU/1/20/1507 is not valid in the system https://ec.europa.eu/health/documents/community-register/html/
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[0].concept[2]: The code EU/1/21/1529 is not valid in the system https://ec.europa.eu/health/documents/community-register/html/
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[0].concept[3]: The code EU/1/20/1525 is not valid in the system https://ec.europa.eu/health/documents/community-register/html/
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[1].concept[0]: The code sputnik-v is not valid in the system http://tempvaccine.eu
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[1].concept[1]: The code CVnCoV is not valid in the system http://tempvaccine.eu
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[1].concept[2]: The code Convidecia is not valid in the system http://tempvaccine.eu
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[1].concept[3]: The code EpiVacCorona is not valid in the system http://tempvaccine.eu
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[1].concept[4]: The code BBIBP-CorV is not valid in the system http://tempvaccine.eu
+WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: ValueSet.compose[0].include[1].concept[5]: The code CoronaVac is not valid in the system http://tempvaccine.eu
+WARNING: ValueSet.where(id = 'vaccines-covid-19-names'): Error from server: Unable to provide support for code system https://ec.europa.eu/health/documents/community-register/html/
+== /github/workspace/input/hl7.fhir.it.dgc.xml ==
+INFORMATION: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+WARNING: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide.definition.resource[24].name: value should not start or finish with whitespace

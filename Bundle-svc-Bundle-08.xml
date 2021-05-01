@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="svc-Bundle-08"/>
+  <identifier>
+    <system value="http://hl7.eu/fhir/sid/uvci"/>
+    <value value="V1IT56561234212111112222333344"/>
+    <period>
+      <start value="2020-12-27"/>
+      <end value="2021-12-27"/>
+    </period>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2020-12-27T14:30:00+01:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:b1995ae1-0c52-48cb-b019-afbfc6f92881"/>
+    <resource>
+      <Composition>
+        <id value="b1995ae1-0c52-48cb-b019-afbfc6f92881"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 82593-5}">Immunization summary report</span></p><p><b>date</b>: Feb 26, 2021, 1:30:00 PM</p><p><b>author</b>: <a href="#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></p><p><b>title</b>: Vaccine Certificate December 27, 2020 14:30</p><p><b>confidentiality</b>: N</p><h3>Attesters</h3><table class="grid"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>legal</td><td>Feb 26, 2021, 1:30:00 PM</td><td><a href="#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></td></tr></table><p><b>custodian</b>: <a href="#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="82593-5"/>
+            <display value="Immunization summary report"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2"/>
+        </subject>
+        <date value="2021-02-26T14:30:00+01:00"/>
+        <author>
+          <reference value="urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d"/>
+        </author>
+        <title value="Vaccine Certificate December 27, 2020 14:30"/>
+        <confidentiality value="N"/>
+        <attester>
+          <mode value="legal"/>
+          <time value="2021-02-26T14:30:00+01:00"/>
+          <party>
+            <reference value="urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d"/>
+          </party>
+        </attester>
+        <custodian>
+          <reference value="urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d"/>
+        </custodian>
+        <section>
+          <title value="Vaccinations"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11369-6"/>
+              <display value="Hx of Immunization"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table><thead><tr><th>Date</th><th>Product</th><th>Vaccine</th><th>Dose</th></tr></thead><tbody><tr><td>2021-02-04</td><td>Comirnaty</td><td>COVID-19 mRNA Vaccine</td><td>1</td></tr><tr><td>2021-02-25</td><td>Comirnaty</td><td>COVID-19 mRNA Vaccine</td><td>2</td></tr></tbody></table></div>
+          </text>
+          <entry>
+            <reference value="urn:uuid:c4b6cb5d-9968-4624-9247-f00e13a43f8c"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:025589f0-2e11-45f5-a63d-375cbf600eb7"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2"/>
+    <resource>
+      <Patient>
+        <id value="194fa246-0822-43ce-8b1e-14efa9c197c2"/>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Birth Place</b>: Italia </p><p><b>identifier</b>: id: LGHDNT71E01D612Q</p><p><b>active</b>: true</p><p><b>name</b>: DANTE ALIGHIERI (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1971-05-01</p><p><b>address</b>: </p><ul><li>Viale della Repubblica 12, PANTIGLIATE - 20090 - Italia(HOME)</li><li>Via Capitolina 27 - interno 5b - 34131 - TRIESTE(HOME)</li></ul><h3>Contacts</h3><table class="grid"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: 33312345678</td></tr></table></div>
+        </text>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+          <valueAddress>
+            <country value="Italia">
+              <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+                <valueCoding>
+                  <system value="http://terminology.hl7.it/CodeSystem/mef-ae-comuni"/>
+                  <code value="F979"/>
+                  <display value="NUORO"/>
+                </valueCoding>
+              </extension>
+            </country>
+          </valueAddress>
+        </extension>
+        <identifier>
+          <extension url="http://hl7.it/fhir/StructureDefinition/recordCertification">
+            <extension url="when">
+              <valueDateTime value="2020-04-06"/>
+            </extension>
+            <extension url="who">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://terminology.hl7.it/CodeSystem/it-tipoEntita"/>
+                  <code value="mef"/>
+                  <display value="Ministero Economia e Finanze"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+          </extension>
+          <system value="http://hl7.it/sid/codiceFiscale"/>
+          <value value="LGHDNT71E01D612Q"/>
+        </identifier>
+        <active value="true"/>
+        <name>
+          <use value="official"/>
+          <family value="ALIGHIERI"/>
+          <given value="DANTE"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1971-05-01"/>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/address-official">
+            <valueBoolean value="true"/>
+          </extension>
+          <use value="home"/>
+          <type value="postal"/>
+          <text value="Viale della Repubblica 12, PANTIGLIATE - 20090 - Italia"/>
+          <line value="Viale della Repubblica 12, scala 2">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Viale della Repubblica"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType">
+              <valueString value="VIALE"/>
+            </extension>
+            <extension url="http://hl7.it/fhir/StructureDefinition/address-dug">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="http://registry.geodati.gov.it/dug"/>
+                  <code value="76"/>
+                  <display value="viale"/>
+                </coding>
+              </valueCodeableConcept>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase">
+              <valueString value="DELLA REPUBBLICA"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="12"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator">
+              <valueString value="scala 2"/>
+            </extension>
+          </line>
+          <city value="PANTIGLIATE"/>
+          <postalCode value="20090"/>
+          <country value="Italia"/>
+        </address>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/address-official">
+            <valueBoolean value="false"/>
+          </extension>
+          <use value="home"/>
+          <type value="postal"/>
+          <text value="Via Capitolina 27 - interno 5b - 34131 - TRIESTE"/>
+          <line value="Via Capitolina 27 - interno 5b"/>
+          <city value="TRIESTE"/>
+          <postalCode value="34131"/>
+          <country value="Italia"/>
+          <period>
+            <start value="2009-06-09T00:00:00+02:00"/>
+          </period>
+        </address>
+        <contact>
+          <telecom>
+            <system value="phone"/>
+            <value value="33312345678"/>
+          </telecom>
+        </contact>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c4b6cb5d-9968-4624-9247-f00e13a43f8c"/>
+    <resource>
+      <Immunization>
+        <id value="c4b6cb5d-9968-4624-9247-f00e13a43f8c"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {https://www.aifa.gov.it/aic 049269018}, {http://snomed.info/sct 1119349007}, {http://www.whocc.no/atc J07BX03}, {http://id.who.int/icd11/mms XM6AT1}">COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)</span></p><p><b>patient</b>: <a href="#Patient_194fa246-0822-43ce-8b1e-14efa9c197c2">See above (Patient/194fa246-0822-43ce-8b1e-14efa9c197c2)</a></p><p><b>occurrence</b>: 2021-02-04</p><p><b>lotNumber</b>: EL0725</p><p><b>site</b>: <span title="Codes: ">deltoide</span></p><p><b>route</b>: <span title="Codes: ">intramuscolare</span></p><blockquote><p><b>performer</b></p><p><b>actor</b>: <span>Az. USL Toscana centro</span></p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href="#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></p></blockquote><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://hl7.org/fhir/sid/icd-10 J12.82}">Pneumonia due to coronavirus disease 2019</span>, <span title="Codes: {http://id.who.int/icd11/mms XN109}">SARS-CoV-2</span>, <span title="Codes: {http://snomed.info/sct 840533007}">2019 novel coronavirus</span></td><td>1</td></tr></table></div>
+        </text>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="https://www.aifa.gov.it/aic"/>
+            <code value="049269018"/>
+            <display value="0,45 ML- CONCENTRATO PER DISPERSIONE INIETTABILE- VIA INTRAMUSCOLARE- FLACONCINO (VETRO) 0,45 ML (6 DOSI)- 195 FLACONCINI MULTIDOSE (1170 DOSI)"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119349007"/>
+            <display value="Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="J07BX03"/>
+            <display value="covid-19 vaccines"/>
+          </coding>
+          <coding>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6AT1"/>
+            <display value="COVID-19 vaccine, DNA based"/>
+          </coding>
+          <text value="COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)"/>
+        </vaccineCode>
+        <patient>
+          <reference value="urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2"/>
+        </patient>
+        <occurrenceDateTime value="2021-02-04"/>
+        <lotNumber value="EL0725"/>
+        <site>
+          <text value="deltoide"/>
+        </site>
+        <route>
+          <text value="intramuscolare"/>
+        </route>
+        <performer>
+          <actor>
+            <display value="Az. USL Toscana centro"/>
+          </actor>
+        </performer>
+        <performer>
+          <actor>
+            <reference value="urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d"/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <targetDisease>
+            <coding>
+              <system value="http://hl7.org/fhir/sid/icd-10"/>
+              <code value="J12.82"/>
+              <display value="Pneumonia due to coronavirus disease 2019"/>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://id.who.int/icd11/mms"/>
+              <code value="XN109"/>
+              <display value="SARS-CoV-2"/>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="840533007"/>
+              <display value="2019 novel coronavirus"/>
+            </coding>
+          </targetDisease>
+          <doseNumberPositiveInt value="1"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:025589f0-2e11-45f5-a63d-375cbf600eb7"/>
+    <resource>
+      <Immunization>
+        <id value="025589f0-2e11-45f5-a63d-375cbf600eb7"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {https://www.aifa.gov.it/aic 049269018}, {http://snomed.info/sct 1119349007}, {http://www.whocc.no/atc J07BX03}, {http://id.who.int/icd11/mms XM6AT1}">COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)</span></p><p><b>patient</b>: <a href="#Patient_194fa246-0822-43ce-8b1e-14efa9c197c2">See above (Patient/194fa246-0822-43ce-8b1e-14efa9c197c2)</a></p><p><b>occurrence</b>: 2021-02-25</p><p><b>lotNumber</b>: EL0727</p><p><b>site</b>: <span title="Codes: ">deltoide</span></p><p><b>route</b>: <span title="Codes: ">intramuscolare</span></p><blockquote><p><b>performer</b></p><p><b>actor</b>: <span>Az. USL Toscana centro</span></p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href="#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></p></blockquote><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td>*</td><td><span title="Codes: {http://hl7.org/fhir/sid/icd-10 J12.82}">Pneumonia due to coronavirus disease 2019</span>, <span title="Codes: {http://id.who.int/icd11/mms XN109}">SARS-CoV-2</span>, <span title="Codes: {http://snomed.info/sct 840533007}">2019 novel coronavirus</span></td><td>2</td></tr></table></div>
+        </text>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="https://www.aifa.gov.it/aic"/>
+            <code value="049269018"/>
+            <display value="0,45 ML- CONCENTRATO PER DISPERSIONE INIETTABILE- VIA INTRAMUSCOLARE- FLACONCINO (VETRO) 0,45 ML (6 DOSI)- 195 FLACONCINI MULTIDOSE (1170 DOSI)"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119349007"/>
+            <display value="Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product"/>
+          </coding>
+          <coding>
+            <system value="http://www.whocc.no/atc"/>
+            <code value="J07BX03"/>
+            <display value="covid-19 vaccines"/>
+          </coding>
+          <coding>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM6AT1"/>
+            <display value="COVID-19 vaccine, DNA based"/>
+          </coding>
+          <text value="COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)"/>
+        </vaccineCode>
+        <patient>
+          <reference value="urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2"/>
+        </patient>
+        <occurrenceDateTime value="2021-02-25"/>
+        <lotNumber value="EL0727"/>
+        <site>
+          <text value="deltoide"/>
+        </site>
+        <route>
+          <text value="intramuscolare"/>
+        </route>
+        <performer>
+          <actor>
+            <display value="Az. USL Toscana centro"/>
+          </actor>
+        </performer>
+        <performer>
+          <actor>
+            <reference value="urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d"/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <targetDisease>
+            <coding>
+              <system value="http://hl7.org/fhir/sid/icd-10"/>
+              <code value="J12.82"/>
+              <display value="Pneumonia due to coronavirus disease 2019"/>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://id.who.int/icd11/mms"/>
+              <code value="XN109"/>
+              <display value="SARS-CoV-2"/>
+            </coding>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="840533007"/>
+              <display value="2019 novel coronavirus"/>
+            </coding>
+          </targetDisease>
+          <doseNumberPositiveInt value="2"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d"/>
+    <resource>
+      <Organization>
+        <id value="c42c2a63-1852-4ec9-8cdc-c400ccf3d19d"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 090201, id: 201, id: 06593810481 , id: 06593810481 </p><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes: {http://terminology.hl7.it/CodeSystem/it-tipoEntita asl}">Azienda Sanitaria Locale</span></p><p><b>name</b>: AZIENDA USL TOSCANA CENTRO</p><p><b>telecom</b>: ph: (055) 6939222, fax: (055) 6939223, <a href="mailto:direttore.generale@uslcentro.toscana.it">direttore.generale@uslcentro.toscana.it</a>, <a href="www.uslcentro.toscana.it">www.uslcentro.toscana.it</a></p><p><b>address</b>: PIAZZA SANTA MARIA NUOVA 1 FIRENZE TOSCANA 50122 IT </p></div>
+        </text>
+        <identifier>
+          <system value="http://hl7.it/sid/fls"/>
+          <value value="090201"/>
+        </identifier>
+        <identifier>
+          <system value="http://hl7.it/sid/toscana/asl"/>
+          <value value="201"/>
+        </identifier>
+        <identifier>
+          <system value="http://hl7.it/sid/partitaIva"/>
+          <value value="06593810481 "/>
+        </identifier>
+        <identifier>
+          <system value="http://hl7.it/sid/codiceFiscale"/>
+          <value value="06593810481 "/>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="http://terminology.hl7.it/CodeSystem/it-tipoEntita"/>
+            <code value="asl"/>
+            <display value="Azienda Sanitaria Locale"/>
+          </coding>
+        </type>
+        <name value="AZIENDA USL TOSCANA CENTRO"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="(055) 6939222"/>
+        </telecom>
+        <telecom>
+          <system value="fax"/>
+          <value value="(055) 6939223"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="direttore.generale@uslcentro.toscana.it"/>
+        </telecom>
+        <telecom>
+          <system value="url"/>
+          <value value="www.uslcentro.toscana.it"/>
+        </telecom>
+        <address>
+          <line value="PIAZZA SANTA MARIA NUOVA 1"/>
+          <city value="FIRENZE">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+              <valueCoding>
+                <system value="http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali"/>
+                <code value="007003"/>
+                <display value="AOSTA"/>
+              </valueCoding>
+            </extension>
+          </city>
+          <district value="FI"/>
+          <state value="TOSCANA">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding">
+              <valueCoding>
+                <system value="http://terminology.hl7.it/CodeSystem/minsan-regione"/>
+                <code value="090"/>
+                <display value="TOSCANA"/>
+              </valueCoding>
+            </extension>
+          </state>
+          <postalCode value="50122"/>
+          <country value="IT"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>

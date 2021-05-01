@@ -1,0 +1,198 @@
+[
+  {
+    "id": "Covid19LabTestsNPUToLOINCMap",
+    "type": "ConceptMap",
+    "url": "http://hl7.it/fhir/dgc/ConceptMap/Covid19LabTestsNPUToLOINCMap",
+    "version": "0.1.1",
+    "name": "Covid19LabTestsNPUToLOINCMap"
+  },
+  {
+    "id": "Covid19VaccinesSnomedToICD11Map",
+    "type": "ConceptMap",
+    "url": "http://hl7.it/fhir/dgc/ConceptMap/Covid19VaccinesSnomedToICD11Map",
+    "version": "0.1.1",
+    "name": "Covid19VaccinesSnomedToICD11Map"
+  },
+  {
+    "id": "hl7.fhir.it.dgc",
+    "type": "ImplementationGuide",
+    "url": "http://hl7.it/fhir/dgc/ImplementationGuide/hl7.fhir.it.dgc",
+    "version": "0.1.1",
+    "name": "Hl7ItDgcIG"
+  },
+  {
+    "id": "Bundle-dgc",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Bundle-dgc",
+    "version": "0.1.1",
+    "name": "BundleDGC"
+  },
+  {
+    "id": "CertificatoVaccinale",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/CertificatoVaccinale",
+    "version": "0.1.1",
+    "name": "CertificatoVaccinale"
+  },
+  {
+    "id": "Composition-dgc",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Composition-dgc",
+    "version": "0.1.1",
+    "name": "CompositionDGC"
+  },
+  {
+    "id": "Immunization-dgc",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Immunization-dgc",
+    "version": "0.1.1",
+    "name": "ImmunizationDGC"
+  },
+  {
+    "id": "ImmunizationRecommendation-dgc",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/ImmunizationRecommendation-dgc",
+    "version": "0.1.1",
+    "name": "ImmunizationRecommendationDGC"
+  },
+  {
+    "id": "Location-dgc",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Location-dgc",
+    "version": "0.1.1",
+    "name": "LocationDGC"
+  },
+  {
+    "id": "Observation-dgc",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Observation-dgc",
+    "version": "0.1.1",
+    "name": "ObservationDGC"
+  },
+  {
+    "id": "OperatoreSanitario",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/OperatoreSanitario",
+    "version": "0.1.1",
+    "name": "OperatoreSanitario"
+  },
+  {
+    "id": "Organizzazione",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Organizzazione",
+    "version": "0.1.1",
+    "name": "Organizzazione"
+  },
+  {
+    "id": "Patient-dgc",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Patient-dgc",
+    "version": "0.1.1",
+    "name": "PatientDGC"
+  },
+  {
+    "id": "Soggetto",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Soggetto",
+    "version": "0.1.1",
+    "name": "Soggetto "
+  },
+  {
+    "id": "Vaccinazione",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Vaccinazione",
+    "version": "0.1.1",
+    "name": "Vaccinazione"
+  },
+  {
+    "id": "atc-vaccines-covid-19",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/atc-vaccines-covid-19",
+    "version": "0.1.1",
+    "name": "AtcCovid19Vaccines"
+  },
+  {
+    "id": "covid-19-diseases",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/covid-19-diseases",
+    "version": "0.1.1",
+    "name": "Covid19Diseases"
+  },
+  {
+    "id": "covid-19-lab-methods",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/covid-19-lab-methods",
+    "version": "0.1.1",
+    "name": "Covid19LabMethods"
+  },
+  {
+    "id": "covid-19-lab-result",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/covid-19-lab-result",
+    "version": "0.1.1",
+    "name": "Covid19LabResult"
+  },
+  {
+    "id": "covid-19-lab-test-manufacturer-and-name",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/covid-19-lab-test-manufacturer-and-name",
+    "version": "0.1.1",
+    "name": "Covid19LabTestManufacturerAndName"
+  },
+  {
+    "id": "icd11-vaccines-covid-19",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/icd11-vaccines-covid-19",
+    "version": "0.1.1",
+    "name": "Icd11Covid19Vaccines"
+  },
+  {
+    "id": "loinc-tests-covid-19",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/loinc-tests-covid-19",
+    "version": "0.1.1",
+    "name": "LoincCovid19Tests"
+  },
+  {
+    "id": "npu-covid-19-non-rapid-tests",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/npu-covid-19-non-rapid-tests",
+    "version": "0.1.1",
+    "name": "NPUCovid19NonRapidTests"
+  },
+  {
+    "id": "npu-covid-19-rapid-tests",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/npu-covid-19-rapid-tests",
+    "version": "0.1.1",
+    "name": "NPUCovid19RapidTests"
+  },
+  {
+    "id": "sct-vaccines-covid-19",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/sct-vaccines-covid-19",
+    "version": "0.1.1",
+    "name": "SctCovid19Vaccines"
+  },
+  {
+    "id": "vaccines-covid-19",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/vaccines-covid-19",
+    "version": "0.1.1",
+    "name": "Covid19Vaccines"
+  },
+  {
+    "id": "vaccines-covid-19-auth-holders",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/vaccines-covid-19-auth-holders",
+    "version": "0.1.1",
+    "name": "Covid19VaccineAuthHolders"
+  },
+  {
+    "id": "vaccines-covid-19-names",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/vaccines-covid-19-names",
+    "version": "0.1.1",
+    "name": "Covid19VaccineNames"
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "resourceType": "Immunization",
+  "id": "example-it-1-2",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {https://www.aifa.gov.it/aic 049269018}, {http://snomed.info/sct 1119349007}, {http://www.whocc.no/atc J07BX03}, {http://id.who.int/icd11/mms XM6AT1}\">COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)</span></p><p><b>patient</b>: <a href=\"Patient-example-it-1.html\">Generated Summary: id: LGHDNT71E01D612Q; active; DANTE ALIGHIERI (OFFICIAL); gender: male; birthDate: 1971-05-01</a></p><p><b>occurrence</b>: 2021-02-25</p><p><b>lotNumber</b>: EL0727</p><p><b>site</b>: <span title=\"Codes: \">deltoide</span></p><p><b>route</b>: <span title=\"Codes: \">intramuscolare</span></p><blockquote><p><b>performer</b></p><p><b>actor</b>: <span>Az. USL Toscana centro</span></p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href=\"Organization-org-example-it.html\">Generated Summary: id: 090201, id: 201, id: 06593810481 , id: 06593810481 ; active; <span title=\"Codes: {http://terminology.hl7.it/CodeSystem/it-tipoEntita asl}\">Azienda Sanitaria Locale</span>; name: AZIENDA USL TOSCANA CENTRO; Phone: (055) 6939222, Fax: (055) 6939223, mailto:direttore.generale@uslcentro.toscana.it, http://www.uslcentro.toscana.i...</a></p></blockquote><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://hl7.org/fhir/sid/icd-10 J12.82}\">Pneumonia due to coronavirus disease 2019</span>, <span title=\"Codes: {http://id.who.int/icd11/mms XN109}\">SARS-CoV-2</span>, <span title=\"Codes: {http://snomed.info/sct 840533007}\">2019 novel coronavirus</span></td><td>2</td></tr></table></div>"
+  },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "https://www.aifa.gov.it/aic",
+        "code": "049269018",
+        "display": "0,45 ML- CONCENTRATO PER DISPERSIONE INIETTABILE- VIA INTRAMUSCOLARE- FLACONCINO (VETRO) 0,45 ML (6 DOSI)- 195 FLACONCINI MULTIDOSE (1170 DOSI)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1119349007",
+        "display": "Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product"
+      },
+      {
+        "system": "http://www.whocc.no/atc",
+        "code": "J07BX03",
+        "display": "covid-19 vaccines"
+      },
+      {
+        "system": "http://id.who.int/icd11/mms",
+        "code": "XM6AT1",
+        "display": "COVID-19 vaccine, DNA based"
+      }
+    ],
+    "text": "COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)"
+  },
+  "patient": {
+    "reference": "Patient/example-it-1"
+  },
+  "occurrenceDateTime": "2021-02-25",
+  "lotNumber": "EL0727",
+  "site": {
+    "text": "deltoide"
+  },
+  "route": {
+    "text": "intramuscolare"
+  },
+  "performer": [
+    {
+      "actor": {
+        "display": "Az. USL Toscana centro"
+      }
+    },
+    {
+      "actor": {
+        "reference": "Organization/org-example-it"
+      }
+    }
+  ],
+  "protocolApplied": [
+    {
+      "targetDisease": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/sid/icd-10",
+              "code": "J12.82",
+              "display": "Pneumonia due to coronavirus disease 2019"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "system": "http://id.who.int/icd11/mms",
+              "code": "XN109",
+              "display": "SARS-CoV-2"
+            }
+          ]
+        },
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "840533007",
+              "display": "2019 novel coronavirus"
+            }
+          ]
+        }
+      ],
+      "doseNumberPositiveInt": 2
+    }
+  ]
+}

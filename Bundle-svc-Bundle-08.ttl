@@ -1,0 +1,509 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/Bundle/svc-Bundle-08> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "svc-Bundle-08"];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "http://hl7.eu/fhir/sid/uvci" ];
+     fhir:Identifier.value [ fhir:value "V1IT56561234212111112222333344" ];
+     fhir:Identifier.period [
+       fhir:Period.start [ fhir:value "2020-12-27"^^xsd:date ];
+       fhir:Period.end [ fhir:value "2021-12-27"^^xsd:date ]
+     ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2020-12-27T14:30:00+01:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:b1995ae1-0c52-48cb-b019-afbfc6f92881" ];
+     fhir:Bundle.entry.resource <urn:uuid:b1995ae1-0c52-48cb-b019-afbfc6f92881>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2" ];
+     fhir:Bundle.entry.resource <urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:c4b6cb5d-9968-4624-9247-f00e13a43f8c" ];
+     fhir:Bundle.entry.resource <urn:uuid:c4b6cb5d-9968-4624-9247-f00e13a43f8c>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:025589f0-2e11-45f5-a63d-375cbf600eb7" ];
+     fhir:Bundle.entry.resource <urn:uuid:025589f0-2e11-45f5-a63d-375cbf600eb7>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d" ];
+     fhir:Bundle.entry.resource <urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d>
+  ] .
+
+<urn:uuid:b1995ae1-0c52-48cb-b019-afbfc6f92881> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "b1995ae1-0c52-48cb-b019-afbfc6f92881"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 82593-5}\">Immunization summary report</span></p><p><b>date</b>: Feb 26, 2021, 1:30:00 PM</p><p><b>author</b>: <a href=\"#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d\">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></p><p><b>title</b>: Vaccine Certificate December 27, 2020 14:30</p><p><b>confidentiality</b>: N</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>legal</td><td>Feb 26, 2021, 1:30:00 PM</td><td><a href=\"#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d\">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></td></tr></table><p><b>custodian</b>: <a href=\"#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d\">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></p></div>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:82593-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "82593-5" ];
+       fhir:Coding.display [ fhir:value "Immunization summary report" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2" ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-02-26T14:30:00+01:00"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d" ]
+  ];
+  fhir:Composition.title [ fhir:value "Vaccine Certificate December 27, 2020 14:30"];
+  fhir:Composition.confidentiality [ fhir:value "N"];
+  fhir:Composition.attester [
+     fhir:index 0;
+     fhir:Composition.attester.mode [ fhir:value "legal" ];
+     fhir:Composition.attester.time [ fhir:value "2021-02-26T14:30:00+01:00"^^xsd:dateTime ];
+     fhir:Composition.attester.party [
+       fhir:Reference.reference [ fhir:value "urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d" ]
+     ]
+  ];
+  fhir:Composition.custodian [
+     fhir:Reference.reference [ fhir:value "urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d" ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Vaccinations" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:11369-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "11369-6" ];
+         fhir:Coding.display [ fhir:value "Hx of Immunization" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Date</th><th>Product</th><th>Vaccine</th><th>Dose</th></tr></thead><tbody><tr><td>2021-02-04</td><td>Comirnaty</td><td>COVID-19 mRNA Vaccine</td><td>1</td></tr><tr><td>2021-02-25</td><td>Comirnaty</td><td>COVID-19 mRNA Vaccine</td><td>2</td></tr></tbody></table></div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "urn:uuid:c4b6cb5d-9968-4624-9247-f00e13a43f8c" ]
+     ], [
+       fhir:index 1;
+       fhir:Reference.reference [ fhir:value "urn:uuid:025589f0-2e11-45f5-a63d-375cbf600eb7" ]
+     ]
+  ] .
+
+<urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "194fa246-0822-43ce-8b1e-14efa9c197c2"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Birth Place</b>: Italia </p><p><b>identifier</b>: id: LGHDNT71E01D612Q</p><p><b>active</b>: true</p><p><b>name</b>: DANTE ALIGHIERI (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1971-05-01</p><p><b>address</b>: </p><ul><li>Viale della Repubblica 12, PANTIGLIATE - 20090 - Italia(HOME)</li><li>Via Capitolina 27 - interno 5b - 34131 - TRIESTE(HOME)</li></ul><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Telecom</b></td></tr><tr><td>*</td><td>ph: 33312345678</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ];
+     fhir:Extension.valueAddress [
+       fhir:Address.country [
+         fhir:value "Italia";
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding" ];
+           fhir:Extension.valueCoding [
+             fhir:Coding.system [ fhir:value "http://terminology.hl7.it/CodeSystem/mef-ae-comuni" ];
+             fhir:Coding.code [ fhir:value "F979" ];
+             fhir:Coding.display [ fhir:value "NUORO" ]
+           ]
+         ]
+       ]
+     ]
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "when" ];
+         fhir:Extension.valueDateTime [ fhir:value "2020-04-06"^^xsd:date ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "who" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://terminology.hl7.it/CodeSystem/it-tipoEntita" ];
+             fhir:Coding.code [ fhir:value "mef" ];
+             fhir:Coding.display [ fhir:value "Ministero Economia e Finanze" ]
+           ]
+         ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.it/fhir/StructureDefinition/recordCertification" ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://hl7.it/sid/codiceFiscale" ];
+     fhir:Identifier.value [ fhir:value "LGHDNT71E01D612Q" ]
+  ];
+  fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "ALIGHIERI" ];
+     fhir:HumanName.given [
+       fhir:value "DANTE";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1971-05-01"^^xsd:date];
+  fhir:Patient.address [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/address-official" ];
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     ];
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "postal" ];
+     fhir:Address.text [ fhir:value "Viale della Repubblica 12, PANTIGLIATE - 20090 - Italia" ];
+     fhir:Address.line [
+       fhir:value "Viale della Repubblica 12, scala 2";
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ];
+         fhir:Extension.valueString [ fhir:value "Viale della Repubblica" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameType" ];
+         fhir:Extension.valueString [ fhir:value "VIALE" ]
+       ], [
+         fhir:index 2;
+         fhir:Extension.url [ fhir:value "http://hl7.it/fhir/StructureDefinition/address-dug" ];
+         fhir:Extension.valueCodeableConcept [
+           fhir:CodeableConcept.coding [
+             fhir:index 0;
+             fhir:Coding.system [ fhir:value "http://registry.geodati.gov.it/dug" ];
+             fhir:Coding.code [ fhir:value "76" ];
+             fhir:Coding.display [ fhir:value "viale" ]
+           ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetNameBase" ];
+         fhir:Extension.valueString [ fhir:value "DELLA REPUBBLICA" ]
+       ], [
+         fhir:index 4;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ];
+         fhir:Extension.valueString [ fhir:value "12" ]
+       ], [
+         fhir:index 5;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator" ];
+         fhir:Extension.valueString [ fhir:value "scala 2" ]
+       ]
+     ];
+     fhir:Address.city [ fhir:value "PANTIGLIATE" ];
+     fhir:Address.postalCode [ fhir:value "20090" ];
+     fhir:Address.country [ fhir:value "Italia" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/address-official" ];
+       fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+     ];
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.type [ fhir:value "postal" ];
+     fhir:Address.text [ fhir:value "Via Capitolina 27 - interno 5b - 34131 - TRIESTE" ];
+     fhir:Address.line [
+       fhir:value "Via Capitolina 27 - interno 5b";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "TRIESTE" ];
+     fhir:Address.postalCode [ fhir:value "34131" ];
+     fhir:Address.country [ fhir:value "Italia" ];
+     fhir:Address.period [
+       fhir:Period.start [ fhir:value "2009-06-09T00:00:00+02:00"^^xsd:dateTime ]
+     ]
+  ];
+  fhir:Patient.contact [
+     fhir:index 0;
+     fhir:Patient.contact.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "phone" ];
+       fhir:ContactPoint.value [ fhir:value "33312345678" ]
+     ]
+  ] .
+
+<urn:uuid:c4b6cb5d-9968-4624-9247-f00e13a43f8c> a fhir:Immunization;
+  fhir:Resource.id [ fhir:value "c4b6cb5d-9968-4624-9247-f00e13a43f8c"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {https://www.aifa.gov.it/aic 049269018}, {http://snomed.info/sct 1119349007}, {http://www.whocc.no/atc J07BX03}, {http://id.who.int/icd11/mms XM6AT1}\">COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)</span></p><p><b>patient</b>: <a href=\"#Patient_194fa246-0822-43ce-8b1e-14efa9c197c2\">See above (Patient/194fa246-0822-43ce-8b1e-14efa9c197c2)</a></p><p><b>occurrence</b>: 2021-02-04</p><p><b>lotNumber</b>: EL0725</p><p><b>site</b>: <span title=\"Codes: \">deltoide</span></p><p><b>route</b>: <span title=\"Codes: \">intramuscolare</span></p><blockquote><p><b>performer</b></p><p><b>actor</b>: <span>Az. USL Toscana centro</span></p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href=\"#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d\">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></p></blockquote><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://hl7.org/fhir/sid/icd-10 J12.82}\">Pneumonia due to coronavirus disease 2019</span>, <span title=\"Codes: {http://id.who.int/icd11/mms XN109}\">SARS-CoV-2</span>, <span title=\"Codes: {http://snomed.info/sct 840533007}\">2019 novel coronavirus</span></td><td>1</td></tr></table></div>"
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.aifa.gov.it/aic" ];
+       fhir:Coding.code [ fhir:value "049269018" ];
+       fhir:Coding.display [ fhir:value "0,45 ML- CONCENTRATO PER DISPERSIONE INIETTABILE- VIA INTRAMUSCOLARE- FLACONCINO (VETRO) 0,45 ML (6 DOSI)- 195 FLACONCINI MULTIDOSE (1170 DOSI)" ]
+     ], [
+       fhir:index 1;
+       a sct:1119349007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1119349007" ];
+       fhir:Coding.display [ fhir:value "Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product" ]
+     ], [
+       fhir:index 2;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "J07BX03" ];
+       fhir:Coding.display [ fhir:value "covid-19 vaccines" ]
+     ], [
+       fhir:index 3;
+       fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+       fhir:Coding.code [ fhir:value "XM6AT1" ];
+       fhir:Coding.display [ fhir:value "COVID-19 vaccine, DNA based" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)" ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.reference [ fhir:value "urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2" ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-04"^^xsd:date];
+  fhir:Immunization.lotNumber [ fhir:value "EL0725"];
+  fhir:Immunization.site [
+     fhir:CodeableConcept.text [ fhir:value "deltoide" ]
+  ];
+  fhir:Immunization.route [
+     fhir:CodeableConcept.text [ fhir:value "intramuscolare" ]
+  ];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.display [ fhir:value "Az. USL Toscana centro" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.reference [ fhir:value "urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d" ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.targetDisease [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10" ];
+         fhir:Coding.code [ fhir:value "J12.82" ];
+         fhir:Coding.display [ fhir:value "Pneumonia due to coronavirus disease 2019" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+         fhir:Coding.code [ fhir:value "XN109" ];
+         fhir:Coding.display [ fhir:value "SARS-CoV-2" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:840533007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "840533007" ];
+         fhir:Coding.display [ fhir:value "2019 novel coronavirus" ]
+       ]
+     ];
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ]
+  ] .
+
+<urn:uuid:025589f0-2e11-45f5-a63d-375cbf600eb7> a fhir:Immunization;
+  fhir:Resource.id [ fhir:value "025589f0-2e11-45f5-a63d-375cbf600eb7"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {https://www.aifa.gov.it/aic 049269018}, {http://snomed.info/sct 1119349007}, {http://www.whocc.no/atc J07BX03}, {http://id.who.int/icd11/mms XM6AT1}\">COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)</span></p><p><b>patient</b>: <a href=\"#Patient_194fa246-0822-43ce-8b1e-14efa9c197c2\">See above (Patient/194fa246-0822-43ce-8b1e-14efa9c197c2)</a></p><p><b>occurrence</b>: 2021-02-25</p><p><b>lotNumber</b>: EL0727</p><p><b>site</b>: <span title=\"Codes: \">deltoide</span></p><p><b>route</b>: <span title=\"Codes: \">intramuscolare</span></p><blockquote><p><b>performer</b></p><p><b>actor</b>: <span>Az. USL Toscana centro</span></p></blockquote><blockquote><p><b>performer</b></p><p><b>actor</b>: <a href=\"#Organization_c42c2a63-1852-4ec9-8cdc-c400ccf3d19d\">See above (Organization/c42c2a63-1852-4ec9-8cdc-c400ccf3d19d)</a></p></blockquote><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://hl7.org/fhir/sid/icd-10 J12.82}\">Pneumonia due to coronavirus disease 2019</span>, <span title=\"Codes: {http://id.who.int/icd11/mms XN109}\">SARS-CoV-2</span>, <span title=\"Codes: {http://snomed.info/sct 840533007}\">2019 novel coronavirus</span></td><td>2</td></tr></table></div>"
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.aifa.gov.it/aic" ];
+       fhir:Coding.code [ fhir:value "049269018" ];
+       fhir:Coding.display [ fhir:value "0,45 ML- CONCENTRATO PER DISPERSIONE INIETTABILE- VIA INTRAMUSCOLARE- FLACONCINO (VETRO) 0,45 ML (6 DOSI)- 195 FLACONCINI MULTIDOSE (1170 DOSI)" ]
+     ], [
+       fhir:index 1;
+       a sct:1119349007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1119349007" ];
+       fhir:Coding.display [ fhir:value "Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product" ]
+     ], [
+       fhir:index 2;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ];
+       fhir:Coding.code [ fhir:value "J07BX03" ];
+       fhir:Coding.display [ fhir:value "covid-19 vaccines" ]
+     ], [
+       fhir:index 3;
+       fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+       fhir:Coding.code [ fhir:value "XM6AT1" ];
+       fhir:Coding.display [ fhir:value "COVID-19 vaccine, DNA based" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "COMIRNATY Vaccino a mRNA contro COVID-19  (modificato a livello dei nucleosidi)" ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.reference [ fhir:value "urn:uuid:194fa246-0822-43ce-8b1e-14efa9c197c2" ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-25"^^xsd:date];
+  fhir:Immunization.lotNumber [ fhir:value "EL0727"];
+  fhir:Immunization.site [
+     fhir:CodeableConcept.text [ fhir:value "deltoide" ]
+  ];
+  fhir:Immunization.route [
+     fhir:CodeableConcept.text [ fhir:value "intramuscolare" ]
+  ];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.display [ fhir:value "Az. USL Toscana centro" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.reference [ fhir:value "urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d" ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.targetDisease [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/icd-10" ];
+         fhir:Coding.code [ fhir:value "J12.82" ];
+         fhir:Coding.display [ fhir:value "Pneumonia due to coronavirus disease 2019" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+         fhir:Coding.code [ fhir:value "XN109" ];
+         fhir:Coding.display [ fhir:value "SARS-CoV-2" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:840533007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "840533007" ];
+         fhir:Coding.display [ fhir:value "2019 novel coronavirus" ]
+       ]
+     ];
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+  ] .
+
+<urn:uuid:c42c2a63-1852-4ec9-8cdc-c400ccf3d19d> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "c42c2a63-1852-4ec9-8cdc-c400ccf3d19d"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 090201, id: 201, id: 06593810481 , id: 06593810481 </p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.it/CodeSystem/it-tipoEntita asl}\">Azienda Sanitaria Locale</span></p><p><b>name</b>: AZIENDA USL TOSCANA CENTRO</p><p><b>telecom</b>: ph: (055) 6939222, fax: (055) 6939223, <a href=\"mailto:direttore.generale@uslcentro.toscana.it\">direttore.generale@uslcentro.toscana.it</a>, <a href=\"www.uslcentro.toscana.it\">www.uslcentro.toscana.it</a></p><p><b>address</b>: PIAZZA SANTA MARIA NUOVA 1 FIRENZE TOSCANA 50122 IT </p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://hl7.it/sid/fls" ];
+     fhir:Identifier.value [ fhir:value "090201" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "http://hl7.it/sid/toscana/asl" ];
+     fhir:Identifier.value [ fhir:value "201" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.system [ fhir:value "http://hl7.it/sid/partitaIva" ];
+     fhir:Identifier.value [ fhir:value "06593810481 " ]
+  ], [
+     fhir:index 3;
+     fhir:Identifier.system [ fhir:value "http://hl7.it/sid/codiceFiscale" ];
+     fhir:Identifier.value [ fhir:value "06593810481 " ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.it/CodeSystem/it-tipoEntita" ];
+       fhir:Coding.code [ fhir:value "asl" ];
+       fhir:Coding.display [ fhir:value "Azienda Sanitaria Locale" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "AZIENDA USL TOSCANA CENTRO"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "(055) 6939222" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "fax" ];
+     fhir:ContactPoint.value [ fhir:value "(055) 6939223" ]
+  ], [
+     fhir:index 2;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "direttore.generale@uslcentro.toscana.it" ]
+  ], [
+     fhir:index 3;
+     fhir:ContactPoint.system [ fhir:value "url" ];
+     fhir:ContactPoint.value [ fhir:value "www.uslcentro.toscana.it" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Address.line [
+       fhir:value "PIAZZA SANTA MARIA NUOVA 1";
+       fhir:index 0
+     ];
+     fhir:Address.city [
+       fhir:value "FIRENZE";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali" ];
+           fhir:Coding.code [ fhir:value "007003" ];
+           fhir:Coding.display [ fhir:value "AOSTA" ]
+         ]
+       ]
+     ];
+     fhir:Address.district [ fhir:value "FI" ];
+     fhir:Address.state [
+       fhir:value "TOSCANA";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.system [ fhir:value "http://terminology.hl7.it/CodeSystem/minsan-regione" ];
+           fhir:Coding.code [ fhir:value "090" ];
+           fhir:Coding.display [ fhir:value "TOSCANA" ]
+         ]
+       ]
+     ];
+     fhir:Address.postalCode [ fhir:value "50122" ];
+     fhir:Address.country [ fhir:value "IT" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/Bundle/svc-Bundle-08.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

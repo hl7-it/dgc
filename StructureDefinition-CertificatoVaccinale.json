@@ -1,0 +1,464 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CertificatoVaccinale",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-CertificatoVaccinale-definitions.html#CertificatoVaccinale\" title=\"Certificato Vaccinale\">CertificatoVaccinale</a><a name=\"CertificatoVaccinale\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Element\">Element</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">This is an abstract profile<br/>Certificato Vaccinale</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-CertificatoVaccinale-definitions.html#CertificatoVaccinale.soggetto\" title=\"Dati del soggetto a cui questo certificato vaccinale si riferisce\">soggetto</a><a name=\"CertificatoVaccinale.soggetto\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-Soggetto.html\">Soggetto</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">soggetto del certificato</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-CertificatoVaccinale-definitions.html#CertificatoVaccinale.dataCreazione\" title=\"Data di creazione del certificato\">dataCreazione</a><a name=\"CertificatoVaccinale.dataCreazione\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Data e Ora del Certificato Vaccinale </td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-CertificatoVaccinale-definitions.html#CertificatoVaccinale.dataFirma\" title=\"Data e ora firma certificato\">dataFirma</a><a name=\"CertificatoVaccinale.dataFirma\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Data e Ora firma Certificato</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-CertificatoVaccinale-definitions.html#CertificatoVaccinale.personaResponsabile\" title=\"Persona responsabile del rilascio del certificato.\">personaResponsabile</a><a name=\"CertificatoVaccinale.personaResponsabile\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-OperatoreSanitario.html\">OperatoreSanitario</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Persona responsabile del rilascio del certificato.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-CertificatoVaccinale-definitions.html#CertificatoVaccinale.organizzazioneResponsabile\" title=\"Organizzazione responsabile del rilascio del certificato. \nCertificati generati automaticamente\">organizzazioneResponsabile</a><a name=\"CertificatoVaccinale.organizzazioneResponsabile\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-Organizzazione.html\">Organizzazione</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Organizzazione responsabile del rilascio del certificato. </td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-CertificatoVaccinale-definitions.html#CertificatoVaccinale.vaccinazione\" title=\"Dettagli relativi alla vaccinazione effettuata o che doveva essere effettuata (e.g. esonero, differimento)\">vaccinazione</a><a name=\"CertificatoVaccinale.vaccinazione\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-Vaccinazione.html\">Vaccinazione</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Dati Vaccinzione o Esonero<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url": "http://hl7.it/fhir/dgc/StructureDefinition/CertificatoVaccinale",
+  "version": "0.1.1",
+  "name": "CertificatoVaccinale",
+  "title": "Certificato Vaccinale",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-05-01T17:30:35+00:00",
+  "publisher": "HL7 Italia",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.it"
+        }
+      ]
+    }
+  ],
+  "description": "Data Set Certificato Vaccinale",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "IT"
+        }
+      ]
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "fhir",
+      "uri": "hl7.org/fhir/r4",
+      "name": "FHIR"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": true,
+  "type": "CertificatoVaccinale",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "CertificatoVaccinale",
+        "path": "CertificatoVaccinale",
+        "short": "Certificato Vaccinale",
+        "definition": "Certificato Vaccinale",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "Element",
+          "min": 0,
+          "max": "*"
+        },
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.id",
+        "path": "CertificatoVaccinale.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.extension",
+        "path": "CertificatoVaccinale.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.soggetto",
+        "path": "CertificatoVaccinale.soggetto",
+        "short": "soggetto del certificato",
+        "definition": "Dati del soggetto a cui questo certificato vaccinale si riferisce",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "CertificatoVaccinale.soggetto",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.it/fhir/dgc/StructureDefinition/Soggetto"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').subject"
+          },
+          {
+            "identity": "fhir",
+            "map": "Immunization.conformsTo('http://hl7.eu/fhir/ig/dgc/StructureDefinition/Immunization-svc').patient"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.dataCreazione",
+        "path": "CertificatoVaccinale.dataCreazione",
+        "short": "Data e Ora del Certificato Vaccinale ",
+        "definition": "Data di creazione del certificato",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CertificatoVaccinale.dataCreazione",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').date"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.dataFirma",
+        "path": "CertificatoVaccinale.dataFirma",
+        "short": "Data e Ora firma Certificato",
+        "definition": "Data e ora firma certificato",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CertificatoVaccinale.dataFirma",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').attester.time"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.personaResponsabile",
+        "path": "CertificatoVaccinale.personaResponsabile",
+        "short": "Persona responsabile del rilascio del certificato.",
+        "definition": "Persona responsabile del rilascio del certificato.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CertificatoVaccinale.personaResponsabile",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.it/fhir/dgc/StructureDefinition/OperatoreSanitario"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').attester.party"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.organizzazioneResponsabile",
+        "path": "CertificatoVaccinale.organizzazioneResponsabile",
+        "short": "Organizzazione responsabile del rilascio del certificato. ",
+        "definition": "Organizzazione responsabile del rilascio del certificato. \nCertificati generati automaticamente",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "CertificatoVaccinale.organizzazioneResponsabile",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "http://hl7.it/fhir/dgc/StructureDefinition/Organizzazione"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').attester.party"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.vaccinazione",
+        "path": "CertificatoVaccinale.vaccinazione",
+        "short": "Dati Vaccinzione o Esonero",
+        "definition": "Dettagli relativi alla vaccinazione effettuata o che doveva essere effettuata (e.g. esonero, differimento)",
+        "min": 1,
+        "max": "*",
+        "base": {
+          "path": "CertificatoVaccinale.vaccinazione",
+          "min": 1,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "http://hl7.it/fhir/dgc/StructureDefinition/Vaccinazione"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Immunization.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Immunization-svc')"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "CertificatoVaccinale",
+        "path": "CertificatoVaccinale",
+        "short": "Certificato Vaccinale",
+        "definition": "Certificato Vaccinale",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "CertificatoVaccinale.soggetto",
+        "path": "CertificatoVaccinale.soggetto",
+        "short": "soggetto del certificato",
+        "definition": "Dati del soggetto a cui questo certificato vaccinale si riferisce",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.it/fhir/dgc/StructureDefinition/Soggetto"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').subject"
+          },
+          {
+            "identity": "fhir",
+            "map": "Immunization.conformsTo('http://hl7.eu/fhir/ig/dgc/StructureDefinition/Immunization-svc').patient"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.dataCreazione",
+        "path": "CertificatoVaccinale.dataCreazione",
+        "short": "Data e Ora del Certificato Vaccinale ",
+        "definition": "Data di creazione del certificato",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').date"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.dataFirma",
+        "path": "CertificatoVaccinale.dataFirma",
+        "short": "Data e Ora firma Certificato",
+        "definition": "Data e ora firma certificato",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').attester.time"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.personaResponsabile",
+        "path": "CertificatoVaccinale.personaResponsabile",
+        "short": "Persona responsabile del rilascio del certificato.",
+        "definition": "Persona responsabile del rilascio del certificato.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.it/fhir/dgc/StructureDefinition/OperatoreSanitario"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').attester.party"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.organizzazioneResponsabile",
+        "path": "CertificatoVaccinale.organizzazioneResponsabile",
+        "short": "Organizzazione responsabile del rilascio del certificato. ",
+        "definition": "Organizzazione responsabile del rilascio del certificato. \nCertificati generati automaticamente",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "http://hl7.it/fhir/dgc/StructureDefinition/Organizzazione"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').attester.party"
+          }
+        ]
+      },
+      {
+        "id": "CertificatoVaccinale.vaccinazione",
+        "path": "CertificatoVaccinale.vaccinazione",
+        "short": "Dati Vaccinzione o Esonero",
+        "definition": "Dettagli relativi alla vaccinazione effettuata o che doveva essere effettuata (e.g. esonero, differimento)",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://hl7.it/fhir/dgc/StructureDefinition/Vaccinazione"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "fhir",
+            "map": "Immunization.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Immunization-svc')"
+          }
+        ]
+      }
+    ]
+  }
+}

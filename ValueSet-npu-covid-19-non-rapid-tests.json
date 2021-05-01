@@ -1,0 +1,293 @@
+{
+  "resourceType": "ValueSet",
+  "id": "npu-covid-19-non-rapid-tests",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://npu-terminology.org</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>NPU59097</td><td>Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59105</td><td>Secr(Nasoph)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59106</td><td>Secr(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59118</td><td>Ex—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59129</td><td>Secr(Trachea)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59130</td><td>BAL—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59144</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody; arb.c.(proc.) = ?</td></tr><tr><td>NPU59145</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody; arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59146</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody(IgM); arb.c.(proc.) = ?</td></tr><tr><td>NPU59147</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody(IgG); arb.c.(proc.) = ?</td></tr><tr><td>NPU59148</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody(IgM); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59149</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody(IgG); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59150</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody(IgA); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59151</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody(IgA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59152</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody; arb.c.(list; proc.)</td></tr><tr><td>NPU59178</td><td>Secr(Pharynx)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59179</td><td>U—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59180</td><td>F—Severe acute respiratory syndrome coronavirus 2(RNA); arb.cont.(proc.) = ?</td></tr><tr><td>NPU59191</td><td>P—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59226</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody(neutralizing); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59236</td><td>Saliva—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59244</td><td>P—Severe acute respiratory syndrome coronavirus 2 antibody(IgG+IgM); arb.c.(proc.) = ?</td></tr><tr><td>NPU59283</td><td>P—Severe acute respiratory syndrome coronavirus 2(RNA); arb.num.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59285</td><td>Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.num.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59308</td><td>Saliva—Severe acute respiratory syndrome coronavirus 2(ag); mass c. = ? ng/L</td></tr><tr><td>NPU59309</td><td>P—Severe acute respiratory syndrome coronavirus 2(ag); mass c. = ? ng/L</td></tr><tr><td>NPU59311</td><td>Secr(spec.)—Severe acute respiratory syndrome coronavirus 2(ag); mass c. = ? ng/L</td></tr><tr><td>NPU59330</td><td>Csf—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59331</td><td>Tissue(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.cont.(proc.) = ?</td></tr><tr><td>NPU59389</td><td>BAL—Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?</td></tr><tr><td>NPU59808</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody; arb.c.(proc.) = ?</td></tr><tr><td>NPU59809</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody; arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59810</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody; arb.c.(proc.) = ?</td></tr><tr><td>NPU59811</td><td>P—Severe acute respiraNPU60268tory syndrome coronavirus 2 (Nucleoprotein) antibody; arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59828</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59829</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgA); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59830</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgA); arb.c.(proc.) = ?</td></tr><tr><td>NPU59831</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgA); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59832</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgG); arb.c.(proc.) = ?</td></tr><tr><td>NPU59833</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgG); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59834</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgG); arb.c.(proc.) = ?</td></tr><tr><td>NPU59835</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgG); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59836</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgM); arb.c.(proc.) = ?</td></tr><tr><td>NPU59837</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgM); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59838</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgM); arb.c.(proc.) = ?</td></tr><tr><td>NPU59839</td><td>P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgM); arb.subst.c.(proc.) = ? (p.d.u.)</td></tr><tr><td>NPU59953</td><td>Saliva—Severe acute respiratory syndrome coronavirus 2, Spike glycoprotein(ag); mass c. = ? ng/L</td></tr><tr><td>NPU59954</td><td>P—Severe acute respiratory syndrome coronavirus 2, Spike glycoprotein(ag); mass c. = ? ng/L</td></tr><tr><td>NPU59955</td><td>Secr(Nasoph)—Severe acute respiratory syndrome coronavirus 2, Spike glycoprotein(ag); arb.c.(proc.) = ?</td></tr><tr><td>NPU59956</td><td>Secr(spec.)—Severe acute respiratory syndrome coronavirus 2, Spike glycoprotein(ag); mass c. = ? ng/L</td></tr><tr><td>NPU59957</td><td>Secr(Nasoph)—Severe acute respiratory syndrome coronavirus 2, Nucleoprotein(ag); arb.c.(proc.) = ?</td></tr><tr><td>NPU59958</td><td>P—Severe acute respiratory syndrome coronavirus 2, Nucleoprotein(ag); mass c. = ? ng/L</td></tr><tr><td>NPU59959</td><td>Secr(spec.)—Severe acute respiratory syndrome coronavirus 2, Nucleoprotein(ag); mass c. = ? ng/L</td></tr><tr><td>NPU59960</td><td>Saliva—Severe acute respiratory syndrome coronavirus 2, Nucleoprotein(ag); mass c. = ? ng/L</td></tr><tr><td>NPU59962</td><td>Csf—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody; arb.c.(proc.) = ?</td></tr><tr><td>NPU60214</td><td>Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(B.1.1.7; RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU60215</td><td>Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(B.1.351; RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU60216</td><td>Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(B.1.1.28.1; RNA); arb.c.(proc.) = ?</td></tr><tr><td>NPU60218</td><td>Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); variation(proc.) = ?</td></tr><tr><td>NPU60217</td><td>Syst(spec.)—Genome(SARS-CoV-2); seq.var.(proc.) = ?</td></tr><tr><td>NPU60218</td><td>Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); variation(proc.) = ?</td></tr><tr><td>NPU60268</td><td>Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA; S gene); seq.var.(proc) = ?</td></tr></table></li></ul></div>"
+  },
+  "url": "http://hl7.it/fhir/dgc/ValueSet/npu-covid-19-non-rapid-tests",
+  "version": "0.1.1",
+  "name": "NPUCovid19NonRapidTests",
+  "title": "NPU Test List, Non-Rapid (COVID-19)",
+  "status": "active",
+  "date": "2021-05-01T17:30:35+00:00",
+  "publisher": "HL7 Italia",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.it"
+        }
+      ]
+    }
+  ],
+  "description": "Test List, Non-Rapid (COVID-19) from [NPU]",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "IT"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://npu-terminology.org",
+        "concept": [
+          {
+            "code": "NPU59097",
+            "display": "Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59105",
+            "display": "Secr(Nasoph)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59106",
+            "display": "Secr(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59118",
+            "display": "Ex—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59129",
+            "display": "Secr(Trachea)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59130",
+            "display": "BAL—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59144",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody; arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59145",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody; arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59146",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody(IgM); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59147",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody(IgG); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59148",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody(IgM); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59149",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody(IgG); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59150",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody(IgA); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59151",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody(IgA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59152",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody; arb.c.(list; proc.)"
+          },
+          {
+            "code": "NPU59178",
+            "display": "Secr(Pharynx)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59179",
+            "display": "U—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59180",
+            "display": "F—Severe acute respiratory syndrome coronavirus 2(RNA); arb.cont.(proc.) = ?"
+          },
+          {
+            "code": "NPU59191",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59226",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody(neutralizing); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59236",
+            "display": "Saliva—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59244",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 antibody(IgG+IgM); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59283",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2(RNA); arb.num.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59285",
+            "display": "Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.num.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59308",
+            "display": "Saliva—Severe acute respiratory syndrome coronavirus 2(ag); mass c. = ? ng/L"
+          },
+          {
+            "code": "NPU59309",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2(ag); mass c. = ? ng/L"
+          },
+          {
+            "code": "NPU59311",
+            "display": "Secr(spec.)—Severe acute respiratory syndrome coronavirus 2(ag); mass c. = ? ng/L"
+          },
+          {
+            "code": "NPU59330",
+            "display": "Csf—Severe acute respiratory syndrome coronavirus 2(RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59331",
+            "display": "Tissue(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); arb.cont.(proc.) = ?"
+          },
+          {
+            "code": "NPU59389",
+            "display": "BAL—Severe acute respiratory syndrome coronavirus 2(ag); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59808",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody; arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59809",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody; arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59810",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody; arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59811",
+            "display": "P—Severe acute respiraNPU60268tory syndrome coronavirus 2 (Nucleoprotein) antibody; arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59828",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59829",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgA); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59830",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59831",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgA); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59832",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgG); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59833",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgG); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59834",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgG); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59835",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgG); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59836",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgM); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59837",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Nucleoprotein) antibody(IgM); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59838",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgM); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59839",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody(IgM); arb.subst.c.(proc.) = ? (p.d.u.)"
+          },
+          {
+            "code": "NPU59953",
+            "display": "Saliva—Severe acute respiratory syndrome coronavirus 2, Spike glycoprotein(ag); mass c. = ? ng/L"
+          },
+          {
+            "code": "NPU59954",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2, Spike glycoprotein(ag); mass c. = ? ng/L"
+          },
+          {
+            "code": "NPU59955",
+            "display": "Secr(Nasoph)—Severe acute respiratory syndrome coronavirus 2, Spike glycoprotein(ag); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59956",
+            "display": "Secr(spec.)—Severe acute respiratory syndrome coronavirus 2, Spike glycoprotein(ag); mass c. = ? ng/L"
+          },
+          {
+            "code": "NPU59957",
+            "display": "Secr(Nasoph)—Severe acute respiratory syndrome coronavirus 2, Nucleoprotein(ag); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU59958",
+            "display": "P—Severe acute respiratory syndrome coronavirus 2, Nucleoprotein(ag); mass c. = ? ng/L"
+          },
+          {
+            "code": "NPU59959",
+            "display": "Secr(spec.)—Severe acute respiratory syndrome coronavirus 2, Nucleoprotein(ag); mass c. = ? ng/L"
+          },
+          {
+            "code": "NPU59960",
+            "display": "Saliva—Severe acute respiratory syndrome coronavirus 2, Nucleoprotein(ag); mass c. = ? ng/L"
+          },
+          {
+            "code": "NPU59962",
+            "display": "Csf—Severe acute respiratory syndrome coronavirus 2 (Spike glycoprotein) antibody; arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU60214",
+            "display": "Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(B.1.1.7; RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU60215",
+            "display": "Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(B.1.351; RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU60216",
+            "display": "Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(B.1.1.28.1; RNA); arb.c.(proc.) = ?"
+          },
+          {
+            "code": "NPU60218",
+            "display": "Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); variation(proc.) = ?"
+          },
+          {
+            "code": "NPU60217",
+            "display": "Syst(spec.)—Genome(SARS-CoV-2); seq.var.(proc.) = ?"
+          },
+          {
+            "code": "NPU60218",
+            "display": "Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA); variation(proc.) = ?"
+          },
+          {
+            "code": "NPU60268",
+            "display": "Syst(spec.)—Severe acute respiratory syndrome coronavirus 2(RNA; S gene); seq.var.(proc) = ?"
+          }
+        ]
+      }
+    ]
+  }
+}

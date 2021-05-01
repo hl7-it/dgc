@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="icd11-vaccines-covid-19"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://id.who.int/icd11/mms</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>XM1NL1</td><td>COVID-19 vaccine, inactivated virus</td></tr><tr><td>XM5DF6</td><td>COVID-19 vaccine, live attenuated virus</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr><tr><td>XM9QW8</td><td>COVID-19 vaccine, non-replicating viral vector</td></tr><tr><td>XM0CX4</td><td>COVID-19 vaccine, replicating viral vector</td></tr><tr><td>XM5JC5</td><td>COVID-19 vaccine, virus protein subunit</td></tr><tr><td>XM1J92</td><td>COVID-19 vaccine, virus like particle (VLP)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.it/fhir/dgc/ValueSet/icd11-vaccines-covid-19"/>
+  <version value="0.1.1"/>
+  <name value="Icd11Covid19Vaccines"/>
+  <title value="ICD11 Vaccine List (COVID-19)"/>
+  <status value="draft"/>
+  <date value="2021-05-01T17:30:35+00:00"/>
+  <publisher value="HL7 Italia"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.it"/>
+    </telecom>
+  </contact>
+  <description value="Vaccine List (COVID-19) from [ICD 11]"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://id.who.int/icd11/mms"/>
+      <concept>
+        <code value="XM1NL1"/>
+        <display value="COVID-19 vaccine, inactivated virus"/>
+      </concept>
+      <concept>
+        <code value="XM5DF6"/>
+        <display value="COVID-19 vaccine, live attenuated virus"/>
+      </concept>
+      <concept>
+        <code value="XM6AT1"/>
+        <display value="COVID-19 vaccine, DNA based"/>
+      </concept>
+      <concept>
+        <code value="XM9QW8"/>
+        <display value="COVID-19 vaccine, non-replicating viral vector"/>
+      </concept>
+      <concept>
+        <code value="XM0CX4"/>
+        <display value="COVID-19 vaccine, replicating viral vector"/>
+      </concept>
+      <concept>
+        <code value="XM5JC5"/>
+        <display value="COVID-19 vaccine, virus protein subunit"/>
+      </concept>
+      <concept>
+        <code value="XM1J92"/>
+        <display value="COVID-19 vaccine, virus like particle (VLP)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="covid-19-lab-test-manufacturer-and-name"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://covid-19-diagnostics.jrc.ec.europa.eu/devices</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1232</td><td>Abbott Rapid Diagnostics Panbio™ COVID-19 Ag Rapid Test</td></tr><tr><td>1065</td><td>Becton Dickinson BD Veritor System for Rapid Deteciton os SARS-CoV-2</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.it/fhir/dgc/ValueSet/covid-19-lab-test-manufacturer-and-name"/>
+  <version value="0.1.1"/>
+  <name value="Covid19LabTestManufacturerAndName"/>
+  <title value="COVID-19 Lab Test Manufacturer And Name"/>
+  <status value="draft"/>
+  <date value="2021-05-01T17:30:35+00:00"/>
+  <publisher value="HL7 Italia"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.it"/>
+    </telecom>
+  </contact>
+  <description value="Examples of COVID-19 Lab Test Manufacturer And Name from http://covid-19-diagnostics.jrc.ec.europa.eu/devices?manufacturer&amp;text_name&amp;marking&amp;rapid_diag&amp;format&amp;target_type&amp;field-1=HSC%20mutual%20recognition%20%28RAT%29&amp;value-1=1&amp;search_method=AND#form_content"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://covid-19-diagnostics.jrc.ec.europa.eu/devices"/>
+      <concept>
+        <code value="1232"/>
+        <display value="Abbott Rapid Diagnostics Panbio&#x2122; COVID-19 Ag Rapid Test"/>
+      </concept>
+      <concept>
+        <code value="1065"/>
+        <display value="Becton Dickinson BD Veritor System for Rapid Deteciton os SARS-CoV-2"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccines-covid-19"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119349007">1119349007</a></td><td>SARS-CoV-2 mRNA vaccine</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1119305005">1119305005</a></td><td>SARS-CoV-2 antigen vaccine</td></tr></table></li><li>Include these codes as defined in <a href="http://www.whocc.no/atc"><code>http://www.whocc.no/atc</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>J07BX03</td><td>covid-19 vaccines</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.it/fhir/dgc/ValueSet/vaccines-covid-19"/>
+  <version value="0.1.1"/>
+  <name value="Covid19Vaccines"/>
+  <title value="Vaccine List (COVID-19)"/>
+  <status value="draft"/>
+  <date value="2021-05-01T17:30:35+00:00"/>
+  <publisher value="HL7 Italia"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.it"/>
+    </telecom>
+  </contact>
+  <description value="Vaccine List (COVID-19)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1119349007"/>
+        <display value="SARS-CoV-2 mRNA vaccine"/>
+      </concept>
+      <concept>
+        <code value="1119305005"/>
+        <display value="SARS-CoV-2 antigen vaccine"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://www.whocc.no/atc"/>
+      <concept>
+        <code value="J07BX03"/>
+        <display value="covid-19 vaccines"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

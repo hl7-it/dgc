@@ -1,0 +1,289 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/Bundle/svc-Bundle-01> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "svc-Bundle-01"];
+  fhir:Bundle.identifier [
+     fhir:Identifier.system [ fhir:value "http://hl7.eu/fhir/sid/uvci" ];
+     fhir:Identifier.value [ fhir:value "V1CZ454557891308174803488707671418" ];
+     fhir:Identifier.period [
+       fhir:Period.start [ fhir:value "2020-12-27T14:30:00+01:00"^^xsd:dateTime ];
+       fhir:Period.end [ fhir:value "2021-12-27T14:30:00+01:00"^^xsd:dateTime ]
+     ]
+  ];
+  fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2020-12-27T14:30:00+01:00"^^xsd:dateTime];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d" ];
+     fhir:Bundle.entry.resource <urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ];
+     fhir:Bundle.entry.resource <urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6" ];
+     fhir:Bundle.entry.resource <urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e" ];
+     fhir:Bundle.entry.resource <urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ];
+     fhir:Bundle.entry.resource <urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8" ];
+     fhir:Bundle.entry.resource <urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8>
+  ] .
+
+<urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d> a fhir:Composition;
+  fhir:Resource.id [ fhir:value "30551ce1-5a28-4356-b684-1e639094ad4d"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: urn:uuid:3f69e0a5-2177-4540-baab-7a5d0877428f</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 82593-5}\">Immunization summary report</span></p><p><b>date</b>: Dec 27, 2020, 1:30:00 PM</p><p><b>author</b>: <span>MUDr. Aleš Procházka</span></p><p><b>title</b>: Vaccine Certificate December 27, 2020 14:30</p><p><b>confidentiality</b>: N</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Time</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>legal</td><td>Dec 27, 2020, 1:30:00 PM</td><td><a href=\"#Organization_45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7\">See above (Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)</a></td></tr></table><p><b>custodian</b>: <a href=\"#Organization_45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7\">See above (Organization/45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7)</a></p></div>"
+  ];
+  fhir:Composition.identifier [
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ];
+     fhir:Identifier.value [ fhir:value "urn:uuid:3f69e0a5-2177-4540-baab-7a5d0877428f" ]
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:82593-5;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "82593-5" ];
+       fhir:Coding.display [ fhir:value "Immunization summary report" ]
+     ]
+  ];
+  fhir:Composition.subject [
+     fhir:Reference.reference [ fhir:value "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Composition.date [ fhir:value "2020-12-27T14:30:00+01:00"^^xsd:dateTime];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.display [ fhir:value "MUDr. Aleš Procházka" ]
+  ];
+  fhir:Composition.title [ fhir:value "Vaccine Certificate December 27, 2020 14:30"];
+  fhir:Composition.confidentiality [ fhir:value "N"];
+  fhir:Composition.attester [
+     fhir:index 0;
+     fhir:Composition.attester.mode [ fhir:value "legal" ];
+     fhir:Composition.attester.time [ fhir:value "2020-12-27T14:30:00+01:00"^^xsd:dateTime ];
+     fhir:Composition.attester.party [
+       fhir:Reference.reference [ fhir:value "urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ]
+     ]
+  ];
+  fhir:Composition.custodian [
+     fhir:Reference.reference [ fhir:value "urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7" ]
+  ];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Vaccinations" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a loinc:11369-6;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ];
+         fhir:Coding.code [ fhir:value "11369-6" ];
+         fhir:Coding.display [ fhir:value "Hx of Immunization" ]
+       ]
+     ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "generated" ];
+       fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><thead><tr><th>Date</th><th>Product</th><th>Vaccine</th><th>Dose</th></tr></thead><tbody><tr><td>2020-12-02</td><td>Comirnaty</td><td>COVID-19 mRNA Vaccine</td><td>1/2</td></tr><tr><td>2020-12-23</td><td>Comirnaty</td><td>COVID-19 mRNA Vaccine</td><td>2/2</td></tr></tbody></table></div>"
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6" ]
+     ], [
+       fhir:index 1;
+       fhir:Reference.reference [ fhir:value "urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e" ]
+     ]
+  ] .
+
+<urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "2b90dd2b-2dab-4c75-9bb9-a355e07401e8"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: National Insurance Payor Identifier (Payor): 740512852, id: A225961454, Passport number: 5484136</p><p><b>name</b>: František Očkovaný </p><p><b>birthDate</b>: 2000-03-21</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "NIIP" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.203.24341.1.20.2" ];
+     fhir:Identifier.value [ fhir:value "740512852" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.203.24341.1.20.9.1" ];
+     fhir:Identifier.value [ fhir:value "A225961454" ]
+  ], [
+     fhir:index 2;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "PPN" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "urn:oid:2.16.840.1.113883.4.330.203" ];
+     fhir:Identifier.value [ fhir:value "5484136" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.family [ fhir:value "Očkovaný" ];
+     fhir:HumanName.given [
+       fhir:value "František";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.birthDate [ fhir:value "2000-03-21"^^xsd:date] .
+
+<urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6> a fhir:Immunization;
+  fhir:Resource.id [ fhir:value "c220e36c-eb67-4fc4-9ba1-2fabc52acec6"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://snomed.info/sct 1119349007}\">Comirnaty</span></p><p><b>patient</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>occurrence</b>: 2020-12-02</p><p><b>location</b>: <a href=\"#Location_55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8\">See above (Location/55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8)</a></p><p><b>manufacturer</b>: <span>BioNTech Manufacturing GmbH</span></p><p><b>lotNumber</b>: B1235742</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span>MUDr. Aleš Procházka</span></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 840533007}\">SARS-CoV-2</span></td><td>1</td><td>2</td></tr></table></div>"
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:1119349007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1119349007" ];
+       fhir:Coding.display [ fhir:value "Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Comirnaty" ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.reference [ fhir:value "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2020-12-02"^^xsd:date];
+  fhir:Immunization.location [
+     fhir:Reference.reference [ fhir:value "urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8" ]
+  ];
+  fhir:Immunization.manufacturer [
+     fhir:Reference.display [ fhir:value "BioNTech Manufacturing GmbH" ]
+  ];
+  fhir:Immunization.lotNumber [ fhir:value "B1235742"];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.display [ fhir:value "MUDr. Aleš Procházka" ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.targetDisease [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:840533007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "840533007" ];
+         fhir:Coding.display [ fhir:value "SARS-CoV-2" ]
+       ]
+     ];
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+  ] .
+
+<urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e> a fhir:Immunization;
+  fhir:Resource.id [ fhir:value "47524493-846a-4a26-bae2-4ab03e60f02e"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://snomed.info/sct 1119349007}\">Comirnaty</span></p><p><b>patient</b>: <a href=\"#Patient_2b90dd2b-2dab-4c75-9bb9-a355e07401e8\">See above (Patient/2b90dd2b-2dab-4c75-9bb9-a355e07401e8)</a></p><p><b>occurrence</b>: 2020-12-23</p><p><b>location</b>: <a href=\"#Location_55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8\">See above (Location/55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8)</a></p><p><b>manufacturer</b>: <span>BioNTech Manufacturing GmbH</span></p><p><b>lotNumber</b>: D5423452</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><span>MUDr. Jan Novák</span></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://snomed.info/sct 840533007}\">SARS-CoV-2</span></td><td>2</td><td>2</td></tr></table></div>"
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:1119349007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1119349007" ];
+       fhir:Coding.display [ fhir:value "Severe acute respiratory syndrome coronavirus 2 mRNA only vaccine product" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Comirnaty" ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.reference [ fhir:value "urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8" ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2020-12-23"^^xsd:date];
+  fhir:Immunization.location [
+     fhir:Reference.reference [ fhir:value "urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8" ]
+  ];
+  fhir:Immunization.manufacturer [
+     fhir:Reference.display [ fhir:value "BioNTech Manufacturing GmbH" ]
+  ];
+  fhir:Immunization.lotNumber [ fhir:value "D5423452"];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:Reference.display [ fhir:value "MUDr. Jan Novák" ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.targetDisease [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:840533007;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "840533007" ];
+         fhir:Coding.display [ fhir:value "SARS-CoV-2" ]
+       ]
+     ];
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "2"^^xsd:positiveInteger ];
+     fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+  ] .
+
+<urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 24341</p><p><b>name</b>: Ministry of Health of the Czech Republic</p></div>"
+  ];
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.203" ];
+     fhir:Identifier.value [ fhir:value "24341" ]
+  ];
+  fhir:Organization.name [ fhir:value "Ministry of Health of the Czech Republic"] .
+
+<urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8> a fhir:Location;
+  fhir:Resource.id [ fhir:value "55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Hospital Na Františku Prague</p><p><b>address</b>: Prague CZ </p></div>"
+  ];
+  fhir:Location.name [ fhir:value "Hospital Na Františku Prague"];
+  fhir:Location.address [
+     fhir:Address.city [ fhir:value "Prague" ];
+     fhir:Address.country [ fhir:value "CZ" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/Bundle/svc-Bundle-01.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

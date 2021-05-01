@@ -1,0 +1,93 @@
+{
+  "resourceType": "Organization",
+  "id": "org-example-it",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 090201, id: 201, id: 06593810481 , id: 06593810481 </p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.it/CodeSystem/it-tipoEntita asl}\">Azienda Sanitaria Locale</span></p><p><b>name</b>: AZIENDA USL TOSCANA CENTRO</p><p><b>telecom</b>: ph: (055) 6939222, fax: (055) 6939223, <a href=\"mailto:mailto:direttore.generale@uslcentro.toscana.it\">mailto:direttore.generale@uslcentro.toscana.it</a>, <a href=\"http://www.uslcentro.toscana.it\">http://www.uslcentro.toscana.it</a></p><p><b>address</b>: PIAZZA SANTA MARIA NUOVA 1 FIRENZE TOSCANA 50122 IT </p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://hl7.it/sid/fls",
+      "value": "090201"
+    },
+    {
+      "system": "http://hl7.it/sid/toscana/asl",
+      "value": "201"
+    },
+    {
+      "system": "http://hl7.it/sid/partitaIva",
+      "value": "06593810481 "
+    },
+    {
+      "system": "http://hl7.it/sid/codiceFiscale",
+      "value": "06593810481 "
+    }
+  ],
+  "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.it/CodeSystem/it-tipoEntita",
+          "code": "asl",
+          "display": "Azienda Sanitaria Locale"
+        }
+      ]
+    }
+  ],
+  "name": "AZIENDA USL TOSCANA CENTRO",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(055) 6939222"
+    },
+    {
+      "system": "fax",
+      "value": "(055) 6939223"
+    },
+    {
+      "system": "email",
+      "value": "mailto:direttore.generale@uslcentro.toscana.it"
+    },
+    {
+      "system": "url",
+      "value": "http://www.uslcentro.toscana.it"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "PIAZZA SANTA MARIA NUOVA 1"
+      ],
+      "city": "FIRENZE",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+            "valueCoding": {
+              "system": "http://terminology.hl7.it/CodeSystem/istat-unitaAmministrativeTerritoriali",
+              "code": "007003",
+              "display": "AOSTA"
+            }
+          }
+        ]
+      },
+      "district": "FI",
+      "state": "TOSCANA",
+      "_state": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-SC-coding",
+            "valueCoding": {
+              "system": "http://terminology.hl7.it/CodeSystem/minsan-regione",
+              "code": "090",
+              "display": "TOSCANA"
+            }
+          }
+        ]
+      },
+      "postalCode": "50122",
+      "country": "IT"
+    }
+  ]
+}

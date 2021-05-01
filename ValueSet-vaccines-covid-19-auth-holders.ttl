@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/ValueSet/vaccines-covid-19-auth-holders> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vaccines-covid-19-auth-holders"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://spor.ema.europa.eu/v1/organisations</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>ORG-100001699</td><td>AstraZeneca AB</td></tr><tr><td>ORG-100030215</td><td>Biontech Manufacturing GmbH</td></tr><tr><td>ORG-100001417</td><td>Janssen-Cilag International</td></tr><tr><td>ORG-100031184</td><td>Moderna Biotech Spain S.L.</td></tr><tr><td>ORG-100006270</td><td>Curevac AG</td></tr><tr><td>ORG-100013793</td><td>CanSino Biologics</td></tr><tr><td>ORG-100020693</td><td>China Sinopharm International Corp. - Beijing location</td></tr><tr><td>ORG-100010771</td><td>Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location</td></tr><tr><td>ORG-100024420</td><td>Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location</td></tr><tr><td>ORG-100032020</td><td>Novavax CZ AS</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "http://hl7.it/fhir/dgc/ValueSet/vaccines-covid-19-auth-holders"];
+  fhir:ValueSet.version [ fhir:value "0.1.1"];
+  fhir:ValueSet.name [ fhir:value "Covid19VaccineAuthHolders"];
+  fhir:ValueSet.title [ fhir:value "Vaccine marketing authorization holder or Vaccine manufacturer (COVID-19)"];
+  fhir:ValueSet.status [ fhir:value "draft"];
+  fhir:ValueSet.date [ fhir:value "2021-05-01T17:30:35+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "HL7 Italia"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.it" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Vaccine marketing authorization holder or Vaccine manufacturer (COVID-19)"];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "IT" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://spor.ema.europa.eu/v1/organisations" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100001699" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "AstraZeneca AB" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100030215" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Biontech Manufacturing GmbH" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100001417" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Janssen-Cilag International" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100031184" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Moderna Biotech Spain S.L." ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100006270" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Curevac AG" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100013793" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "CanSino Biologics" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100020693" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "China Sinopharm International Corp. - Beijing location" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100010771" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sinopharm Weiqida Europe Pharmaceutical s.r.o. - Prague location" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100024420" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "ORG-100032020" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Novavax CZ AS" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.it/fhir/dgc/ValueSet/vaccines-covid-19-auth-holders.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

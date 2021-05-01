@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="covid-19-lab-result"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1240581000000104">1240581000000104</a></td><td>Severe acute respiratory syndrome coronavirus 2 detected</td></tr><tr><td><a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1240591000000102">1240591000000102</a></td><td>Severe acute respiratory syndrome coronavirus 2 not detected</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://hl7.it/fhir/dgc/ValueSet/covid-19-lab-result"/>
+  <version value="0.1.1"/>
+  <name value="Covid19LabResult"/>
+  <title value="COVID-19 Lab Result"/>
+  <status value="draft"/>
+  <date value="2021-05-01T17:30:35+00:00"/>
+  <publisher value="HL7 Italia"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.it"/>
+    </telecom>
+  </contact>
+  <description value="COVID-19 Lab Result"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IT"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="1240581000000104"/>
+        <display value="Severe acute respiratory syndrome coronavirus 2 detected"/>
+      </concept>
+      <concept>
+        <code value="1240591000000102"/>
+        <display value="Severe acute respiratory syndrome coronavirus 2 not detected"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
