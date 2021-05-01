@@ -1,0 +1,63 @@
+"Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"vaccinationCertificate","","","",1,1,"","","","","EU Vaccination Certificate","EU Vaccination Certificate content","","","","","","","","","",,,,,"",,,,"Element",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","n/a"
+"vaccinationCertificate.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"vaccinationCertificate.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"vaccinationCertificate.subject","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Person identification","Person identification","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.subject",1,1,"",""
+"vaccinationCertificate.subject.name","","","",1,*,"","","","HumanName {[]} {[]}
+","Person name","The legal name of the vaccinated person","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.subject.name",1,*,"",""
+"vaccinationCertificate.subject.identifier","","","",0,*,"","","","Identifier {[]} {[]}
+","Person identifier","An identifier of the vaccinated person, according to the policies applicable in each country. It should be captured what type of identifier is used. Examples: citizen ID card or identifier within the health system/IIS/e-registry.","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.subject.identifier",0,*,"",""
+"vaccinationCertificate.subject.sex","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Sex","Administrative gender","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.subject.sex",0,1,"",""
+"vaccinationCertificate.subject.birthDate","","","",0,1,"","","","dateTime {[]} {[]}
+","Person date of birth","Vaccinated person’s date of birth. Mandatory if no Person identifier is provided.","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.subject.birthDate",0,1,"",""
+"vaccinationCertificate.vaccination","","","",1,*,"","","","BackboneElement {[]} {[]}
+","Vaccination / prophylaxis information","Vaccination / prophylaxis information","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination",1,*,"",""
+"vaccinationCertificate.vaccination.targetDisease","","","",0,*,"","","","CodeableConcept {[]} {[]}
+","Disease or agent targeted","Disease or agent that the vaccination provides protection against","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.targetDisease",0,*,"",""
+"vaccinationCertificate.vaccination.vaccineCode","","","",1,*,"","","","CodeableConcept {[]} {[]}
+","Vaccine or prophylaxis","Generic description of the vaccine/Vaccine component(s).
+Example:
+J07BX03 covid-19 vaccines (temporary code, to be implemented in ATC 2022)
+1119349007 | COVID-19 mRNA vaccine |
+1119305005 | COVID-19 antigen vaccine |","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.vaccineCode",1,*,"",""
+"vaccinationCertificate.vaccination.vaccineProductName","","","",1,*,"","","","string {[]} {[]}
+","Vaccine medicinal product  ","Medicinal product name
+Example: 
+COMIRNATY concentrate for dispersion for injection  ","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.vaccineProductName",1,*,"",""
+"vaccinationCertificate.vaccination.vaccineMarketingAuthorizationHolder","","","",1,1,"","","","string {[]} {[]}
+","Marketing Authorization Holder","Marketing Authorisation Holder ","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.vaccineMarketingAuthorizationHolder",1,1,"",""
+"vaccinationCertificate.vaccination.doseNumber","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Number in a series of vaccinations / doses","Order in the vaccination course ","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.doseNumber",1,1,"",""
+"vaccinationCertificate.vaccination.vaccineBatchNumber","","","",0,1,"","","","string {[]} {[]}
+","Batch/lot number","A distinctive combination of numbers and/or letters which specifically identifies a batch","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.vaccineBatchNumber",0,1,"",""
+"vaccinationCertificate.vaccination.dateOfVaccination","","","",1,1,"","","","dateTime {[]} {[]}
+","Date of vaccination","Date of vaccination","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.dateOfVaccination",1,1,"",""
+"vaccinationCertificate.vaccination.administeringCentre","","","",1,1,"","","","Organization {[]} {[]}
+","Administering centre","Name/code of administering centre or a health authority responsible for the vaccination event","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.administeringCentre",1,1,"",""
+"vaccinationCertificate.vaccination.healthProfessionalIdentification","","","",0,*,"","","","Practitioner {[]} {[]}
+","Health Professional identification","Name or health professional code responsible for administering the vaccine or prophylaxis","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.healthProfessionalIdentification",0,*,"",""
+"vaccinationCertificate.vaccination.countryOfVaccination","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Country of vaccination","The country in which the individual has been vaccinated","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.countryOfVaccination",1,1,"",""
+"vaccinationCertificate.vaccination.dateNextDose","","","",0,1,"","","","dateTime {[]} {[]}
+","Next vaccination date","Date on which the next vaccination should be administered","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.vaccination.dateNextDose",0,1,"",""
+"vaccinationCertificate.metaData","","","",1,1,"","","","BackboneElement {[]} {[]}
+","Certificate metadata","Certificate metadata","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.metaData",1,1,"",""
+"vaccinationCertificate.metaData.issuer","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Certificate Issuer","Entity that has issued the certificate (allowing to check the certificate)","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.metaData.issuer",1,1,"",""
+"vaccinationCertificate.metaData.certificateId","","","",1,1,"","","","Identifier {[]} {[]}
+","Certificate identifier","Unique identifier of the certificate (UVCI), to be printed (human readable) into the certificate; the unique identifier can be included in the IIS","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.metaData.certificateId",1,1,"",""
+"vaccinationCertificate.metaData.startValidity","","","",0,1,"","","","dateTime {[]} {[]}
+","Certificate valid from","Certificate valid from (required if known)","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.metaData.startValidity",0,1,"",""
+"vaccinationCertificate.metaData.endValidity","","","",0,1,"","","","dateTime {[]} {[]}
+","Certificate valid until","Certificate valid until (validity can differ from the expected immunisation period)","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.metaData.endValidity",0,1,"",""
+"vaccinationCertificate.metaData.certificateSchemaVersion","","","",1,1,"","","","Identifier {[]} {[]}
+","Certificate schema version","Version of this minimum dataset definition - currently set at 1.0.0","","","","","","","","","",,,,,"",,,,"vaccinationCertificate.metaData.certificateSchemaVersion",1,1,"",""

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0b32f86f-37c9-4397-b082-961b410eb1b3"/>
+  <id value="02b5b9bb-a072-4a97-99b6-a8e258738323"/>
   <meta>
-    <lastUpdated value="2021-05-01T17:30:35.181+00:00"/>
+    <lastUpdated value="2021-05-01T22:01:09.310+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1661,7 +1661,7 @@
         <name value="Covid19Vaccines"/>
         <title value="Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2021-05-01T17:30:35+00:00"/>
+        <date value="2021-05-01T22:01:09+00:00"/>
         <publisher value="HL7 Italia"/>
         <contact>
           <telecom>
@@ -1677,8 +1677,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e79a32a7-e434-4e75-9560-9c3d32e0006f"/>
-          <timestamp value="2021-05-01T17:30:58+00:00"/>
+          <identifier value="urn:uuid:18b37a22-5b72-406d-a605-165f647293da"/>
+          <timestamp value="2021-05-01T22:01:27+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>

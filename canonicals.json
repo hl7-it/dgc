@@ -1,5 +1,12 @@
 [
   {
+    "id": "vaccinationCertificate",
+    "type": "StructureDefinition",
+    "url": "http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificate",
+    "version": "0.1.1",
+    "name": "vaccinationCertificate"
+  },
+  {
     "id": "Covid19LabTestsNPUToLOINCMap",
     "type": "ConceptMap",
     "url": "http://hl7.it/fhir/dgc/ConceptMap/Covid19LabTestsNPUToLOINCMap",
