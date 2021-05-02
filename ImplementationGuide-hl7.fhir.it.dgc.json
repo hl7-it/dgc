@@ -11,7 +11,7 @@
   "title": "HL7 Italia Certificato Vaccinale (DGC) FHIR Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-05-01T22:01:09+00:00",
+  "date": "2021-05-02T16:08:48+00:00",
   "publisher": "HL7 Italia",
   "contact": [
     {
@@ -70,6 +70,58 @@
           {
             "url": "value",
             "valueString": "CI Build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificate"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificatePV"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificateBC"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificateMD"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -494,6 +546,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vaccinationCertificateBC"
+        },
+        "name": "EU Digital Green Certificate - Border Control",
+        "description": "Logical Model representing the EU Digital Green Certificate for Border Control"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -706,10 +771,23 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/vaccinationCertificateMD"
+        },
+        "name": "EU Digital Green Certificate - Medical Use",
+        "description": "Logical Model representing the EU Digital Green Certificate for Medical Use"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/vaccinationCertificate"
         },
-        "name": "EU Vaccination Certificate [LM]",
-        "description": "Logical Model representing the EU Vaccination Certificate Model"
+        "name": "EU Digital Green Certificate",
+        "description": "Logical Model representing the EU Digital Green Certificate"
       },
       {
         "extension": [
@@ -832,6 +910,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/vaccinationCertificatePV"
+        },
+        "name": "EU Digital Green Certificate - Private Venue",
+        "description": "Logical Model representing the EU Digital Green Certificate for Private Venue"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -849,22 +940,22 @@
       "page": [
         {
           "nameUrl": "index.html",
-          "title": "EU Digital Green Certificate - Home Page",
+          "title": "Digital Green Certificate - Home Page",
           "generation": "markdown"
         },
         {
           "nameUrl": "models.html",
-          "title": "Logical Models",
+          "title": "Modelli Logici",
           "generation": "markdown"
         },
         {
           "nameUrl": "profiles.html",
-          "title": "FHIR Profiles",
+          "title": "Profili FHIR",
           "generation": "markdown"
         },
         {
           "nameUrl": "terminologies.html",
-          "title": "Terminologies",
+          "title": "Terminologie",
           "generation": "markdown"
         },
         {

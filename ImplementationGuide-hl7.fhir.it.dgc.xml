@@ -12,7 +12,7 @@
   <title value="HL7 Italia Certificato Vaccinale (DGC) FHIR Implementation Guide"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2021-05-01T22:01:09+00:00"/>
+  <date value="2021-05-02T16:08:48+00:00"/>
   <publisher value="HL7 Italia"/>
   <contact>
     <telecom>
@@ -50,6 +50,38 @@
       </extension>
       <extension url="value">
         <valueString value="CI Build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificate"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificatePV"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificateBC"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificateMD"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -339,6 +371,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vaccinationCertificateBC"/>
+      </reference>
+      <name value="EU Digital Green Certificate - Border Control"/>
+      <description value="Logical Model representing the EU Digital Green Certificate for Border Control"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -502,10 +544,20 @@
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/vaccinationCertificateMD"/>
+      </reference>
+      <name value="EU Digital Green Certificate - Medical Use"/>
+      <description value="Logical Model representing the EU Digital Green Certificate for Medical Use"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/vaccinationCertificate"/>
       </reference>
-      <name value="EU Vaccination Certificate [LM]"/>
-      <description value="Logical Model representing the EU Vaccination Certificate Model"/>
+      <name value="EU Digital Green Certificate"/>
+      <description value="Logical Model representing the EU Digital Green Certificate"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -599,6 +651,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vaccinationCertificatePV"/>
+      </reference>
+      <name value="EU Digital Green Certificate - Private Venue"/>
+      <description value="Logical Model representing the EU Digital Green Certificate for Private Venue"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -613,22 +675,22 @@
       <generation value="html"/>
       <page>
         <nameUrl value="index.html"/>
-        <title value="EU Digital Green Certificate - Home Page"/>
+        <title value="Digital Green Certificate - Home Page"/>
         <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="models.html"/>
-        <title value="Logical Models"/>
+        <title value="Modelli Logici"/>
         <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="profiles.html"/>
-        <title value="FHIR Profiles"/>
+        <title value="Profili FHIR"/>
         <generation value="markdown"/>
       </page>
       <page>
         <nameUrl value="terminologies.html"/>
-        <title value="Terminologies"/>
+        <title value="Terminologie"/>
         <generation value="markdown"/>
       </page>
       <page>

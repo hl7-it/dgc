@@ -1,9 +1,9 @@
 ﻿Hl7ItDgcIG : Validation Results
 =========================================
 
-err = 50, warn = 158, info = 121
+err = 48, warn = 164, info = 121
 IG Publisher Version: 1.1.68
-Generated Sat May 01 22:01:41 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.dgc#0.1.1 (canonical = http://hl7.it/fhir/dgc)
+Generated Sun May 02 16:09:30 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.dgc#0.1.1 (canonical = http://hl7.it/fhir/dgc)
 
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-01 : 4 / 0 / 20
@@ -32,7 +32,10 @@ Generated Sat May 01 22:01:41 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.dgc#0
  /github/workspace/fsh-generated/resources/StructureDefinition-Patient-dgc : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Soggetto : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Vaccinazione : 0 / 8 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificate : 2 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificate : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificateBC : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificateMD : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificatePV : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-atc-vaccines-covid-19 : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-covid-19-diseases : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-covid-19-lab-methods : 0 / 2 / 1
@@ -382,12 +385,22 @@ WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: Str
 WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.differential.element[12].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/Vaccinazione: StructureDefinition/Vaccinazione: StructureDefinition.differential.element[14].short: value should not start or finish with whitespace
 == /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificate.json ==
-ERROR: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificate'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificate.json - the canonical URL (http://hl7.it/fhir/dgc/StructureDefinition/vaccinationCertificate) does not match the URL (http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificate)
 INFORMATION: StructureDefinition/vaccinationCertificate: StructureDefinition/vaccinationCertificate: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/vaccinationCertificate: StructureDefinition/vaccinationCertificate: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 WARNING: StructureDefinition/vaccinationCertificate: StructureDefinition/vaccinationCertificate: StructureDefinition.snapshot.element[11].short: value should not start or finish with whitespace
 WARNING: StructureDefinition/vaccinationCertificate: StructureDefinition/vaccinationCertificate: StructureDefinition.differential.element[9].short: value should not start or finish with whitespace
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificate: URL Mismatch http://hl7.it/fhir/dgc/StructureDefinition/vaccinationCertificate vs http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificate
+== /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificateBC.json ==
+INFORMATION: StructureDefinition/vaccinationCertificateBC: StructureDefinition/vaccinationCertificateBC: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/vaccinationCertificateBC: StructureDefinition/vaccinationCertificateBC: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+WARNING: StructureDefinition/vaccinationCertificateBC: StructureDefinition/vaccinationCertificateBC: StructureDefinition.snapshot.element[11].short: value should not start or finish with whitespace
+== /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificateMD.json ==
+INFORMATION: StructureDefinition/vaccinationCertificateMD: StructureDefinition/vaccinationCertificateMD: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/vaccinationCertificateMD: StructureDefinition/vaccinationCertificateMD: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+WARNING: StructureDefinition/vaccinationCertificateMD: StructureDefinition/vaccinationCertificateMD: StructureDefinition.snapshot.element[11].short: value should not start or finish with whitespace
+== /github/workspace/fsh-generated/resources/StructureDefinition-vaccinationCertificatePV.json ==
+INFORMATION: StructureDefinition/vaccinationCertificatePV: StructureDefinition/vaccinationCertificatePV: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/vaccinationCertificatePV: StructureDefinition/vaccinationCertificatePV: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+WARNING: StructureDefinition/vaccinationCertificatePV: StructureDefinition/vaccinationCertificatePV: StructureDefinition.snapshot.element[11].short: value should not start or finish with whitespace
 == /github/workspace/fsh-generated/resources/ValueSet-atc-vaccines-covid-19.json ==
 INFORMATION: ValueSet/atc-vaccines-covid-19: ValueSet/atc-vaccines-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/atc-vaccines-covid-19: ValueSet/atc-vaccines-covid-19: ValueSet.compose[0].include[0].concept[0]: The code J07BX03 is not valid in the system http://www.whocc.no/atc
@@ -542,4 +555,4 @@ WARNING: ValueSet/vaccines-covid-19-names: ValueSet/vaccines-covid-19-names: Val
 WARNING: ValueSet.where(id = 'vaccines-covid-19-names'): Error from server: Unable to provide support for code system https://ec.europa.eu/health/documents/community-register/html/
 == /github/workspace/input/hl7.fhir.it.dgc.xml ==
 INFORMATION: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-WARNING: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide.definition.resource[24].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide/hl7.fhir.it.dgc: ImplementationGuide.definition.resource[25].name: value should not start or finish with whitespace

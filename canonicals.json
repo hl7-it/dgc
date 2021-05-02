@@ -112,6 +112,27 @@
     "name": "Vaccinazione"
   },
   {
+    "id": "vaccinationCertificateBC",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/vaccinationCertificateBC",
+    "version": "0.1.1",
+    "name": "vaccinationCertificateBorderControl"
+  },
+  {
+    "id": "vaccinationCertificateMD",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/vaccinationCertificateMD",
+    "version": "0.1.1",
+    "name": "vaccinationCertificatemedicalUse"
+  },
+  {
+    "id": "vaccinationCertificatePV",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/vaccinationCertificatePV",
+    "version": "0.1.1",
+    "name": "vaccinationCertificatePrivateVenue"
+  },
+  {
     "id": "atc-vaccines-covid-19",
     "type": "ValueSet",
     "url": "http://hl7.it/fhir/dgc/ValueSet/atc-vaccines-covid-19",
