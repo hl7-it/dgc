@@ -30,23 +30,21 @@
 	</jurisdiction>
 	<packageId value="hl7.fhir.it.dgc"/>
 	<!-- This should be changed to 'not-open-source' or another license if appropriate for non-HL7-published content -->
-<!-- 	<dependsOn>
+	<!-- 	<dependsOn>
 		<uri value="http://hl7.it/fhir/ImplementationGuide/hl7.fhir.it.base"/> 
 		<packageId value="hl7.fhir.it.base"/>
 		<version value="current"/>
 	</dependsOn> -->
-	
-		<dependsOn>
-		<uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/> 
+	<dependsOn>
+		<uri value="http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"/>
 		<packageId value="hl7.fhir.uv.ips"/>
 		<version value="dev"/>
 	</dependsOn>
-	
 	<license value="CC-BY-SA-4.0"/>
 	<!-- This is whatever FHIR version(s) the IG artifacts are targeting (not the version of this file, which should always be 'current release') -->
 	<fhirVersion value="4.0.1"/>
 	<definition>
-			<resource>
+		<resource>
 			<reference>
 				<reference value="Bundle/svc-Bundle-01"/>
 			</reference>
@@ -151,22 +149,22 @@
 			<generation value="html"/>
 			<page>
 				<nameUrl value="index.html"/>
-				<title value="EU Digital Green Certificate - Home Page"/>
+				<title value="Digital Green Certificate - Home Page"/>
 				<generation value="markdown"/>
 			</page>
 			<page>
 				<nameUrl value="models.html"/>
-				<title value="Logical Models"/>
+				<title value="Modelli Logici"/>
 				<generation value="markdown"/>
 			</page>
 			<page>
 				<nameUrl value="profiles.html"/>
-				<title value="FHIR Profiles"/>
+				<title value="Profili FHIR"/>
 				<generation value="markdown"/>
 			</page>
 			<page>
 				<nameUrl value="terminologies.html"/>
-				<title value="Terminologies"/>
+				<title value="Terminologie"/>
 				<generation value="markdown"/>
 			</page>
 			<page>
@@ -189,17 +187,28 @@
 		<parameter>
 			<code value="releaselabel"/>
 			<!-- <value value="PC Ballot"/> -->
-				<value value="CI Build"/>
+			<value value="CI Build"/>
 		</parameter>
 		<parameter>
 			<code value="find-other-resources"/>
 			<value value="true"/>
 		</parameter>
-<!-- 		<parameter>
+		<parameter>
 			<code value="special-url"/>
-			<value value="http://terminology.hl7.it/CodeSystem/mef-ae-regioni"/>
-		</parameter> -->
-	
+			<value value="http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificate"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificatePV"/>
+		</parameter>
+		<parameter>
+			<code value="special-url"/>
+			<value value="http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificateBC"/>
+		</parameter>
+			<parameter>
+			<code value="special-url"/>
+			<value value="http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificateMD"/>
+		</parameter>
 		<parameter>
 			<code value="apply-jurisdiction"/>
 			<value value="true"/>

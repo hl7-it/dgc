@@ -1,23 +1,27 @@
 Instance: vaccinationCertificate
 InstanceOf: StructureDefinition
-Description: "Logical Model representing the EU Vaccination Certificate Model"
-Title: "EU Vaccination Certificate [LM]"
+Description: "Logical Model representing the EU Digital Green Certificate"
+Title: "EU Digital Green Certificate"
 Usage: #definition
 
 * publisher = "HL7 Italia"
 * status = #draft
 * url = "http://hl7.eu/fhir/ig/dgc/StructureDefinition/vaccinationCertificate"
 * name = "vaccinationCertificate"
-* title = "EU Vaccination Certificate [LM]"
+* title = "EU Digital Green Certificate"
 * status = #draft
 * experimental = true
-* description = "Logical Model representing the EU Vaccination Certificate Model"
+* description = "Logical Model representing the EU Digital Green Certificate"
 * version = "0.0.1"
 * kind = #logical
 * abstract = false
 * type = "vaccinationCertificate"
 * baseDefinition = "http://hl7.org/fhir/StructureDefinition/Element"
 * derivation = #specialization
+
+* mapping[0].identity = "fhir"
+* mapping[0].uri = "hl7.org/fhir/r4"
+* mapping[0].name = "FHIR"
 
 * differential.element[0].id = "vaccinationCertificate"
 * differential.element[0].path = "vaccinationCertificate"
@@ -83,7 +87,7 @@ Example:
 J07BX03 covid-19 vaccines (temporary code, to be implemented in ATC 2022)
 1119349007 | COVID-19 mRNA vaccine |
 1119305005 | COVID-19 antigen vaccine |"
-* differential.element[8].min = 1
+* differential.element[8].min = 0
 * differential.element[8].max = "*"
 * differential.element[8].type.code = #CodeableConcept
 * differential.element[9].id = "vaccinationCertificate.vaccination.vaccineProductName"
@@ -92,20 +96,20 @@ J07BX03 covid-19 vaccines (temporary code, to be implemented in ATC 2022)
 * differential.element[9].definition = "Medicinal product name
 Example: 
 COMIRNATY concentrate for dispersion for injection  "
-* differential.element[9].min = 1
+* differential.element[9].min = 0
 * differential.element[9].max = "*"
 * differential.element[9].type.code = #string
 * differential.element[10].id = "vaccinationCertificate.vaccination.vaccineMarketingAuthorizationHolder"
 * differential.element[10].path = "vaccinationCertificate.vaccination.vaccineMarketingAuthorizationHolder"
 * differential.element[10].short = "Marketing Authorization Holder"
-* differential.element[10].definition = "Marketing Authorisation Holder "
-* differential.element[10].min = 1
+* differential.element[10].definition = "Marketing Authorisation Holder"
+* differential.element[10].min = 0
 * differential.element[10].max = "1"
 * differential.element[10].type.code = #string
 * differential.element[11].id = "vaccinationCertificate.vaccination.doseNumber"
 * differential.element[11].path = "vaccinationCertificate.vaccination.doseNumber"
 * differential.element[11].short = "Number in a series of vaccinations / doses"
-* differential.element[11].definition = "Order in the vaccination course "
+* differential.element[11].definition = "Order in the vaccination course"
 * differential.element[11].min = 1
 * differential.element[11].max = "1"
 * differential.element[11].type.code = #BackboneElement
@@ -120,14 +124,14 @@ COMIRNATY concentrate for dispersion for injection  "
 * differential.element[13].path = "vaccinationCertificate.vaccination.dateOfVaccination"
 * differential.element[13].short = "Date of vaccination"
 * differential.element[13].definition = "Date of vaccination"
-* differential.element[13].min = 1
+* differential.element[13].min = 0
 * differential.element[13].max = "1"
 * differential.element[13].type.code = #dateTime
 * differential.element[14].id = "vaccinationCertificate.vaccination.administeringCentre"
 * differential.element[14].path = "vaccinationCertificate.vaccination.administeringCentre"
 * differential.element[14].short = "Administering centre"
 * differential.element[14].definition = "Name/code of administering centre or a health authority responsible for the vaccination event"
-* differential.element[14].min = 1
+* differential.element[14].min = 0
 * differential.element[14].max = "1"
 * differential.element[14].type.code = #Organization
 * differential.element[15].id = "vaccinationCertificate.vaccination.healthProfessionalIdentification"
@@ -141,7 +145,7 @@ COMIRNATY concentrate for dispersion for injection  "
 * differential.element[16].path = "vaccinationCertificate.vaccination.countryOfVaccination"
 * differential.element[16].short = "Country of vaccination"
 * differential.element[16].definition = "The country in which the individual has been vaccinated"
-* differential.element[16].min = 1
+* differential.element[16].min = 0
 * differential.element[16].max = "1"
 * differential.element[16].type.code = #CodeableConcept
 * differential.element[17].id = "vaccinationCertificate.vaccination.dateNextDose"
@@ -193,7 +197,9 @@ COMIRNATY concentrate for dispersion for injection  "
 * differential.element[23].min = 1
 * differential.element[23].max = "1"
 * differential.element[23].type.code = #Identifier
-"// === MAPPING ===" 
+//  
+// === MAPPING === 
+// 
 * differential.element[1].mapping[0].identity = "fhir"
 * differential.element[1].mapping[0].map = "Composition.conformsTo('http://hl7.eu/fhir/ig/dgc/StructureDefinition/Composition-svc').subject"
 
@@ -265,3 +271,10 @@ COMIRNATY concentrate for dispersion for injection  "
 
 * differential.element[22].mapping[0].identity = "fhir"
 * differential.element[22].mapping[0].map = "Build.conformsTo('http://hl7.eu/fhir/ig/dgc/StructureDefinition/Build-svc').identifier.period.end"
+// 
+// === INVARIANTS === 
+//  
+* differential.element[0].constraint[0].key = "eu-dgc-1"
+* differential.element[0].constraint[0].severity = #error
+* differential.element[0].constraint[0].human = "If no Person identifier is provided then the date of birth shall be valued"
+* differential.element[0].constraint[0].expression = "identifier.exists() or birthDate.exists()"

@@ -74,7 +74,9 @@ Certificati generati automaticamente"
 * differential.element[6].min = 1
 * differential.element[6].max = "*"
 * differential.element[6].type.code = #http://hl7.it/fhir/dgc/StructureDefinition/Vaccinazione
-"// === MAPPING ===" 
+//  
+// === MAPPING === 
+// 
 * differential.element[1].mapping[0].identity = "fhir"
 * differential.element[1].mapping[0].map = "Composition.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Composition-svc').subject"
 
@@ -95,3 +97,6 @@ Certificati generati automaticamente"
 
 * differential.element[6].mapping[0].identity = "fhir"
 * differential.element[6].mapping[0].map = "Immunization.conformsTo('http://hl7.it/fhir/dgc/StructureDefinition/Immunization-svc')"
+// 
+// === INVARIANTS === 
+//  

@@ -257,7 +257,9 @@ Codice regione + codice presidio + subcodice stabilimento"
 * differential.element[32].min = 0
 * differential.element[32].max = "1"
 * differential.element[32].type.code = #dateTime
-"// === MAPPING ===" 
+//  
+// === MAPPING === 
+// 
 * differential.element[1].mapping[0].identity = "fhir"
 * differential.element[1].mapping[0].map = "Immunization.protocolApplied.targetDisease"
 * differential.element[1].mapping[0].comment = "note"
@@ -350,3 +352,6 @@ Codice regione + codice presidio + subcodice stabilimento"
 
 * differential.element[31].mapping[0].identity = "fhir"
 * differential.element[31].mapping[0].map = "ImmunizationRecommendation.dateCriterion.value"
+// 
+// === INVARIANTS === 
+//  
