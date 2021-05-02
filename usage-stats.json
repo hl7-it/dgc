@@ -37,6 +37,10 @@
     ],
     "Observation": [
       {
+        "url": "http://hl7.it/fhir/dgc/StructureDefinition/Observation-CovidImmunity",
+        "title": "Observation - Covid Immunity"
+      },
+      {
         "url": "http://hl7.it/fhir/dgc/StructureDefinition/Observation-dgc",
         "title": "Observation - Test Result (Digital Green Certificate)"
       }

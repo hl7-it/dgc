@@ -19,7 +19,7 @@
   <name value="LocationDGC"/>
   <title value="Location (Digital Green Certificate)"/>
   <status value="active"/>
-  <date value="2021-05-02T16:08:48+00:00"/>
+  <date value="2021-05-02T19:49:34+00:00"/>
   <publisher value="HL7 Italia"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
       <value value="http://hl7.it"/>
     </telecom>
   </contact>
-  <description value="This profile defines how to represent Location in FHIR for building a Smart vaccination Card. This is used to describe optionally where the vaccination occured"/>
+  <description value="This profile defines how to represent Location in FHIR for building a Digital Green Certificate. This is used to describe optionally where the vaccination occured"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

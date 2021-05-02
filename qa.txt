@@ -1,9 +1,9 @@
 ﻿Hl7ItDgcIG : Validation Results
 =========================================
 
-err = 48, warn = 164, info = 121
+err = 48, warn = 165, info = 121
 IG Publisher Version: 1.1.68
-Generated Sun May 02 16:09:30 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.dgc#0.1.1 (canonical = http://hl7.it/fhir/dgc)
+Generated Sun May 02 19:50:14 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.dgc#0.1.1 (canonical = http://hl7.it/fhir/dgc)
 
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-svc-Bundle-01 : 4 / 0 / 20
@@ -26,6 +26,7 @@ Generated Sun May 02 16:09:30 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.dgc#0
  /github/workspace/fsh-generated/resources/StructureDefinition-Immunization-dgc : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ImmunizationRecommendation-dgc : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-Location-dgc : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Observation-CovidImmunity : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Observation-dgc : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OperatoreSanitario : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Organizzazione : 0 / 0 / 1
@@ -42,6 +43,7 @@ Generated Sun May 02 16:09:30 UTC 2021. FHIR version 4.0.1 for hl7.fhir.it.dgc#0
  /github/workspace/fsh-generated/resources/ValueSet-covid-19-lab-result : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-covid-19-lab-test-manufacturer-and-name : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/ValueSet-icd11-vaccines-covid-19 : 0 / 8 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-loinc-disease-immunity : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-loinc-tests-covid-19 : 0 / 18 / 1
  /github/workspace/fsh-generated/resources/ValueSet-npu-covid-19-non-rapid-tests : 0 / 63 / 1
  /github/workspace/fsh-generated/resources/ValueSet-npu-covid-19-rapid-tests : 0 / 8 / 1
@@ -358,6 +360,9 @@ INFORMATION: StructureDefinition.where(url = 'http://hl7.it/fhir/dgc/StructureDe
 == /github/workspace/fsh-generated/resources/StructureDefinition-Location-dgc.json ==
 INFORMATION: StructureDefinition/Location-dgc: StructureDefinition/Location-dgc: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 INFORMATION: StructureDefinition.where(url = 'http://hl7.it/fhir/dgc/StructureDefinition/Location-dgc'): The Implementation Guide contains no explicitly linked examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-Observation-CovidImmunity.json ==
+INFORMATION: StructureDefinition/Observation-CovidImmunity: StructureDefinition/Observation-CovidImmunity: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/dgc/StructureDefinition/Observation-CovidImmunity'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-Observation-dgc.json ==
 INFORMATION: StructureDefinition/Observation-dgc: StructureDefinition/Observation-dgc: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://hl7.it/fhir/dgc/StructureDefinition/Observation-dgc'): The Implementation Guide contains no examples for this profile
@@ -427,6 +432,8 @@ WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: Val
 WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet.compose[0].include[0].concept[5]: The code XM5JC5 is not valid in the system http://id.who.int/icd11/mms
 WARNING: ValueSet/icd11-vaccines-covid-19: ValueSet/icd11-vaccines-covid-19: ValueSet.compose[0].include[0].concept[6]: The code XM1J92 is not valid in the system http://id.who.int/icd11/mms
 WARNING: ValueSet.where(id = 'icd11-vaccines-covid-19'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
+== /github/workspace/fsh-generated/resources/ValueSet-loinc-disease-immunity.json ==
+INFORMATION: ValueSet/loinc-disease-immunity: ValueSet/loinc-disease-immunity: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-loinc-tests-covid-19.json ==
 INFORMATION: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/loinc-tests-covid-19: ValueSet/loinc-tests-covid-19: ValueSet.compose[0].include[0].concept[0]: The code 96766-1 is not valid in the system http://loinc.org

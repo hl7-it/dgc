@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d8654678-f8b8-47df-bc99-95cfa1fbca96",
+  "id" : "d2fa1de7-c436-44c9-bce6-4e6ef4f5f8bd",
   "meta" : {
-    "lastUpdated" : "2021-05-02T16:08:48.272+00:00"
+    "lastUpdated" : "2021-05-02T19:49:34.652+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -661,7 +661,7 @@
       "name" : "Covid19Vaccines",
       "title" : "Vaccine List (COVID-19)",
       "status" : "draft",
-      "date" : "2021-05-02T16:08:48+00:00",
+      "date" : "2021-05-02T19:49:34+00:00",
       "publisher" : "HL7 Italia",
       "contact" : [{
         "telecom" : [{
@@ -677,8 +677,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:1d02cc0c-5f10-4500-8b14-891755beb43f",
-        "timestamp" : "2021-05-02T16:09:10+00:00",
+        "identifier" : "urn:uuid:e33faa3f-1cf5-47a3-a087-fcdad9a1ec6c",
+        "timestamp" : "2021-05-02T19:49:55+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -737,6 +737,38 @@
           "system" : "http://snomed.info/sct",
           "code" : "1240591000000102",
           "display" : "Severe acute respiratory syndrome coronavirus 2 not detected"
+        }]
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.69</p><p>All codes from system <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-75505-8\"> </a><a href=\"http://details.loinc.org/LOINC/75505-8.html\">75505-8</a></td><td>Diseases with serologic evidence of immunity</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-59784-9\"> </a><a href=\"http://details.loinc.org/LOINC/59784-9.html\">59784-9</a></td><td>Disease with presumed immunity</td><td/></tr></table></div>"
+      },
+      "status" : "active",
+      "expansion" : {
+        "identifier" : "urn:uuid:ea40ff1c-45ee-460f-818f-6132b7d6fefd",
+        "timestamp" : "2021-05-02T19:40:35.893Z",
+        "parameter" : [{
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueString" : "http://loinc.org|2.69"
+        }],
+        "contains" : [{
+          "system" : "http://loinc.org",
+          "code" : "75505-8",
+          "display" : "Diseases with serologic evidence of immunity"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "59784-9",
+          "display" : "Disease with presumed immunity"
         }]
       }
     }

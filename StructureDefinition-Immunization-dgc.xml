@@ -34,7 +34,7 @@
   <name value="ImmunizationDGC"/>
   <title value="Immunization (Digital Green Certificate)"/>
   <status value="active"/>
-  <date value="2021-05-02T16:08:48+00:00"/>
+  <date value="2021-05-02T19:49:34+00:00"/>
   <publisher value="HL7 Italia"/>
   <contact>
     <telecom>
@@ -42,7 +42,7 @@
       <value value="http://hl7.it"/>
     </telecom>
   </contact>
-  <description value="This profile defines how to represent Immunizations in FHIR for building a Smart vaccination Card."/>
+  <description value="This profile defines how to represent Immunizations in FHIR for building a Digital Green Certificate."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "ImmunizationRecommendationDGC"];
   fhir:StructureDefinition.title [ fhir:value "ImmunizationRecommendation (Digital Green Certificate)"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-05-02T16:08:48+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-05-02T19:49:34+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "HL7 Italia"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
        fhir:ContactPoint.value [ fhir:value "http://hl7.it" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "This profile defines how to represent Immunization Recommandations in FHIR for building a Smart vaccination Card."];
+  fhir:StructureDefinition.description [ fhir:value "This profile defines how to represent Immunization Recommandations in FHIR for building a Digital Green Certificate."];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

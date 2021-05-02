@@ -70,6 +70,13 @@
     "name": "LocationDGC"
   },
   {
+    "id": "Observation-CovidImmunity",
+    "type": "StructureDefinition",
+    "url": "http://hl7.it/fhir/dgc/StructureDefinition/Observation-CovidImmunity",
+    "version": "0.1.1",
+    "name": "ObservationCovidImmunity"
+  },
+  {
     "id": "Observation-dgc",
     "type": "StructureDefinition",
     "url": "http://hl7.it/fhir/dgc/StructureDefinition/Observation-dgc",
@@ -173,6 +180,13 @@
     "url": "http://hl7.it/fhir/dgc/ValueSet/icd11-vaccines-covid-19",
     "version": "0.1.1",
     "name": "Icd11Covid19Vaccines"
+  },
+  {
+    "id": "loinc-disease-immunity",
+    "type": "ValueSet",
+    "url": "http://hl7.it/fhir/dgc/ValueSet/loinc-disease-immunity",
+    "version": "0.1.1",
+    "name": "LoincDiseaseWithImmunity"
   },
   {
     "id": "loinc-tests-covid-19",

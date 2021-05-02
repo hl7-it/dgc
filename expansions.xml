@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d8654678-f8b8-47df-bc99-95cfa1fbca96"/>
+  <id value="d2fa1de7-c436-44c9-bce6-4e6ef4f5f8bd"/>
   <meta>
-    <lastUpdated value="2021-05-02T16:08:48.272+00:00"/>
+    <lastUpdated value="2021-05-02T19:49:34.652+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1661,7 +1661,7 @@
         <name value="Covid19Vaccines"/>
         <title value="Vaccine List (COVID-19)"/>
         <status value="draft"/>
-        <date value="2021-05-02T16:08:48+00:00"/>
+        <date value="2021-05-02T19:49:34+00:00"/>
         <publisher value="HL7 Italia"/>
         <contact>
           <telecom>
@@ -1677,8 +1677,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1d02cc0c-5f10-4500-8b14-891755beb43f"/>
-          <timestamp value="2021-05-02T16:09:10+00:00"/>
+          <identifier value="urn:uuid:e33faa3f-1cf5-47a3-a087-fcdad9a1ec6c"/>
+          <timestamp value="2021-05-02T19:49:55+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1775,6 +1775,76 @@
             <system value="http://snomed.info/sct"/>
             <code value="1240591000000102"/>
             <display value="Severe acute respiratory syndrome coronavirus 2 not detected"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.69</p>
+            <p>All codes from system 
+              <a href="http://terminology.hl7.org/2.1.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-75505-8"> </a>
+                  <a href="http://details.loinc.org/LOINC/75505-8.html">75505-8</a>
+                </td>
+                <td>Diseases with serologic evidence of immunity</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-59784-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/59784-9.html">59784-9</a>
+                </td>
+                <td>Disease with presumed immunity</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <status value="active"/>
+        <expansion>
+          <identifier value="urn:uuid:ea40ff1c-45ee-460f-818f-6132b7d6fefd"/>
+          <timestamp value="2021-05-02T19:40:35.893Z"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://loinc.org|2.69"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="75505-8"/>
+            <display value="Diseases with serologic evidence of immunity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="59784-9"/>
+            <display value="Disease with presumed immunity"/>
           </contains>
         </expansion>
       </ValueSet>

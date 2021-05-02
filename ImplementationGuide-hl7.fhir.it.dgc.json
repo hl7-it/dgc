@@ -11,7 +11,7 @@
   "title": "HL7 Italia Certificato Vaccinale (DGC) FHIR Implementation Guide",
   "status": "draft",
   "experimental": true,
-  "date": "2021-05-02T16:08:48+00:00",
+  "date": "2021-05-02T19:49:34+00:00",
   "publisher": "HL7 Italia",
   "contact": [
     {
@@ -618,7 +618,7 @@
           "reference": "StructureDefinition/Immunization-dgc"
         },
         "name": "Immunization (Digital Green Certificate)",
-        "description": "This profile defines how to represent Immunizations in FHIR for building a Smart vaccination Card."
+        "description": "This profile defines how to represent Immunizations in FHIR for building a Digital Green Certificate."
       },
       {
         "extension": [
@@ -644,7 +644,7 @@
           "reference": "StructureDefinition/ImmunizationRecommendation-dgc"
         },
         "name": "ImmunizationRecommendation (Digital Green Certificate)",
-        "description": "This profile defines how to represent Immunization Recommandations in FHIR for building a Smart vaccination Card."
+        "description": "This profile defines how to represent Immunization Recommandations in FHIR for building a Digital Green Certificate."
       },
       {
         "extension": [
@@ -800,7 +800,7 @@
           "reference": "StructureDefinition/Location-dgc"
         },
         "name": "Location (Digital Green Certificate)",
-        "description": "This profile defines how to represent Location in FHIR for building a Smart vaccination Card. This is used to describe optionally where the vaccination occured"
+        "description": "This profile defines how to represent Location in FHIR for building a Digital Green Certificate. This is used to describe optionally where the vaccination occured"
       },
       {
         "extension": [
@@ -905,6 +905,32 @@
         },
         "name": "Organizzazione",
         "description": "Organizzazione"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Observation-CovidImmunity"
+        },
+        "name": "Observation - Covid Immunity",
+        "description": "This profile defines how to represent Covid with (presumed) Immunity in a Digital Green Certificate."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/loinc-disease-immunity"
+        },
+        "name": "LOINC Disease with Immunity",
+        "description": "Disease with Immunity [LOINC]"
       },
       {
         "extension": [
